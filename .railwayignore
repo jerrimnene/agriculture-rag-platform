@@ -1,0 +1,11 @@
+venv/
+data/
+*.log
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+frontend/
+scripts/
+docs/
+*.md

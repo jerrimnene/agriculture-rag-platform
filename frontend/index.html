@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hupfumi.Africa's Earth Evidence AI - Zimbabwe Agricultural Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --primary-green: #059669;
+            --primary-dark: #047857;
+            --primary-light: #10b981;
+            --accent-amber: #f59e0b;
+            --accent-orange: #ea580c;
+            --surface-dark: #0f172a;
+            --surface-card: #1e293b;
+            --surface-light: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+            --gradient-primary: linear-gradient(135deg, #059669 0%, #047857 100%);
+            --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+            --gradient-background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--gradient-background);
+            min-height: 100vh;
+            padding: 24px;
+            color: var(--text-primary);
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(5, 150, 105, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(245, 158, 11, 0.06) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.04) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .container { 
+            max-width: 1600px; 
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: var(--shadow-2xl), inset 0 1px 0 0 rgba(255,255,255,0.1);
+            margin-bottom: 32px;
+            border: 1px solid rgba(255,255,255,0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+        
+        h1 { 
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-primary); 
+            font-size: 2.75em; 
+            margin-bottom: 12px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+        h1 .brand-africa { 
+            background: var(--gradient-accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        h1 .brand-earth { 
+            color: var(--primary-light);
+            font-weight: 600;
+        }
+        .subtitle { 
+            color: var(--text-secondary); 
+            font-size: 1.1em;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+        
+        .location-bar {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 16px;
+            margin-top: 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        
+        .location-label { 
+            font-weight: 600; 
+            color: var(--primary-light);
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        #districtSelect {
+            flex: 1;
+            min-width: 280px;
+            padding: 14px 20px;
+            border: 2px solid rgba(5, 150, 105, 0.3);
+            border-radius: 12px;
+            font-size: 0.95em;
+            outline: none;
+            cursor: pointer;
+            background: rgba(30, 41, 59, 0.8);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        #districtSelect:hover {
+            border-color: var(--primary-light);
+            background: rgba(30, 41, 59, 1);
+            transform: translateY(-1px);
+        }
+        
+        #districtSelect:focus {
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
+        }
+        
+        #districtSelect option {
+            background: var(--surface-card);
+            color: var(--text-primary);
+        }
+        
+        .location-badge {
+            background: rgba(5, 150, 105, 0.15);
+            border: 1px solid rgba(5, 150, 105, 0.3);
+            color: var(--primary-light);
+            padding: 10px 18px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .location-badge:hover {
+            background: rgba(5, 150, 105, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .location-badge .badge-label { 
+            opacity: 0.8;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .location-badge .badge-value { 
+            font-weight: 700;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 24px;
+        }
+        
+        @media (max-width: 1200px) {
+            .main-content { grid-template-columns: 1fr; }
+            h1 { font-size: 2em; }
+        }
+        
+        .left-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        
+        .chat-container {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-radius: 24px;
+            box-shadow: var(--shadow-2xl), inset 0 1px 0 0 rgba(255,255,255,0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 50vh;
+            border: 1px solid rgba(255,255,255,0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .chat-container:hover {
+            box-shadow: var(--shadow-2xl), inset 0 1px 0 0 rgba(255,255,255,0.12);
+        }
+        
+        .tools-container {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-radius: 24px;
+            box-shadow: var(--shadow-2xl), inset 0 1px 0 0 rgba(255,255,255,0.08);
+            padding: 28px;
+            max-height: 50vh;
+            overflow-y: auto;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        
+        .tools-container::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .tools-container::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.3);
+            border-radius: 10px;
+        }
+        
+        .tools-container::-webkit-scrollbar-thumb {
+            background: rgba(5, 150, 105, 0.4);
+            border-radius: 10px;
+        }
+        
+        .tools-container::-webkit-scrollbar-thumb:hover {
+            background: rgba(5, 150, 105, 0.6);
+        }
+        
+        .chat-header {
+            background: rgba(5, 150, 105, 0.15);
+            border-bottom: 1px solid rgba(5, 150, 105, 0.2);
+            color: var(--text-primary);
+            padding: 24px 28px;
+            font-weight: 600;
+            font-size: 1.1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            letter-spacing: -0.01em;
+        }
+        
+        .context-indicator {
+            font-size: 0.8em;
+            font-weight: 500;
+            background: rgba(5, 150, 105, 0.2);
+            border: 1px solid rgba(5, 150, 105, 0.3);
+            color: var(--primary-light);
+            padding: 6px 14px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+            background: rgba(15, 23, 42, 0.4);
+        }
+        
+        .chat-messages::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .chat-messages::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.3);
+            border-radius: 10px;
+        }
+        
+        .chat-messages::-webkit-scrollbar-thumb {
+            background: rgba(5, 150, 105, 0.4);
+            border-radius: 10px;
+        }
+        
+        .chat-messages::-webkit-scrollbar-thumb:hover {
+            background: rgba(5, 150, 105, 0.6);
+        }
+        
+        .message {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            animation: messageSlideIn 0.3s ease-out;
+        }
+        
+        @keyframes messageSlideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .message.user { justify-content: flex-end; }
+        
+        .message-content {
+            max-width: 75%;
+            padding: 18px 22px;
+            border-radius: 18px;
+            line-height: 1.7;
+            font-size: 0.95em;
+        }
+        
+        .message.user .message-content {
+            background: var(--gradient-primary);
+            color: white;
+            border-bottom-right-radius: 6px;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .message.assistant .message-content {
+            background: rgba(30, 41, 59, 0.8);
+            border-bottom-left-radius: 6px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(255,255,255,0.06);
+            color: var(--text-primary);
+        }
+        
+        .message-role {
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 0.85em;
+            opacity: 0.9;
+            letter-spacing: 0.02em;
+        }
+        
+        .message.assistant .message-role {
+            color: var(--primary-light);
+        }
+        
+        .message-location {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.2);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            color: var(--accent-amber);
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.7em;
+            margin-left: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .chat-input-container {
+            padding: 24px;
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        
+        .input-wrapper { display: flex; gap: 12px; }
+        
+        #queryInput {
+            flex: 1;
+            padding: 16px 20px;
+            border: 2px solid rgba(5, 150, 105, 0.2);
+            border-radius: 16px;
+            font-size: 0.95em;
+            outline: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(30, 41, 59, 0.6);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+        }
+        
+        #queryInput::placeholder {
+            color: var(--text-muted);
+        }
+        
+        #queryInput:focus { 
+            border-color: var(--primary-light);
+            background: rgba(30, 41, 59, 0.8);
+            box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
+        }
+        
+        #sendButton {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 16px;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-lg);
+            letter-spacing: 0.02em;
+        }
+        
+        #sendButton:hover:not(:disabled) { 
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        #sendButton:active:not(:disabled) {
+            transform: translateY(0);
+        }
+        
+        #sendButton:disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        .info-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            padding: 28px;
+            border-radius: 24px;
+            box-shadow: var(--shadow-2xl), inset 0 1px 0 0 rgba(255,255,255,0.08);
+            max-height: 70vh;
+            overflow-y: auto;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        
+        .info-panel::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .info-panel::-webkit-scrollbar-track {
+            background: rgba(15, 23, 42, 0.3);
+            border-radius: 10px;
+        }
+        
+        .info-panel::-webkit-scrollbar-thumb {
+            background: rgba(5, 150, 105, 0.4);
+            border-radius: 10px;
+        }
+        
+        .info-panel::-webkit-scrollbar-thumb:hover {
+            background: rgba(5, 150, 105, 0.6);
+        }
+        
+        .info-panel h3 {
+            color: var(--primary-light);
+            margin-bottom: 18px;
+            font-size: 1.1em;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: -0.01em;
+        }
+        
+        .district-info {
+            background: rgba(15, 23, 42, 0.5);
+            padding: 18px;
+            border-radius: 14px;
+            margin-bottom: 20px;
+            border-left: 3px solid var(--primary-light);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        
+        .district-info-item {
+            margin: 10px 0;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .district-info-label {
+            font-weight: 600;
+            color: var(--primary-light);
+        }
+        
+        .recommended-crops {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+        
+        .crop-tag {
+            background: rgba(5, 150, 105, 0.15);
+            border: 1px solid rgba(5, 150, 105, 0.3);
+            color: var(--primary-light);
+            padding: 6px 14px;
+            border-radius: 10px;
+            font-size: 0.8em;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .crop-tag:hover {
+            background: rgba(5, 150, 105, 0.25);
+            transform: translateY(-1px);
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(5, 150, 105, 0.2);
+            border-top: 3px solid var(--primary-light);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .examples { margin-top: 18px; }
+        
+        .example-query {
+            background: rgba(15, 23, 42, 0.5);
+            padding: 12px 18px;
+            margin: 8px 0;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-left: 3px solid var(--primary-light);
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        
+        .example-query:hover { 
+            background: rgba(5, 150, 105, 0.15);
+            transform: translateX(4px);
+            border-left-color: var(--accent-amber);
+        }
+        
+        .citation-box {
+            background: rgba(15, 23, 42, 0.6);
+            border-left: 3px solid var(--primary-light);
+            padding: 16px;
+            margin-top: 16px;
+            border-radius: 12px;
+            font-size: 0.88em;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        
+        .citation-header {
+            font-weight: 600;
+            color: var(--primary-light);
+            margin-bottom: 12px;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .citation-item {
+            margin: 10px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+        }
+        
+        .citation-item:last-child {
+            border-bottom: none;
+        }
+        
+        .citation-source {
+            color: var(--accent-amber);
+            font-weight: 500;
+        }
+        
+        .citation-link {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-size: 0.85em;
+            display: inline-block;
+            margin-top: 6px;
+            transition: all 0.2s ease;
+            padding: 4px 8px;
+            border-radius: 6px;
+            background: rgba(5, 150, 105, 0.1);
+        }
+        
+        .citation-link:hover {
+            background: rgba(5, 150, 105, 0.2);
+            transform: translateX(2px);
+        }
+        
+        .source-badge {
+            background: rgba(5, 150, 105, 0.2);
+            border: 1px solid rgba(5, 150, 105, 0.3);
+            color: var(--primary-light);
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-size: 0.75em;
+            margin-left: 8px;
+            font-weight: 600;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 16px;
+        }
+        
+        .stat-box {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 16px;
+            border-radius: 14px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-box:hover {
+            background: rgba(5, 150, 105, 0.1);
+            transform: translateY(-2px);
+            border-color: rgba(5, 150, 105, 0.3);
+        }
+        
+        .stat-value {
+            font-size: 1.8em;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .stat-label {
+            font-size: 0.8em;
+            color: var(--text-muted);
+            margin-top: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+        }
+        
+        /* Voice Intelligence Styles */
+        .voice-button {
+            background: var(--gradient-accent);
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            font-size: 1.3em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .voice-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .voice-button.listening {
+            animation: pulse 1.5s infinite;
+            background: var(--gradient-primary);
+        }
+        
+        .voice-button.speaking {
+            animation: speaking 0.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        @keyframes speaking {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .voice-status {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(245, 158, 11, 0.95);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            white-space: nowrap;
+            box-shadow: var(--shadow-lg);
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateX(-50%) translateY(5px); }
+            to { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+        
+        .input-wrapper {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌾 <span class="brand-africa">Hupfumi.Africa</span>'s <span class="brand-earth">Earth Evidence AI</span></h1>
+            <p class="subtitle">Where the land speaks, data listens, and wisdom decides | Zimbabwe's Ancestral Intelligence for Agriculture</p>
+            
+            <div class="location-bar">
+                <span class="location-label">📍 Your Location:</span>
+                <select id="districtSelect" onchange="handleDistrictChange()">
+                    <option value="">Select your district...</option>
+                </select>
+                <div id="regionBadge" style="display: none;" class="location-badge">
+                    <span class="badge-label">Region:</span>
+                    <span id="regionValue" class="badge-value"></span>
+                </div>
+                <div id="rainfallBadge" style="display: none;" class="location-badge">
+                    <span class="badge-label">Rainfall:</span>
+                    <span id="rainfallValue" class="badge-value"></span>
+                </div>
+            </div>
+        </header>
+        
+        <div class="tools-link-banner" style="background: rgba(245, 158, 11, 0.15); border: 2px solid rgba(245, 158, 11, 0.3); padding: 20px; border-radius: 16px; margin-bottom: 32px; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <div style="font-size: 1.3em; font-weight: 600; color: var(--accent-amber); margin-bottom: 6px;">🧮 Need Budget Planning?</div>
+                <div style="color: var(--text-secondary); font-size: 0.95em;">Access our complete farm budget calculator, verified suppliers directory, and planning tools</div>
+            </div>
+            <a href="tools.html" style="background: var(--gradient-accent); color: white; padding: 14px 28px; border-radius: 12px; text-decoration: none; font-weight: 600; white-space: nowrap; box-shadow: var(--shadow-lg); transition: all 0.3s ease;">Open Tools →</a>
+        </div>
+        
+        <div class="main-content">
+            <div class="left-panel">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <span>💬 Ask Your Agricultural Questions</span>
+                    <span id="contextIndicator" class="context-indicator" style="display: none;"></span>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message assistant">
+                        <div class="message-content">
+                            <div class="message-role">🌍 Earth Evidence AI</div>
+                            Mauya! Welcome! I'm Hupfumi.Africa's Earth Evidence AI — your ancestral intelligence assistant rooted in Zimbabwe's land, climate, and agricultural wisdom. Select your district above to receive recommendations based on your region's natural resources, rainfall patterns, soil characteristics, and traditional knowledge. From soil to soul, I'm here to guide your journey to prosperity.
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <div class="input-wrapper">
+                        <button class="voice-button" id="micButton" onclick="toggleVoiceInput()" title="Click to speak" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); z-index: 10;">
+                            🎤
+                        </button>
+                        <input 
+                            type="text" 
+                            id="queryInput" 
+                            placeholder="Ask about crop varieties, fertilizers, pest management..."
+                            onkeypress="handleKeyPress(event)"
+                            style="padding-left: 70px;"
+                        />
+                        <button id="sendButton" onclick="sendQuery()">Send</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="info-panel">
+                <!-- Date/Time Intelligence Panel -->
+                <div id="dateTimePanel"></div>
+                
+                <div id="districtInfoPanel" style="display: none;">
+                    <h3>📍 Location Context</h3>
+                    <div class="district-info" id="districtInfo"></div>
+                </div>
+                
+                <h3>📊 System Status</h3>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-value" id="districtCount">56</div>
+                        <div class="stat-label">Districts</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value" id="docCount">-</div>
+                        <div class="stat-label">Documents</div>
+                    </div>
+                </div>
+                
+                <div id="additionalInfoPanel" style="display: none;">
+                    <h3 style="margin-top: 25px;">⚠️ Challenges & Warnings</h3>
+                    <div id="challengesInfo" class="district-info" style="font-size: 0.9em;"></div>
+                    
+                    <h3 style="margin-top: 20px;">🏪 Local Markets</h3>
+                    <div id="marketsInfo" class="district-info" style="font-size: 0.9em;"></div>
+                    
+                    <h3 style="margin-top: 20px;">🌾 Where to Sell</h3>
+                    <div id="sellingInfo" class="district-info" style="font-size: 0.9em;"></div>
+                </div>
+            </div>
+    
+    <script>
+        const API_BASE = 'http://localhost:8000';
+        let selectedDistrict = null;
+        let districtData = null;
+        
+        async function loadDistricts() {
+            console.log('Loading districts from API...');
+            try {
+                const response = await fetch(`${API_BASE}/districts`);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const data = await response.json();
+                console.log('Districts loaded:', data.total, 'districts');
+                
+                const select = document.getElementById('districtSelect');
+                const byProvince = {};
+                data.districts.forEach(d => {
+                    if (!byProvince[d.province]) byProvince[d.province] = [];
+                    byProvince[d.province].push(d);
+                });
+                
+                Object.keys(byProvince).sort().forEach(province => {
+                    const optgroup = document.createElement('optgroup');
+                    optgroup.label = province;
+                    byProvince[province].sort((a, b) => a.name.localeCompare(b.name)).forEach(district => {
+                        const option = document.createElement('option');
+                        option.value = district.name;
+                        option.textContent = district.name;
+                        optgroup.appendChild(option);
+                    });
+                    select.appendChild(optgroup);
+                });
+                console.log('Districts dropdown populated successfully');
+            } catch (error) {
+                console.error('Failed to load districts:', error);
+                alert('Error loading districts. Please check console (F12) for details.');
+            }
+        }
+        
+        async function handleDistrictChange() {
+            console.log('handleDistrictChange called');
+            const select = document.getElementById('districtSelect');
+            selectedDistrict = select.value;
+            console.log('Selected district:', selectedDistrict);
+            
+            if (!selectedDistrict) {
+                document.getElementById('regionBadge').style.display = 'none';
+                document.getElementById('rainfallBadge').style.display = 'none';
+                document.getElementById('districtInfoPanel').style.display = 'none';
+                document.getElementById('additionalInfoPanel').style.display = 'none';
+                document.getElementById('toolsContainer').style.display = 'none';
+                document.getElementById('contextIndicator').style.display = 'none';
+                return;
+            }
+            
+            try {
+                // Use the COMPLETE district profile endpoint
+                const response = await fetch(`${API_BASE}/api/district/${encodeURIComponent(selectedDistrict)}/complete-profile`);
+                if (!response.ok) throw new Error('Failed to load district profile');
+                
+                const data = await response.json();
+                console.log('District profile loaded:', data);
+                
+                // Update header badges
+                const regionText = data.geographic_info?.natural_region || 'N/A';
+                const rainfallText = data.geographic_info?.rainfall_mm || 'N/A';
+                document.getElementById('regionValue').textContent = regionText;
+                document.getElementById('rainfallValue').textContent = rainfallText;
+                document.getElementById('regionBadge').style.display = 'flex';
+                document.getElementById('rainfallBadge').style.display = 'flex';
+                
+                // Update chat header context
+                document.getElementById('contextIndicator').textContent = `${data.district}, ${regionText}`;
+                document.getElementById('contextIndicator').style.display = 'block';
+                
+                // Build main info panel
+                let infoHtml = `
+                    <div class="district-info-item"><span class="district-info-label">District:</span> ${data.district}</div>
+                    <div class="district-info-item"><span class="district-info-label">Province:</span> ${data.geographic_info?.province || 'N/A'}</div>
+                    <div class="district-info-item"><span class="district-info-label">Natural Region:</span> ${regionText}</div>
+                    <div class="district-info-item"><span class="district-info-label">Rainfall:</span> ${rainfallText}</div>
+                    <div class="district-info-item"><span class="district-info-label">Soil Type:</span> ${data.geographic_info?.soil_type || 'N/A'}</div>
+                `;
+                
+                // Add main crops from quick facts
+                if (data.quick_facts?.main_crops && data.quick_facts.main_crops.length > 0) {
+                    infoHtml += `<div class="district-info-item"><span class="district-info-label">Main Crops:</span>
+                        <div class="recommended-crops">${data.quick_facts.main_crops.map(c => `<span class="crop-tag">${c}</span>`).join('')}</div></div>`;
+                }
+                
+                // Add best crop for profit
+                if (data.quick_facts?.best_crop_for_profit) {
+                    infoHtml += `<div class="district-info-item"><span class="district-info-label">💰 Most Profitable:</span> ${data.quick_facts.best_crop_for_profit}</div>`;
+                }
+                
+                document.getElementById('districtInfo').innerHTML = infoHtml;
+                document.getElementById('districtInfoPanel').style.display = 'block';
+                
+                // Build challenges/warnings section
+                let challengesHtml = '';
+                if (data.quick_facts?.main_challenges && data.quick_facts.main_challenges.length > 0) {
+                    challengesHtml = data.quick_facts.main_challenges.map(c => `• ${c}`).join('<br>');
+                } else {
+                    challengesHtml = 'Loading challenges data...';
+                }
+                document.getElementById('challengesInfo').innerHTML = challengesHtml;
+                
+                // Build markets section
+                let marketsHtml = '';
+                if (data.markets?.local_markets) {
+                    const gp = data.markets.local_markets.growth_points || [];
+                    const sc = data.markets.local_markets.service_centres || [];
+                    const wm = data.markets.local_markets.weekly_markets || [];
+                    const allMarkets = [...gp, ...sc, ...wm];
+                    if (allMarkets.length > 0) {
+                        marketsHtml = allMarkets.slice(0, 5).map(m => `• ${m}`).join('<br>');
+                    }
+                }
+                if (!marketsHtml) marketsHtml = `${data.district} local market<br>${data.district} growth point`;
+                document.getElementById('marketsInfo').innerHTML = marketsHtml;
+                
+                // Build selling locations section
+                let sellingHtml = '';
+                if (data.selling_locations) {
+                    sellingHtml += '<strong>Local:</strong><br>';
+                    sellingHtml += (data.selling_locations.local || [`${data.district} market`]).slice(0, 3).map(l => `• ${l}`).join('<br>');
+                    sellingHtml += '<br><br><strong>Regional:</strong><br>';
+                    sellingHtml += (data.selling_locations.regional || ['GMB depots', 'Provincial markets']).slice(0, 3).map(l => `• ${l}`).join('<br>');
+                    sellingHtml += '<br><br><strong>National:</strong><br>';
+                    sellingHtml += (data.selling_locations.national || ['Mbare Musika (Harare)', 'ZMX']).slice(0, 3).map(l => `• ${l}`).join('<br>');
+                } else {
+                    sellingHtml = `Local: ${data.district} market<br>Regional: GMB depots<br>National: Mbare Musika, ZMX`;
+                }
+                document.getElementById('sellingInfo').innerHTML = sellingHtml;
+                document.getElementById('additionalInfoPanel').style.display = 'block';
+                
+                // Add system message
+                addMessage('system', `📍 Location set to ${data.district}, ${data.geographic_info?.province || 'Zimbabwe'} (${regionText}). Your recommendations will now be tailored to local conditions.`);
+            } catch (error) {
+                console.error('Failed to load district info:', error);
+                addMessage('system', '⚠️ Could not load complete district profile. Using basic data.');
+            }
+        }
+        
+        async function sendQuery() {
+            const input = document.getElementById('queryInput');
+            const query = input.value.trim();
+            if (!query) return;
+            
+            addMessage('user', query, selectedDistrict);
+            input.value = '';
+            
+            const sendButton = document.getElementById('sendButton');
+            sendButton.disabled = true;
+            sendButton.innerHTML = '<span class="loading"></span>';
+            
+            try {
+                let response, data;
+                
+                // If district is selected, use district-specific endpoint
+                if (selectedDistrict) {
+                    response = await fetch(`${API_BASE}/api/district/${encodeURIComponent(selectedDistrict)}/ask?question=${encodeURIComponent(query)}`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' }
+                    });
+                    
+                    if (!response.ok) throw new Error('Failed to get response');
+                    data = await response.json();
+                    addMessageWithCitations('assistant', data.answer || data.response, data.sources || [], data.source_count || 0, selectedDistrict);
+                    
+                    // Speak the response using Voice Intelligence
+                    if (typeof VoiceIntelligence !== 'undefined') {
+                        VoiceIntelligence.speakChatResponse(
+                            data.answer || data.response,
+                            data.sources || [],
+                            0.88
+                        );
+                    }
+                } else {
+                    // Use general query endpoint
+                    response = await fetch(`${API_BASE}/query`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ query: query })
+                    });
+                    
+                    if (!response.ok) throw new Error('Failed to get response');
+                    data = await response.json();
+                    addMessageWithCitations('assistant', data.response, data.sources || [], data.source_count || 0);
+                    
+                    // Speak the response using Voice Intelligence
+                    if (typeof VoiceIntelligence !== 'undefined') {
+                        VoiceIntelligence.speakChatResponse(
+                            data.response,
+                            data.sources || [],
+                            0.88
+                        );
+                    }
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                addMessage('assistant', '❌ Sorry, I encountered an error. Please make sure the API server is running.');
+            } finally {
+                sendButton.disabled = false;
+                sendButton.innerHTML = 'Send';
+            }
+        }
+        
+        function addMessage(role, content, district = null) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${role}`;
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            
+            if (role !== 'system') {
+                const roleDiv = document.createElement('div');
+                roleDiv.className = 'message-role';
+                roleDiv.innerHTML = role === 'user' ? 'You' : 'AgriEvidence';
+                if (district && role === 'user') roleDiv.innerHTML += `<span class="message-location">${district}</span>`;
+                contentDiv.appendChild(roleDiv);
+            }
+            
+            const textDiv = document.createElement('div');
+            textDiv.style.whiteSpace = 'pre-wrap';
+            textDiv.textContent = content;
+            contentDiv.appendChild(textDiv);
+            messageDiv.appendChild(contentDiv);
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+        
+        function addMessageWithCitations(role, content, sources = [], sourceCount = 0, district = null) {
+            const messagesContainer = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${role}`;
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            
+            // Add role header
+            if (role !== 'system') {
+                const roleDiv = document.createElement('div');
+                roleDiv.className = 'message-role';
+                roleDiv.innerHTML = role === 'user' ? 'You' : 'AgriEvidence';
+                if (district && role === 'user') roleDiv.innerHTML += `<span class="message-location">${district}</span>`;
+                contentDiv.appendChild(roleDiv);
+            }
+            
+            // Add main content
+            const textDiv = document.createElement('div');
+            textDiv.style.whiteSpace = 'pre-wrap';
+            textDiv.textContent = content;
+            contentDiv.appendChild(textDiv);
+            
+            // Add citations if available
+            if (sources && sources.length > 0) {
+                const citationBox = document.createElement('div');
+                citationBox.className = 'citation-box';
+                
+                const citationHeader = document.createElement('div');
+                citationHeader.className = 'citation-header';
+                citationHeader.innerHTML = `📚 Evidence & Sources <span class="source-badge">${sourceCount} document${sourceCount !== 1 ? 's' : ''}</span>`;
+                citationBox.appendChild(citationHeader);
+                
+                // Show up to 3 sources
+                sources.slice(0, 3).forEach((source, index) => {
+                    const citationItem = document.createElement('div');
+                    citationItem.className = 'citation-item';
+                    
+                    // Extract metadata
+                    const category = source.metadata?.category || 'general';
+                    const district = source.metadata?.district || 'Zimbabwe';
+                    const sourceName = source.metadata?.source || 'Unknown source';
+                    const sourceFile = source.metadata?.source_file || '';
+                    const sourceUrl = source.metadata?.url || '';
+                    
+                    // Build citation HTML
+                    let citationHTML = `<strong>${index + 1}.</strong> `;
+                    citationHTML += `<span class="citation-source">${category.charAt(0).toUpperCase() + category.slice(1)} - ${district} District</span><br>`;
+                    
+                    // Add snippet of content
+                    const snippet = source.content ? source.content.substring(0, 120) + '...' : 'Agricultural guidance document';
+                    citationHTML += `<div style="color: #666; font-size: 0.9em; margin-top: 3px;">${snippet}</div>`;
+                    
+                    // Add document name
+                    citationHTML += `<div style="color: #888; font-size: 0.85em; margin-top: 3px; font-style: italic;">Source: ${sourceName}</div>`;
+                    
+                    // Add document link ONLY if URL or source_file exists and is not empty
+                    if ((sourceFile && sourceFile.trim()) || (sourceUrl && sourceUrl.trim())) {
+                        const link = sourceUrl && sourceUrl.trim() ? sourceUrl : `#document-${sourceFile}`;
+                        citationHTML += `<a href="${link}" class="citation-link" target="_blank">📄 View source document</a>`;
+                    }
+                    
+                    citationItem.innerHTML = citationHTML;
+                    citationBox.appendChild(citationItem);
+                });
+                
+                // Add "show more" if there are more sources
+                if (sources.length > 3) {
+                    const moreDiv = document.createElement('div');
+                    moreDiv.style.marginTop = '8px';
+                    moreDiv.style.color = '#666';
+                    moreDiv.style.fontSize = '0.85em';
+                    moreDiv.textContent = `+ ${sources.length - 3} more source${sources.length - 3 !== 1 ? 's' : ''}`;
+                    citationBox.appendChild(moreDiv);
+                }
+                
+                contentDiv.appendChild(citationBox);
+            }
+            
+            messageDiv.appendChild(contentDiv);
+            messagesContainer.appendChild(messageDiv);
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+        
+        function setQuery(text) {
+            document.getElementById('queryInput').value = text;
+            document.getElementById('queryInput').focus();
+        }
+        
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') sendQuery();
+        }
+        
+        async function loadStats() {
+            try {
+                const response = await fetch(`${API_BASE}/health`);
+                const data = await response.json();
+                if (data.vector_store_stats) {
+                    document.getElementById('docCount').textContent = data.vector_store_stats.total_documents || '-';
+                }
+            } catch (error) {
+                console.log('Could not load stats');
+            }
+        }
+        
+        window.onload = function() {
+            loadDistricts();
+            loadStats();
+            
+            // Initialize Voice Intelligence
+            if (typeof VoiceIntelligence !== 'undefined') {
+                VoiceIntelligence.init('sk_2d285c737f4b126d866eb64c7cbe788921afef2355d80829');
+                console.log('🎤 Voice Intelligence initialized');
+            }
+            
+            // Initialize Date/Time Intelligence
+            if (typeof DateTimeIntelligence !== 'undefined') {
+                DateTimeIntelligence.displayCurrentInfo('dateTimePanel');
+                console.log('📅 DateTime Intelligence initialized');
+            }
+        };
+        
+        // Voice Input Function
+        function toggleVoiceInput() {
+            if (typeof VoiceIntelligence === 'undefined') {
+                alert('Voice system is loading... Please try again in a moment.');
+                return;
+            }
+            
+            const micButton = document.getElementById('micButton');
+            const queryInput = document.getElementById('queryInput');
+            
+            if (VoiceIntelligence.isListening) {
+                VoiceIntelligence.stopListening();
+                micButton.classList.remove('listening');
+                return;
+            }
+            
+            micButton.classList.add('listening');
+            
+            VoiceIntelligence.startListening(
+                // Final result - send query
+                (transcript) => {
+                    queryInput.value = transcript;
+                    micButton.classList.remove('listening');
+                    sendQuery();
+                },
+                // Interim results - show what's being said
+                (interim) => {
+                    queryInput.value = interim + '...';
+                }
+            );
+        }
+    </script>
+    <script src="datetime_intelligence.js"></script>
+    <script src="voice_intelligence.js"></script>
+</body>
+</html>

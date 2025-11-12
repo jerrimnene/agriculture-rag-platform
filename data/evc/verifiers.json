@@ -1,0 +1,36 @@
+{
+  "VRF_20251110224215_94485e": {
+    "id": "VRF_20251110224215_94485e",
+    "name": "Dr. John Mapfumo",
+    "role": "research_scientist",
+    "organization": "ICRISAT Zimbabwe",
+    "credentials": [
+      "PhD Agronomy",
+      "15 years experience"
+    ],
+    "specializations": [
+      "maize_production",
+      "soil_fertility"
+    ],
+    "email": "j.mapfumo@icrisat.org",
+    "active": true,
+    "verified_count": 1
+  },
+  "VRF_20251110224215_a21560": {
+    "id": "VRF_20251110224215_a21560",
+    "name": "Ms. Grace Moyo",
+    "role": "agritex_specialist",
+    "organization": "AGRITEX Mashonaland",
+    "credentials": [
+      "MSc Agriculture",
+      "AGRITEX Certified"
+    ],
+    "specializations": [
+      "extension_services",
+      "farmer_training"
+    ],
+    "email": "g.moyo@agritex.gov.zw",
+    "active": true,
+    "verified_count": 2
+  }
+}

@@ -1,0 +1,2459 @@
+{
+  "Beitbridge": {
+    "name": "Beitbridge",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Beitbridge-District-Profile.pdf",
+    "pages_processed": 37,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [],
+    "crops": {
+      "primary": [
+        "wheat",
+        "maize",
+        "beans",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Unattractive",
+        "Labour",
+        "Informal",
+        "Livestock"
+      ],
+      "commodities": [
+        "tobacco",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 2022
+  },
+  "Bikita": {
+    "name": "Bikita",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Bikita-District-Profile.pdf",
+    "pages_processed": 57,
+    "rainfall": {
+      "annual_mm": 151
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "vegetables",
+        "beans",
+        "maize",
+        "millet",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Nyika"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 37
+  },
+  "Bindura": {
+    "name": "Bindura",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Bindura-District-Profile.pdf",
+    "pages_processed": 57,
+    "rainfall": {
+      "annual_mm": 580
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "sunflower",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {
+        "sorghum": 6.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Farmer",
+        "Harare",
+        "Governmental Organisations\nMain",
+        "Vegetable"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 38
+  },
+  "Binga": {
+    "name": "Binga",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Binga-District-Profile.pdf",
+    "pages_processed": 41,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {
+        "cotton": 14.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Proper",
+        "Crop Markets\nCrop",
+        "Establish",
+        "Food"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 2012
+  },
+  "Bubi": {
+    "name": "Bubi",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Bubi-District-Profile.pdf",
+    "pages_processed": 40,
+    "rainfall": {
+      "annual_mm": 450
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "sunflower",
+        "millet",
+        "maize",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock",
+        "Food Commodities Markets\nThe",
+        "Availability"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower"
+      ],
+      "market_days": []
+    },
+    "population": 2012
+  },
+  "Buhera": {
+    "name": "Buhera",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Buhera-District-Profile.pdf",
+    "pages_processed": 57,
+    "rainfall": {
+      "annual_mm": 400
+    },
+    "soil_types": [
+      "sandy",
+      "loam"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "vegetables",
+        "beans",
+        "maize",
+        "groundnuts",
+        "sorghum",
+        "sunflower",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 4
+  },
+  "Bulilima": {
+    "name": "Bulilima",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Bulilima-District-Profile.pdf",
+    "pages_processed": 53,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "loam",
+      "deep",
+      "sandy",
+      "clay",
+      "shallow"
+    ],
+    "crops": {
+      "primary": [
+        "millet",
+        "maize",
+        "groundnuts",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Output"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts"
+      ],
+      "market_days": []
+    },
+    "population": 35
+  },
+  "Chegutu": {
+    "name": "Chegutu",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chegutu-District-Profile.pdf",
+    "pages_processed": 45,
+    "rainfall": {
+      "annual_mm": 133
+    },
+    "soil_types": [],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "sunflower",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 1
+  },
+  "Chikomba": {
+    "name": "Chikomba",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chikomba-District-Profile.pdf",
+    "pages_processed": 49,
+    "rainfall": {
+      "annual_mm": 143
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Organized"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 1
+  },
+  "Chimanimani": {
+    "name": "Chimanimani",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chimanimani-District-Profile.pdf",
+    "pages_processed": 53,
+    "rainfall": {
+      "annual_mm": 377
+    },
+    "soil_types": [
+      "silt",
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "vegetables"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Gudyanga"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower"
+      ],
+      "market_days": []
+    },
+    "population": 2022
+  },
+  "Chipinge": {
+    "name": "Chipinge",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chipinge-District-Profile.pdf",
+    "pages_processed": 53,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "silt",
+      "loam",
+      "deep",
+      "clay",
+      "shallow"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "sunflower",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Competition",
+        "Side",
+        "Unorganized"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 2022
+  },
+  "Chiredzi": {
+    "name": "Chiredzi",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chiredzi-District-Profile.pdf",
+    "pages_processed": 57,
+    "rainfall": {
+      "annual_mm": 122
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "deep",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "beans",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {
+        "cotton": 1.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Distant",
+        "Covid",
+        "Village",
+        "Available",
+        "Poor",
+        "Muhlanguleni"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 1
+  },
+  "Chirumhanzu": {
+    "name": "Chirumhanzu",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chirumhanzu-District-Profile.pdf",
+    "pages_processed": 45,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "sunflower"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Main Markets For Crop Produce\nMarket Name Ward Number Commodity Source Of Availability\nCommodity\nMvuma",
+        "Mhondoro",
+        "Lalapanzi",
+        "Charandura",
+        "Mavise"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower"
+      ],
+      "market_days": []
+    },
+    "population": 1
+  },
+  "Chivi": {
+    "name": "Chivi",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chivi-District-Profile.pdf",
+    "pages_processed": 69,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "vegetables",
+        "beans",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {
+        "maize": 25.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Poor",
+        "Mining",
+        "Open"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts"
+      ],
+      "market_days": []
+    },
+    "population": 2012
+  },
+  "Gokwe-North": {
+    "name": "Gokwe-North",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Gokwe-North-District-Profile.pdf",
+    "pages_processed": 65,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "deep",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "vegetables",
+        "maize",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {
+        "cotton": 10.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Hence",
+        "Farmer",
+        "Governmental Organisations\nMain",
+        "Roadside",
+        "Cereal"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 1
+  },
+  "Gokwe-South": {
+    "name": "Gokwe-South",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Gokwe-South-District-Profile.pdf",
+    "pages_processed": 69,
+    "rainfall": {
+      "annual_mm": 296
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "crops": {
+      "primary": [
+        "beans",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Cotton",
+        "Agriculture",
+        "Flea",
+        "Formal"
+      ],
+      "commodities": [
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 1
+  },
+  "Goromonzi": {
+    "name": "Goromonzi",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Goromonzi-District-Profile.pdf",
+    "pages_processed": 57,
+    "rainfall": {
+      "annual_mm": 772
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "deep"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "sunflower",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 1
+  },
+  "Guruve": {
+    "name": "Guruve",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Guruve-District-Profile.pdf",
+    "pages_processed": 41,
+    "rainfall": {
+      "annual_mm": 660
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "soybeans",
+        "groundnuts",
+        "sorghum",
+        "sunflower",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Distant",
+        "Poor",
+        "Guruve District\nDevelopment Priority Rank Wards Targeted Comment\nAgricultural"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 1
+  },
+  "Gutu": {
+    "name": "Gutu",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Gutu-District-Profile.pdf",
+    "pages_processed": 41,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "millet",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {
+        "maize": 2.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Crop",
+        "Mupandawana"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 28
+  },
+  "Gwanda": {
+    "name": "Gwanda",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Gwanda-District-Profile.pdf",
+    "pages_processed": 53,
+    "rainfall": {
+      "annual_mm": 135
+    },
+    "soil_types": [
+      "sandy",
+      "loam"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Markets\nLivestock",
+        "Table"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts"
+      ],
+      "market_days": []
+    },
+    "population": 2021
+  },
+  "Gweru": {
+    "name": "Gweru",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Gweru-District-Profile.pdf",
+    "pages_processed": 49,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "sunflower",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Maboleni",
+        "Livestock",
+        "Cereals",
+        "Poor"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 50
+  },
+  "HWEDZA": {
+    "name": "HWEDZA",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /HWEDZA-District-Profile.pdf",
+    "pages_processed": 45,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "loam"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 2012
+  },
+  "Hwange": {
+    "name": "Hwange",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Hwange-District-Profile.pdf",
+    "pages_processed": 53,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "millet",
+        "maize",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain"
+      ],
+      "market_days": []
+    },
+    "population": 32
+  },
+  "Insiza": {
+    "name": "Insiza",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Insiza-District-Profile.pdf",
+    "pages_processed": 57,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "deep"
+    ],
+    "crops": {
+      "primary": [
+        "beans",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Legumes",
+        "Available",
+        "Horticulture External",
+        "Periodic",
+        "No Functional",
+        "Available\nHorticulture External",
+        "Seasonal\nMobile"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 2000
+  },
+  "Kariba": {
+    "name": "Kariba",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Kariba-District-Profile.pdf",
+    "pages_processed": 47,
+    "rainfall": {
+      "annual_mm": 1157
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [],
+      "commodities": [
+        "tobacco",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 2012
+  },
+  "Kwekwe": {
+    "name": "Kwekwe",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Kwekwe-District-Profile.pdf",
+    "pages_processed": 49,
+    "rainfall": {
+      "annual_mm": 266
+    },
+    "soil_types": [],
+    "crops": {
+      "primary": [
+        "wheat",
+        "maize",
+        "groundnuts",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Source",
+        "Urban",
+        "Controlled",
+        "Urban Horticultural",
+        "Open",
+        "Agricultural"
+      ],
+      "commodities": [
+        "livestock",
+        "maize",
+        "groundnuts",
+        "grain"
+      ],
+      "market_days": []
+    },
+    "population": 1
+  },
+  "Lupane": {
+    "name": "Lupane",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Lupane-District-Profile.pdf",
+    "pages_processed": 57,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam"
+    ],
+    "crops": {
+      "primary": [
+        "beans",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Hence",
+        "Other"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 42
+  },
+  "MT-Darwin": {
+    "name": "MT-Darwin",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /MT-Darwin-District-Profile.pdf",
+    "pages_processed": 53,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "sunflower",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 9
+  },
+  "Makonde": {
+    "name": "Makonde",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Makonde-District-Profile.pdf",
+    "pages_processed": 37,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [],
+    "crops": {
+      "primary": [
+        "wheat",
+        "tobacco",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "sunflower",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {
+        "cotton": 18.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Farmer",
+        "Main"
+      ],
+      "commodities": [
+        "tobacco",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 4
+  },
+  "Mangwe": {
+    "name": "Mangwe",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mangwe-District-Profile.pdf",
+    "pages_processed": 45,
+    "rainfall": {
+      "annual_mm": 342
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "vegetables",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Unreliable",
+        "Higher",
+        "High",
+        "Ward"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts"
+      ],
+      "market_days": []
+    },
+    "population": 2022
+  },
+  "Marondera": {
+    "name": "Marondera",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Marondera-District-Profile.pdf",
+    "pages_processed": 41,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Tobacco",
+        "Fluctuating",
+        "Frost Hailstorm Fluctuating"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts"
+      ],
+      "market_days": []
+    },
+    "population": 2021
+  },
+  "Masvingo": {
+    "name": "Masvingo",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Masvingo-District-Profile.pdf",
+    "pages_processed": 65,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "vegetables",
+        "beans",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Sheep",
+        "Source",
+        "Distant",
+        "Cattle Marketing\nCattle",
+        "Mobile",
+        "Broilers",
+        "Rabbits",
+        "Donkey",
+        "Local",
+        "Dairy",
+        "Indigenous",
+        "Open",
+        "Fish",
+        "Poor",
+        "Informal",
+        "Pigs"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 211215
+  },
+  "Matobo": {
+    "name": "Matobo",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Matobo-District-Profile.pdf",
+    "pages_processed": 41,
+    "rainfall": {
+      "annual_mm": 895
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "crops": {
+      "primary": [
+        "vegetables",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Poor",
+        "Maphisa",
+        "Most"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts"
+      ],
+      "market_days": []
+    },
+    "population": 1
+  },
+  "Mazowe": {
+    "name": "Mazowe",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mazowe-District-Profile.pdf",
+    "pages_processed": 49,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "tobacco",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "sunflower",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Local"
+      ],
+      "commodities": [
+        "tobacco",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 2021
+  },
+  "Mberengwa": {
+    "name": "Mberengwa",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mberengwa-District-Profile.pdf",
+    "pages_processed": 49,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "loam",
+      "deep",
+      "sandy",
+      "clay",
+      "shallow"
+    ],
+    "crops": {
+      "primary": [
+        "vegetables",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Mberengwa",
+        "These",
+        "Livestock",
+        "Formal",
+        "Poor",
+        "Mataga"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 215
+  },
+  "Mbire": {
+    "name": "Mbire",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mbire-District-Profile.pdf",
+    "pages_processed": 41,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "crops": {
+      "primary": [
+        "cotton",
+        "tobacco",
+        "groundnuts",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {
+        "cotton": 1.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Cuthouse\nSource",
+        "Cuthouse",
+        "Local",
+        "Informed"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 83724
+  },
+  "Mhondoro-Ngezi": {
+    "name": "Mhondoro-Ngezi",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mhondoro-Ngezi-District-Profile.pdf",
+    "pages_processed": 45,
+    "rainfall": {
+      "annual_mm": 921
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "beans",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Despite"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 4
+  },
+  "Mudzi": {
+    "name": "Mudzi",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mudzi-District-Profile.pdf",
+    "pages_processed": 53,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "loam",
+      "deep",
+      "sandy",
+      "clay",
+      "shallow"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "sunflower",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Crop Markets\nWard Source Of\nMarket Name Number Commodity Commodity Availability Type Of Market\nKotwa",
+        "Makaha",
+        "Harare",
+        "Kotwa"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 1
+  },
+  "Murehwa": {
+    "name": "Murehwa",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Murehwa-District-Profile.pdf",
+    "pages_processed": 53,
+    "rainfall": {
+      "annual_mm": 152
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "sunflower",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Distant",
+        "Murehwa",
+        "Poor",
+        "Local"
+      ],
+      "commodities": [
+        "tobacco",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 8
+  },
+  "Mutare": {
+    "name": "Mutare",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mutare-District-Profile.pdf",
+    "pages_processed": 73,
+    "rainfall": {
+      "annual_mm": 501
+    },
+    "soil_types": [],
+    "crops": {
+      "primary": [
+        "wheat",
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "High",
+        "Poor",
+        "Sakubva Main"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 2019
+  },
+  "Mutasa": {
+    "name": "Mutasa",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mutasa-District-Profile.pdf",
+    "pages_processed": 49,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Available",
+        "Formal",
+        "Available\nRusape",
+        "Open",
+        "Horticultural Sakubva"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 2021
+  },
+  "Mwenezi": {
+    "name": "Mwenezi",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mwenezi-District-Profile.pdf",
+    "pages_processed": 45,
+    "rainfall": {
+      "annual_mm": 136
+    },
+    "soil_types": [],
+    "crops": {
+      "primary": [
+        "vegetables",
+        "beans",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Crop",
+        "Poor"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 209
+  },
+  "Nyanga": {
+    "name": "Nyanga",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Nyanga-District-Profile.pdf",
+    "pages_processed": 45,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "sunflower",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Informal",
+        "Crop Markets\nCrop"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 2012
+  },
+  "RUSHINGA": {
+    "name": "RUSHINGA",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /RUSHINGA-District-Profile.pdf",
+    "pages_processed": 41,
+    "rainfall": {
+      "annual_mm": 229
+    },
+    "soil_types": [],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {
+        "tobacco": 0.25
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Chimhanda",
+        "Limited",
+        "Poor",
+        "Distant"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 25
+  },
+  "Sanyati": {
+    "name": "Sanyati",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Sanyati-District-Profile.pdf",
+    "pages_processed": 53,
+    "rainfall": {
+      "annual_mm": 1202
+    },
+    "soil_types": [],
+    "crops": {
+      "primary": [
+        "wheat",
+        "beans",
+        "maize",
+        "soybeans",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "More",
+        "Sanyati"
+      ],
+      "commodities": [
+        "tobacco",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 38
+  },
+  "Seke": {
+    "name": "Seke",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Seke-District-Profile.pdf",
+    "pages_processed": 57,
+    "rainfall": {
+      "annual_mm": 650
+    },
+    "soil_types": [
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "maize",
+        "vegetables",
+        "groundnuts"
+      ],
+      "secondary": [],
+      "yields": {
+        "tobacco": 3.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Guzha",
+        "Alicedale",
+        "Mbare",
+        "Jambanja"
+      ],
+      "commodities": [
+        "tobacco",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 1
+  },
+  "Shamva": {
+    "name": "Shamva",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Shamva-District-Profile.pdf",
+    "pages_processed": 53,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "soybeans",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Source",
+        "Poor",
+        "Madziwa Growth Point\nThe",
+        "Local",
+        "Guinea",
+        "Wadzanayi Available",
+        "Madziva",
+        "Turkey"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 9
+  },
+  "Shurugwi": {
+    "name": "Shurugwi",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Shurugwi-District-Profile.pdf",
+    "pages_processed": 53,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Poor",
+        "Local"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 49
+  },
+  "Tsholotsho": {
+    "name": "Tsholotsho",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Tsholotsho-District-Profile.pdf",
+    "pages_processed": 45,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "crops": {
+      "primary": [
+        "beans",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts"
+      ],
+      "market_days": []
+    },
+    "population": 2022
+  },
+  "UMP": {
+    "name": "UMP",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /UMP-District-Profile.pdf",
+    "pages_processed": 41,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "deep",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Poor"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 2018
+  },
+  "Umguza": {
+    "name": "Umguza",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Umguza-District-Profile.pdf",
+    "pages_processed": 49,
+    "rainfall": {
+      "annual_mm": 1755
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "wheat",
+        "vegetables",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "sunflower"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Farmer",
+        "Bulawayo",
+        "Chickens"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "sugar",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "sunflower"
+      ],
+      "market_days": []
+    },
+    "population": 2012
+  },
+  "Umzingwane": {
+    "name": "Umzingwane",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Umzingwane-District-Profile.pdf",
+    "pages_processed": 45,
+    "rainfall": {
+      "annual_mm": 302
+    },
+    "soil_types": [
+      "sandy",
+      "loam",
+      "deep",
+      "shallow"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum"
+      ],
+      "secondary": [],
+      "yields": {
+        "wheat": 50.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Esigodini Vegetable",
+        "Large"
+      ],
+      "commodities": [
+        "livestock",
+        "maize",
+        "vegetables",
+        "grain"
+      ],
+      "market_days": []
+    },
+    "population": 70
+  },
+  "Zaka": {
+    "name": "Zaka",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Zaka-District-Profile.pdf",
+    "pages_processed": 37,
+    "rainfall": {
+      "annual_mm": 500
+    },
+    "soil_types": [
+      "loam",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "vegetables",
+        "beans",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Jerera",
+        "Zaka",
+        "Fishing",
+        "Mining"
+      ],
+      "commodities": [
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 2022
+  },
+  "Zvimba": {
+    "name": "Zvimba",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Zvimba-District-Profile.pdf",
+    "pages_processed": 49,
+    "rainfall": {
+      "annual_mm": 300
+    },
+    "soil_types": [
+      "sandy",
+      "loam"
+    ],
+    "crops": {
+      "primary": [
+        "tobacco",
+        "beans",
+        "soybeans",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Farmer",
+        "Main",
+        "Murombedzi"
+      ],
+      "commodities": [
+        "tobacco",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 322
+  },
+  "Zvishavane": {
+    "name": "Zvishavane",
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Zvishavane-District-Profile.pdf",
+    "pages_processed": 52,
+    "rainfall": {
+      "annual_mm": 741
+    },
+    "soil_types": [
+      "sandy",
+      "clay"
+    ],
+    "crops": {
+      "primary": [
+        "vegetables",
+        "maize",
+        "millet",
+        "groundnuts",
+        "sorghum",
+        "cotton"
+      ],
+      "secondary": [],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Markets\nLivestock",
+        "Mandava",
+        "Mabasa"
+      ],
+      "commodities": [
+        "tobacco",
+        "vegetables",
+        "beans",
+        "maize",
+        "livestock",
+        "grain",
+        "groundnuts",
+        "cotton"
+      ],
+      "market_days": []
+    },
+    "population": 38
+  }
+}

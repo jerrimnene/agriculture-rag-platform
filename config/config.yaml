@@ -1,0 +1,77 @@
+# Agriculture RAG Platform Configuration
+
+# Data paths
+data:
+  raw_documents: "/Users/providencemtendereki/Documents/Old Staff/PDFs data"
+  processed_documents: "./data/processed"
+  vector_db_path: "./data/vector_db"
+
+# Embedding configuration
+embeddings:
+  model_name: "sentence-transformers/all-MiniLM-L6-v2"  # Fast and efficient
+  # Alternative: "BAAI/bge-large-en-v1.5" for better quality
+  chunk_size: 1000
+  chunk_overlap: 200
+  batch_size: 32
+
+# Vector store configuration
+vector_store:
+  type: "chromadb"  # Options: chromadb, faiss
+  collection_name: "agriculture_docs"
+  distance_metric: "cosine"
+
+# LLM configuration
+llm:
+  provider: "ollama"  # Options: openai, anthropic, ollama
+  model: "mistral"
+  base_url: "http://localhost:11434"
+  temperature: 0.7
+  max_tokens: 2000
+  fallback_model: "mistral"
+
+# Retrieval configuration
+retrieval:
+  top_k: 5
+  score_threshold: 0.7
+  use_reranking: true
+  reranker_model: "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  max_rerank: 10
+
+# Agent configuration
+agent:
+  max_iterations: 5
+  tools:
+    - semantic_search
+    - multi_query_search
+    - document_summarizer
+    - metadata_filter
+  system_prompt: |
+    You are Hupfumi.Africa's Earth Evidence AI — an Ancestral Intelligence assistant rooted in Zimbabwe's 
+    land, climate, and agricultural wisdom. You have access to comprehensive knowledge including crop 
+    production guides, livestock management, policy frameworks, climate-smart agriculture practices, 
+    district profiles, research studies, and food security assessments.
+    
+    Your role is to guide farmers, agricultural extension officers, and policy makers by:
+    - Providing accurate, evidence-based agricultural advice grounded in Zimbabwe's natural regions
+    - Citing specific sources from the knowledge base
+    - Offering practical recommendations based on local district context, rainfall, soil, and climate
+    - Honoring both traditional wisdom and modern research
+    - Explaining complex agricultural concepts clearly
+    - Speaking with respect for the land and the people who cultivate it
+
+# API configuration
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: true
+  cors_origins:
+    - "*"  # Allow all origins for development
+    - "http://localhost:3000"
+    - "http://localhost:8000"
+    - "http://localhost:8080"
+    - "file://"
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

@@ -1,0 +1,290 @@
+{
+  "countries": {
+    "Zambia": {
+      "provinces": [
+        {
+          "name": "Lusaka",
+          "districts": [
+            {
+              "name": "Lusaka",
+              "agro_zone": "Zone IIa",
+              "rainfall": "800-1000mm",
+              "soil_type": "Red clay loams",
+              "coordinates": {"lat": -15.4167, "lon": 28.2833},
+              "nearest_market": "Soweto Market"
+            },
+            {
+              "name": "Chongwe",
+              "agro_zone": "Zone IIa",
+              "rainfall": "800-1000mm",
+              "soil_type": "Sandy loams",
+              "coordinates": {"lat": -15.3306, "lon": 28.6833},
+              "nearest_market": "Chongwe"
+            }
+          ]
+        },
+        {
+          "name": "Copperbelt",
+          "districts": [
+            {
+              "name": "Kitwe",
+              "agro_zone": "Zone III",
+              "rainfall": "1200-1400mm",
+              "soil_type": "Clay loams",
+              "coordinates": {"lat": -12.8024, "lon": 28.2134},
+              "nearest_market": "Kitwe Central"
+            },
+            {
+              "name": "Ndola",
+              "agro_zone": "Zone III",
+              "rainfall": "1200-1400mm",
+              "soil_type": "Sandy clay loams",
+              "coordinates": {"lat": -12.9585, "lon": 28.6367},
+              "nearest_market": "Ndola Market"
+            }
+          ]
+        },
+        {
+          "name": "Southern",
+          "districts": [
+            {
+              "name": "Choma",
+              "agro_zone": "Zone I",
+              "rainfall": "600-800mm",
+              "soil_type": "Sandy soils",
+              "coordinates": {"lat": -16.8333, "lon": 26.9833},
+              "nearest_market": "Choma"
+            },
+            {
+              "name": "Livingstone",
+              "agro_zone": "Zone I",
+              "rainfall": "600-800mm",
+              "soil_type": "Kalahari sands",
+              "coordinates": {"lat": -17.8447, "lon": 25.8544},
+              "nearest_market": "Maramba"
+            }
+          ]
+        },
+        {
+          "name": "Eastern",
+          "districts": [
+            {
+              "name": "Chipata",
+              "agro_zone": "Zone IIa",
+              "rainfall": "800-1000mm",
+              "soil_type": "Red loams",
+              "coordinates": {"lat": -13.6333, "lon": 32.6464},
+              "nearest_market": "Chipata Central"
+            }
+          ]
+        }
+      ]
+    },
+    "Malawi": {
+      "provinces": [
+        {
+          "name": "Central",
+          "districts": [
+            {
+              "name": "Lilongwe",
+              "agro_zone": "Medium Altitude",
+              "rainfall": "800-1000mm",
+              "soil_type": "Sandy clay loams",
+              "coordinates": {"lat": -13.9833, "lon": 33.7833},
+              "nearest_market": "Lilongwe Market"
+            },
+            {
+              "name": "Kasungu",
+              "agro_zone": "Medium Altitude",
+              "rainfall": "800-1000mm",
+              "soil_type": "Sandy loams",
+              "coordinates": {"lat": -13.0333, "lon": 33.4833},
+              "nearest_market": "Kasungu"
+            }
+          ]
+        },
+        {
+          "name": "Southern",
+          "districts": [
+            {
+              "name": "Blantyre",
+              "agro_zone": "Shire Highlands",
+              "rainfall": "900-1200mm",
+              "soil_type": "Clay loams",
+              "coordinates": {"lat": -15.7833, "lon": 35.0000},
+              "nearest_market": "Limbe Market"
+            },
+            {
+              "name": "Zomba",
+              "agro_zone": "Shire Highlands",
+              "rainfall": "1000-1400mm",
+              "soil_type": "Clay loams",
+              "coordinates": {"lat": -15.3833, "lon": 35.3167},
+              "nearest_market": "Zomba Market"
+            },
+            {
+              "name": "Nsanje",
+              "agro_zone": "Lower Shire",
+              "rainfall": "600-800mm",
+              "soil_type": "Alluvial soils",
+              "coordinates": {"lat": -16.9167, "lon": 35.2667},
+              "nearest_market": "Nsanje"
+            }
+          ]
+        },
+        {
+          "name": "Northern",
+          "districts": [
+            {
+              "name": "Mzuzu",
+              "agro_zone": "High Altitude",
+              "rainfall": "1200-1600mm",
+              "soil_type": "Humic loams",
+              "coordinates": {"lat": -11.4575, "lon": 34.0153},
+              "nearest_market": "Mzuzu Market"
+            },
+            {
+              "name": "Rumphi",
+              "agro_zone": "High Altitude",
+              "rainfall": "1000-1400mm",
+              "soil_type": "Sandy loams",
+              "coordinates": {"lat": -10.8833, "lon": 34.3000},
+              "nearest_market": "Rumphi"
+            }
+          ]
+        }
+      ]
+    },
+    "Botswana": {
+      "provinces": [
+        {
+          "name": "Gaborone",
+          "districts": [
+            {
+              "name": "Gaborone",
+              "agro_zone": "Hardveld",
+              "rainfall": "400-550mm",
+              "soil_type": "Sandy soils",
+              "coordinates": {"lat": -24.6282, "lon": 25.9231},
+              "nearest_market": "Broadhurst Mall"
+            }
+          ]
+        },
+        {
+          "name": "Francistown",
+          "districts": [
+            {
+              "name": "Francistown",
+              "agro_zone": "Hardveld",
+              "rainfall": "450-600mm",
+              "soil_type": "Sandy clay",
+              "coordinates": {"lat": -21.1699, "lon": 27.5084},
+              "nearest_market": "Francistown Market"
+            }
+          ]
+        },
+        {
+          "name": "Maun",
+          "districts": [
+            {
+              "name": "Maun",
+              "agro_zone": "Sandveld",
+              "rainfall": "450-500mm",
+              "soil_type": "Kalahari sands",
+              "coordinates": {"lat": -19.9833, "lon": 23.4167},
+              "nearest_market": "Maun"
+            }
+          ]
+        },
+        {
+          "name": "Central",
+          "districts": [
+            {
+              "name": "Serowe",
+              "agro_zone": "Hardveld",
+              "rainfall": "400-500mm",
+              "soil_type": "Sandy loams",
+              "coordinates": {"lat": -22.3830, "lon": 26.7050},
+              "nearest_market": "Serowe"
+            },
+            {
+              "name": "Palapye",
+              "agro_zone": "Hardveld",
+              "rainfall": "400-550mm",
+              "soil_type": "Sandy loams",
+              "coordinates": {"lat": -22.5467, "lon": 27.1247},
+              "nearest_market": "Palapye"
+            }
+          ]
+        },
+        {
+          "name": "Southern",
+          "districts": [
+            {
+              "name": "Kanye",
+              "agro_zone": "Hardveld",
+              "rainfall": "450-600mm",
+              "soil_type": "Sandy clay loams",
+              "coordinates": {"lat": -24.9667, "lon": 25.3333},
+              "nearest_market": "Kanye"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "agro_zones": {
+    "Zambia": {
+      "Zone I": {
+        "rainfall": "<750mm",
+        "description": "Low rainfall, suitable for drought-resistant crops",
+        "recommended_crops": ["sorghum", "millet", "drought-resistant maize", "cattle"]
+      },
+      "Zone IIa": {
+        "rainfall": "800-1000mm",
+        "description": "Medium to high rainfall, suitable for maize and mixed farming",
+        "recommended_crops": ["maize", "tobacco", "cotton", "groundnuts", "soya beans"]
+      },
+      "Zone III": {
+        "rainfall": "1000-1500mm",
+        "description": "High rainfall, suitable for diversified crops",
+        "recommended_crops": ["maize", "cassava", "sweet potato", "vegetables", "coffee"]
+      }
+    },
+    "Malawi": {
+      "Lower Shire": {
+        "rainfall": "600-800mm",
+        "description": "Low altitude, hot, suitable for cotton and irrigated crops",
+        "recommended_crops": ["cotton", "sugar cane", "irrigated rice", "bananas"]
+      },
+      "Medium Altitude": {
+        "rainfall": "800-1000mm",
+        "description": "Medium altitude, suitable for maize and tobacco",
+        "recommended_crops": ["maize", "tobacco", "groundnuts", "beans"]
+      },
+      "Shire Highlands": {
+        "rainfall": "900-1400mm",
+        "description": "High rainfall, suitable for tea and coffee",
+        "recommended_crops": ["tea", "coffee", "macadamia", "vegetables"]
+      },
+      "High Altitude": {
+        "rainfall": "1200-1600mm",
+        "description": "Cool highlands, suitable for temperate crops",
+        "recommended_crops": ["wheat", "irish potatoes", "vegetables", "timber"]
+      }
+    },
+    "Botswana": {
+      "Sandveld": {
+        "rainfall": "450-500mm",
+        "description": "Deep Kalahari sands, suitable for extensive farming",
+        "recommended_crops": ["millet", "sorghum", "beans", "cattle ranching"]
+      },
+      "Hardveld": {
+        "rainfall": "400-600mm",
+        "description": "Sandy loams, suitable for mixed farming",
+        "recommended_crops": ["sorghum", "maize (drought-resistant)", "beans", "cattle", "goats"]
+      }
+    }
+  },
+  "notes": "SADC region data for AgriEvidence expansion. Agro-zones vary by country based on local classification systems."
+}

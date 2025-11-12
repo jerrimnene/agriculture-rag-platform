@@ -1,0 +1,1306 @@
+{
+  "Beitbridge": {
+    "name": "Beitbridge",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Cross border trading",
+        "1-15",
+        "Vegetable production and marketing",
+        "October -June",
+        "Closure of border - Covid-19 restrictions",
+        "Livestock type",
+        "Average\nPrice (US$)\n2016",
+        "Average Price\n(US$) 2022",
+        "Type of Market"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2022
+  },
+  "Bikita": {
+    "name": "Bikita",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Gathering of wild products",
+        "9, 10, 15 and 24",
+        "Livestock Type",
+        "Price 2016 (US$)",
+        "Price 2022 (US$)",
+        "Type Of Market",
+        "Market Name",
+        "Ward\nNumber",
+        "Commodity"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2012
+  },
+  "Bindura": {
+    "name": "Bindura",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 750,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "s And Main Markets For",
+        "ing Board",
+        "Trading and retailing",
+        "Provision of goods and services to\ncustomers",
+        "Small business and trade",
+        "All wards",
+        "challenges",
+        "Tobacco",
+        "Cotton",
+        "ing Trends"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Binga": {
+    "name": "Binga",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 500,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "near Hwange",
+        "access are the biggest",
+        "Kariba Valley\nKariangwe Jambezi\nCommunal",
+        "Western Kalahari\nSandveld Communal",
+        "s are mostly informal",
+        "Sites in Binga",
+        "s Commodity",
+        "s are mostly found in",
+        "Market Name"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2012
+  },
+  "Bubi": {
+    "name": "Bubi",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "access",
+        "Livestock and\nCereal Farming\nCommunal in\nForests",
+        "15, 16, 17,\n18, 19,\n20, 21,\n22 and\n23",
+        "Availability",
+        "Class of stock",
+        "Average price (2016) USD",
+        "Average price\n(2022) USD",
+        "Type of market",
+        "Indigenous\nchickens"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2012
+  },
+  "Buhera": {
+    "name": "Buhera",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 600,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "s in Buhera District",
+        "ing Board",
+        "Gathering of wild products",
+        "Challenges",
+        "January disease",
+        "Livestock, markets,\nhousehold economy",
+        "Training of farmers on\nlivestock management",
+        "bus ranks",
+        "Market shades",
+        "Muzokomba (24), Buhera (5)"
+      ]
+    },
+    "soil_types": [
+      "loam"
+    ]
+  },
+  "Bulilima": {
+    "name": "Bulilima",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "s in South",
+        "Western Kalahari Sandveld\nCommunal",
+        "Cross border trading",
+        "Brick moulding",
+        "Information",
+        "Livestock Type",
+        "Average In 2016",
+        "Average In 2021",
+        "Type Of Market"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Chegutu": {
+    "name": "Chegutu",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 650,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "at Mubaira which",
+        "gardening",
+        "Irrigation schemes",
+        "Wards 20 and 1",
+        "s and prices",
+        "s in other",
+        "Seasonal calendar"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "population": 2021
+  },
+  "Chikomba": {
+    "name": "Chikomba",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "where there is not much",
+        "Northern Cattle\nand Cereal Farming",
+        "1, 2, 3, 4, 6, 7, 8, 10,\n13 and 14",
+        "Challenges",
+        "has been refurbished and",
+        "sites to be developed",
+        "and bus",
+        "and bus terminus",
+        "Organized market places"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2021
+  },
+  "Chimanimani": {
+    "name": "Chimanimani",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "s in the",
+        "Challenges",
+        "to absorb fresh farm produce",
+        "LEAD",
+        "PVO\n19/11",
+        "Crop\ndevelopment\nMarket\nlinkages",
+        "7,17",
+        "500\nhouseholds",
+        "Active\nbefore\ncyclone"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2022
+  },
+  "Chipinge": {
+    "name": "Chipinge",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 1000,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "s Readily",
+        "ing Board",
+        "s which",
+        "is Chiredzi abattoirs",
+        "Eastern\nHighlands\nLarge Scale\nCommercial",
+        "6, 7, 8, 9,\n10, 11, 12,\n13, 14, 15,\n19",
+        "Save River\nValley and\nNdowoyo\nLowveld\nCommunal",
+        "linkages",
+        "Challenges"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2022
+  },
+  "Chiredzi": {
+    "name": "Chiredzi",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "which",
+        "s\nServices Accessible",
+        "Ward",
+        "Type Of\nRoad",
+        "Road\nAuthority",
+        "Condition Of The Road",
+        "Availability\nOf Train\nServices",
+        "Major\nMarkets\nAccessible\nThroughout\nThe Year",
+        "Irrigated\nCommercial\nSugar\nand Fruit\nFarming"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2021
+  },
+  "Chirumhanzu": {
+    "name": "Chirumhanzu",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 650,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "s For Crop Produce",
+        "Livestock\nType",
+        "Average\nPrice 2016\n(US$)",
+        "Average\nZWL",
+        "Average\nPrice 2022\n(US$)",
+        "Type Of Market",
+        "Market Name",
+        "Ward Number",
+        "Commodity"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Chivi": {
+    "name": "Chivi",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 500,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "to cut",
+        "Trade",
+        "Barter trade in all wards\nOpen markets",
+        "1, 6, 13, 17, 21, 22, 28, 30 and 32",
+        "price due to disease outbreaks",
+        "s\nGenerally",
+        "Challenges",
+        "s by farmers limits their",
+        "Livestock\nType"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2012
+  },
+  "Gokwe North": {
+    "name": "Gokwe North",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "called Mtora Growth Point",
+        "access",
+        "Cereal and\nLow Cotton\nCommunal",
+        "11, 12, 13, 14,\n15, 16,\n17 and 18",
+        "ing of goods is difficult",
+        "gardening",
+        "ing also plays a major",
+        "South\nEastern\nGokwe\nNorth\nMixed\nAgriculture",
+        "24, 25 and 26"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ]
+  },
+  "Gokwe South": {
+    "name": "Gokwe South",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 540,
+      "source": "text"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Urban",
+        "Nyaradza",
+        "Gokwe Centre",
+        "Buying and selling",
+        "Flea markets and entrepreneurship",
+        "Urban Wards 1, 2, 3, 4, 5 and 6",
+        "ing May to August",
+        "Marketing",
+        "May to August"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Goromonzi": {
+    "name": "Goromonzi",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 1000,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Petty trading",
+        "All wards",
+        "ADRA(Adventist\nDevelopment and\nRelief Agency)",
+        "Farmer Market\nSchool",
+        "Munyawiri\nWard 1 and\nChinyika Ward\n16",
+        "40 Farming\nHouseholds",
+        "Seventh Day\nAdventist\nChurch\nAustralia.",
+        "shell at",
+        "SAVE THE CHILDREN"
+      ]
+    },
+    "soil_types": [
+      "loam"
+    ]
+  },
+  "Guruve": {
+    "name": "Guruve",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "is the main business centre",
+        "Petty trading",
+        "All wards",
+        "All wealth quintiles",
+        "Cross border trading",
+        "Buy and sell assorted products",
+        "s for produce",
+        "ing Board Trends for Cereals",
+        "ing Board by Farmers"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Gutu": {
+    "name": "Gutu",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 650,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "s for both grain and livestock",
+        "Masvingo,\nManicaland\nMiddleveld\ncommunal",
+        "15, 16 and 18",
+        "Small and medium enterprises",
+        "All wards",
+        "prizes",
+        "Information",
+        "s in the District",
+        "s are horticultural"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "crops": {
+      "yields": {
+        "reach": 5.0
+      }
+    }
+  },
+  "Gwanda": {
+    "name": "Gwanda",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Beitbridge South\nWestern lowveld\ncommunal",
+        "10, 21, 22\nand 23",
+        "Market Name",
+        "Ward Number",
+        "Commodity",
+        "Source Of Commodity",
+        "Availability",
+        "Gwanda Market",
+        "1, 2, 8, 14, 17 and 9"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Gweru": {
+    "name": "Gweru",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Crop production zone",
+        "Petty Trading\n(perennial)",
+        "12, 13, 14, 15, 16 and 20",
+        "glut",
+        "for small grains",
+        "infrastructure in rural areas",
+        "s\nGenerally",
+        "is Maboleni growth point",
+        "s In The District"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ]
+  },
+  "Hwedza": {
+    "name": "Hwedza",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 800,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "competition",
+        "gardening",
+        "5,7, 8,9",
+        "gardening is",
+        "Northern cattle\nand cereal\nfarming",
+        "13 and 14",
+        "Challenges"
+      ]
+    },
+    "population": 2012
+  },
+  "Hwange": {
+    "name": "Hwange",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Irrigation Schemes",
+        "10, 14\nand 20",
+        "dynamics",
+        "s within",
+        "s which",
+        "or town for the market",
+        "s the inputs are not easily",
+        "Livestock Type",
+        "Average Price 2016 (USD)"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Insiza": {
+    "name": "Insiza",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Class",
+        "Average Price\nUSD (2016)",
+        "Average price\n(USD) 2022",
+        "Type of Market",
+        "s for main crops",
+        "s commodities Interregional",
+        "s\nLegumes Irrigation schemes",
+        "s available",
+        "s Available"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2000
+  },
+  "Kariba": {
+    "name": "Kariba",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "near Hwange",
+        "access are the",
+        "3, 5, 6\nand 4",
+        "Kariba Valley\nand\nKariangwe\nJambezi\nCommunal",
+        "for their food needs including",
+        "s\nGenerally",
+        "Challenges"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "population": 2012
+  },
+  "Kwekwe": {
+    "name": "Kwekwe",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 650,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Gathering of wild\nproducts",
+        "Seasonal",
+        "21, 22, 24, 26, 27 and 28",
+        "ing of livestock",
+        "Livestock Type",
+        "Average Price 2016 (US$)",
+        "Average Price 2022 (US$)",
+        "Type of Market",
+        "Cattle"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Lupane": {
+    "name": "Lupane",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 421,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "gardening",
+        "Eastern Kalahari\nSandveld\nCommunal",
+        "shortages",
+        "ing Board which has outlets in",
+        "s in the district",
+        "Livestock Type",
+        "Average Price 2016 (US$)",
+        "Average Price 2022 (US$)",
+        "Type Of Market"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2016
+  },
+  "MT Darwin": {
+    "name": "MT Darwin",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 700,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "s Distribution",
+        "Type Of Market",
+        "Private buyers",
+        "Private buyer",
+        "s For Crop Produce",
+        "Livestock\nType",
+        "Average Price\n2016 (Us$)",
+        "Average Price\n2022 (Us$)",
+        "Beef Cattle"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Makonde": {
+    "name": "Makonde",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Farmer to Local butcheries",
+        "Farmer to Farmer",
+        "Private buyers",
+        "Livestock\nType",
+        "Average Price\n2016 (US$)",
+        "Average Price\n2022 (US$)",
+        "Type of Market",
+        "Beef cattle",
+        "Goat"
+      ]
+    },
+    "population": 2016
+  },
+  "Mangwe": {
+    "name": "Mangwe",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 200,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Beitbridge\nand South-\nWestern Lowveld\nCommunal",
+        "s are offering",
+        "Information",
+        "Challenges",
+        "Livestock Type",
+        "Average Price\n(US$) 2016",
+        "Average Price\n(ZA Rand)\n2022",
+        "Type of Market",
+        "s in Bulawayo and"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Marondera": {
+    "name": "Marondera",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 750,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "has been decentralized",
+        "Livestock Type",
+        "Average Price\n(US$) 2016",
+        "Average Price\n(US$) 2022",
+        "Type of Market",
+        "Challenges",
+        "Petty trading",
+        "All wards",
+        "price All wards"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ]
+  },
+  "Masvingo": {
+    "name": "Masvingo",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "exchange rates that",
+        "ing and Distribution",
+        "prices"
+      ]
+    }
+  },
+  "Matobo": {
+    "name": "Matobo",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Communal Estate Farms",
+        "s are",
+        "s around the",
+        "s In Matobo District",
+        "Farmer to farmer",
+        "Livestock Type",
+        "Average Price\n2016 (Us$)",
+        "Average Price\n2022 (Us$)",
+        "Type Of Market"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ]
+  },
+  "Mazowe": {
+    "name": "Mazowe",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "s for crops include GMB",
+        "s by Ward",
+        "Market Name",
+        "Ward Number",
+        "Commodity",
+        "Source of Commodity",
+        "Availability",
+        "Local markets\n(sale amongst\nfarmers)",
+        "1 \u2013 35"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2021
+  },
+  "Mberengwa": {
+    "name": "Mberengwa",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 650,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "Season Calendar in a",
+        "ing Board",
+        "Poor markets",
+        "Covid-19",
+        "All wards\nwere affected\nby Covid-19",
+        "Livelihoods, human death.",
+        "s in",
+        "for livestock",
+        "Livestock\nType",
+        "Average Price (US$)"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Mbire": {
+    "name": "Mbire",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "s and lack of a",
+        "Chitsungo Musarurwa",
+        "h Matsiwo M Mumbamuchena",
+        "accessibility",
+        "7, 8, 10, 13 and 17",
+        "Poor bridges which affects market accessibility",
+        "Cuthouse",
+        "Livestock Type",
+        "Average Price 2016 (US$)"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "population": 83724
+  },
+  "Mhondoro Ngezi": {
+    "name": "Mhondoro Ngezi",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Livestock",
+        "Market Type",
+        "Average Price 2016 (USD)",
+        "Average Price 2022 (USD)",
+        "Cattle",
+        "Open Market",
+        "Goats",
+        "Sheep",
+        "Donkeys"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Mudzi": {
+    "name": "Mudzi",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "access by farmers and most",
+        "s\nWard Source Of",
+        "All wards Cereals",
+        "Livestock\nType",
+        "Average Price\n2016 (US$)",
+        "Average ZWL",
+        "Average Price\n2022 (US$)",
+        "Type of Market",
+        "Market Name"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Murehwa": {
+    "name": "Murehwa",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 600,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "to complement",
+        "linkages",
+        "ing Board deport and silos",
+        "s Within The District",
+        "Market Name",
+        "Ward",
+        "Commodity",
+        "Source of commodity",
+        "Available"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "population": 2012
+  },
+  "Mutare": {
+    "name": "Mutare",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 1000,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "s and Type",
+        "Type of Livestock",
+        "2016 Price (US)",
+        "2022 Price",
+        "Type of Markets",
+        "Market",
+        "Ward",
+        "Commodities",
+        "Source Of\nCommodity"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2019
+  },
+  "Mutasa": {
+    "name": "Mutasa",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 1200,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Wholesale and Retail\ntrade",
+        "Operation of stores and supermarkets.",
+        "All wards",
+        "s and",
+        "Livestock Type",
+        "Average Price (Us$) 2016",
+        "Average Price (Us$) 2022",
+        "Type Of Market",
+        "Cattle"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2021
+  },
+  "Mutoko": {
+    "name": "Mutoko",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Information",
+        "s\nAverage Price Average Price",
+        "Average ZWL",
+        "Livestock type",
+        "Average Price\n(US$) 2016",
+        "Average Price\n(US$) 2022",
+        "Type of Market",
+        "Market Name",
+        "Commodity"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "population": 2012
+  },
+  "Mwenezi": {
+    "name": "Mwenezi",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "s for Mopane worms are",
+        "s especially in remote areas",
+        "s is hindered",
+        "4, 6, 7, 8, 9,\n10, 11, 12, 13,\n16, 17 and 18",
+        "Livestock type",
+        "Average Price 2016\n(US$)",
+        "Average Price 2022\n(US$)",
+        "Type Of Market",
+        "s By Commodity"
+      ]
+    }
+  },
+  "Nyanga": {
+    "name": "Nyanga",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "challenges are hindering",
+        "s such as",
+        "s are at Nyamhuka",
+        "areas are wards",
+        "Challenges",
+        "calendar",
+        "Calendar",
+        "ing Calendar",
+        "s\nType Description Wards"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Rushinga": {
+    "name": "Rushinga",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 650,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "networking knowledge and skills",
+        "prices",
+        "Challenges",
+        "outlets"
+      ]
+    },
+    "soil_types": [
+      "loam"
+    ],
+    "crops": {
+      "yields": {
+        "from": 0.5,
+        "to": 0.25
+      }
+    }
+  },
+  "Sanyati": {
+    "name": "Sanyati",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "s and Food Commodity",
+        "ing Board",
+        "Functional",
+        "resale",
+        "Market Name",
+        "Ward\nNumber",
+        "Commodity",
+        "Source of Commodity",
+        "Availability",
+        "s Seasonal Calendar"
+      ]
+    }
+  },
+  "Seke": {
+    "name": "Seke",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 750,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "in Seke District and",
+        "s which",
+        "Horticulture-Market\ngardening",
+        "1-8, 9, 16, 11, 12, 13, 15, 16, 17, 18, 19\nand 21",
+        "Commercial\nhorticulture\nproduction",
+        "(9, 10, 13, 14, 15, 16, 17, 18 and 19)",
+        "prices",
+        "Tobacco",
+        "Wards 3, 4, 5, 6, 7 and 9 to 21"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ]
+  },
+  "Shamva": {
+    "name": "Shamva",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "and Shamva",
+        "and Chakonda District",
+        "Informal Trading",
+        "Buying and selling",
+        "All Wards",
+        "channels",
+        "s in peri urban areas of Shamva",
+        "Livestock Class",
+        "Prices (USD) 2016"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Shurugwi": {
+    "name": "Shurugwi",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Tongogara",
+        "and training centres",
+        "Vending, trading, subsistence farming",
+        "Subsistence farming, livestock, horticulture",
+        "Cattle rearing and Cereal Farming",
+        "1, 2, 3, 6, 16, 17,\n18, 19, 20, 21\nand 23",
+        "s Information",
+        "Seasonal Calendar",
+        "s in Shurugwi are Chachacha"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Tsholotsho": {
+    "name": "Tsholotsho",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "s is limited",
+        "Western Kalahari\nSand Veld Communal",
+        "All 22 wards",
+        "s\nIn terms of markets",
+        "for cereals and",
+        "s\nSource Of",
+        "Commodity",
+        "Unit Price",
+        "Value As Of\n2016"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "crops": {
+      "yields": {
+        "average": 0.23,
+        "ha": 1.6,
+        "yield": 0.23,
+        "2": 5.0,
+        "1": 2.0,
+        "3": 2.0,
+        "4": 9.0,
+        "0": 8.0
+      }
+    },
+    "population": 2016
+  },
+  "UMP": {
+    "name": "UMP",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 750,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Type Of Crop",
+        "Hacterage",
+        "Main Uses",
+        "Traditional Markets",
+        "places with",
+        "s In Zimbabwe",
+        "Challenges",
+        "linkages",
+        "s for horticulture"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ]
+  },
+  "Umguza": {
+    "name": "Umguza",
+    "sources": [],
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "ZRP Station",
+        "Mbembesi, Nyamandl-\novu and Insuza",
+        "ZPCS",
+        "Training depot is in ward 5",
+        "Market gardening",
+        "1, 2, 7, 8, 9, 19 and 16",
+        "Harvesting/marketing",
+        "distortions",
+        "knowledge"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2012
+  },
+  "Umzingwane": {
+    "name": "Umzingwane",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "s to",
+        "s and credit facilities",
+        "Challenges",
+        "Livestock Type",
+        "Average Price 2016 (US$)",
+        "Average Price 2022\n(US$)",
+        "Type of Market",
+        "Market Name",
+        "Ward\nNumber"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ]
+  },
+  "Zaka": {
+    "name": "Zaka",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 1200,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "only",
+        "s and flooding of produce",
+        "Formal traders",
+        "Perennial",
+        "Petty trade",
+        "3, 4, 19 and 28",
+        "Artisan",
+        "Potter, builders, craftsman",
+        "All wards"
+      ]
+    },
+    "soil_types": [
+      "clay"
+    ],
+    "population": 2022
+  },
+  "Zvimba": {
+    "name": "Zvimba",
+    "sources": [],
+    "rainfall": {
+      "annual_mm": 700,
+      "source": "table"
+    },
+    "markets": {
+      "trading_centers": [
+        "ing Board",
+        "Private buyers and abattoirs",
+        "Farmer to Local butcheries and",
+        "Farmer to Farmer and abattoirs",
+        "Farmer to Local butcheries",
+        "Private buyers",
+        "s In The District",
+        "Livestock type",
+        "Average Price\n2016 (US$)",
+        "Average Price\n2022 (US$)"
+      ]
+    },
+    "soil_types": [
+      "sandy"
+    ]
+  }
+}

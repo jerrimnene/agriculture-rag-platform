@@ -1,0 +1,1118 @@
+{
+  "crop_yield_maize_harare": [
+    {
+      "timestamp": "2019-04-15T12:00:00",
+      "value": 4.7,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2018/2019"
+      }
+    },
+    {
+      "timestamp": "2019-05-15T12:00:00",
+      "value": 4.3,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2018/2019"
+      }
+    },
+    {
+      "timestamp": "2019-06-15T12:00:00",
+      "value": 4.7,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2018/2019"
+      }
+    },
+    {
+      "timestamp": "2020-04-15T12:00:00",
+      "value": 5.0,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2019/2020"
+      }
+    },
+    {
+      "timestamp": "2020-05-15T12:00:00",
+      "value": 4.6,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2019/2020"
+      }
+    },
+    {
+      "timestamp": "2020-06-15T12:00:00",
+      "value": 5.0,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2019/2020"
+      }
+    },
+    {
+      "timestamp": "2021-04-15T12:00:00",
+      "value": 5.3,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2020/2021"
+      }
+    },
+    {
+      "timestamp": "2021-05-15T12:00:00",
+      "value": 4.8999999999999995,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2020/2021"
+      }
+    },
+    {
+      "timestamp": "2021-06-15T12:00:00",
+      "value": 5.3,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2020/2021"
+      }
+    },
+    {
+      "timestamp": "2022-04-15T12:00:00",
+      "value": 5.6000000000000005,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2021/2022"
+      }
+    },
+    {
+      "timestamp": "2022-05-15T12:00:00",
+      "value": 5.2,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2021/2022"
+      }
+    },
+    {
+      "timestamp": "2022-06-15T12:00:00",
+      "value": 5.6000000000000005,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2021/2022"
+      }
+    },
+    {
+      "timestamp": "2023-04-15T12:00:00",
+      "value": 5.9,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2022/2023"
+      }
+    },
+    {
+      "timestamp": "2023-05-15T12:00:00",
+      "value": 5.5,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2022/2023"
+      }
+    },
+    {
+      "timestamp": "2023-06-15T12:00:00",
+      "value": 5.9,
+      "unit": "tonnes/ha",
+      "location": "Harare",
+      "crop": "maize",
+      "metadata": {
+        "season": "2022/2023"
+      }
+    }
+  ],
+  "market_price_maize_mbare": [
+    {
+      "timestamp": "2019-01-01T12:00:00",
+      "value": 320.8333333333333,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-02-01T12:00:00",
+      "value": 313.33333333333337,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-03-01T12:00:00",
+      "value": 307.5,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-04-01T12:00:00",
+      "value": 303.3333333333333,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-05-01T12:00:00",
+      "value": 300.8333333333333,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-06-01T12:00:00",
+      "value": 300.0,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-07-01T12:00:00",
+      "value": 300.8333333333333,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-08-01T12:00:00",
+      "value": 303.3333333333333,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-09-01T12:00:00",
+      "value": 307.5,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-10-01T12:00:00",
+      "value": 313.33333333333337,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-11-01T12:00:00",
+      "value": 320.8333333333333,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-12-01T12:00:00",
+      "value": 330.0,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-01-01T12:00:00",
+      "value": 374.30555555555554,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-02-01T12:00:00",
+      "value": 365.5555555555556,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-03-01T12:00:00",
+      "value": 358.74999999999994,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-04-01T12:00:00",
+      "value": 353.88888888888886,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-05-01T12:00:00",
+      "value": 350.97222222222223,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-06-01T12:00:00",
+      "value": 350.0,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-07-01T12:00:00",
+      "value": 350.97222222222223,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-08-01T12:00:00",
+      "value": 353.88888888888886,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-09-01T12:00:00",
+      "value": 358.74999999999994,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-10-01T12:00:00",
+      "value": 365.5555555555556,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-11-01T12:00:00",
+      "value": 374.30555555555554,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-12-01T12:00:00",
+      "value": 385.00000000000006,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-01-01T12:00:00",
+      "value": 427.77777777777777,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-02-01T12:00:00",
+      "value": 417.7777777777778,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-03-01T12:00:00",
+      "value": 409.99999999999994,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-04-01T12:00:00",
+      "value": 404.44444444444446,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-05-01T12:00:00",
+      "value": 401.1111111111111,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-06-01T12:00:00",
+      "value": 400.0,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-07-01T12:00:00",
+      "value": 401.1111111111111,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-08-01T12:00:00",
+      "value": 404.44444444444446,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-09-01T12:00:00",
+      "value": 409.99999999999994,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-10-01T12:00:00",
+      "value": 417.7777777777778,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-11-01T12:00:00",
+      "value": 427.77777777777777,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-12-01T12:00:00",
+      "value": 440.00000000000006,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-01-01T12:00:00",
+      "value": 481.25,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-02-01T12:00:00",
+      "value": 470.00000000000006,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-03-01T12:00:00",
+      "value": 461.24999999999994,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-04-01T12:00:00",
+      "value": 455.0,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-05-01T12:00:00",
+      "value": 451.25,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-06-01T12:00:00",
+      "value": 450.0,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-07-01T12:00:00",
+      "value": 451.25,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-08-01T12:00:00",
+      "value": 455.0,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-09-01T12:00:00",
+      "value": 461.24999999999994,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-10-01T12:00:00",
+      "value": 470.00000000000006,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-11-01T12:00:00",
+      "value": 481.25,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-12-01T12:00:00",
+      "value": 495.00000000000006,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-01-01T12:00:00",
+      "value": 534.7222222222222,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-02-01T12:00:00",
+      "value": 522.2222222222223,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-03-01T12:00:00",
+      "value": 512.5,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-04-01T12:00:00",
+      "value": 505.55555555555554,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-05-01T12:00:00",
+      "value": 501.38888888888886,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-06-01T12:00:00",
+      "value": 500.0,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-07-01T12:00:00",
+      "value": 501.38888888888886,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-08-01T12:00:00",
+      "value": 505.55555555555554,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-09-01T12:00:00",
+      "value": 512.5,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-10-01T12:00:00",
+      "value": 522.2222222222223,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-11-01T12:00:00",
+      "value": 534.7222222222222,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-12-01T12:00:00",
+      "value": 550.0,
+      "unit": "USD/tonne",
+      "location": "Mbare",
+      "crop": "maize",
+      "metadata": null
+    }
+  ],
+  "rainfall_harare": [
+    {
+      "timestamp": "2019-01-01T12:00:00",
+      "value": 130,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-02-01T12:00:00",
+      "value": 160,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-03-01T12:00:00",
+      "value": 100,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-04-01T12:00:00",
+      "value": 18,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-05-01T12:00:00",
+      "value": 20,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-06-01T12:00:00",
+      "value": 22,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-07-01T12:00:00",
+      "value": 24,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-08-01T12:00:00",
+      "value": 26,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-09-01T12:00:00",
+      "value": 28,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-10-01T12:00:00",
+      "value": 30,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-11-01T12:00:00",
+      "value": 160,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2019-12-01T12:00:00",
+      "value": 100,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-01-01T12:00:00",
+      "value": 130,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-02-01T12:00:00",
+      "value": 160,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-03-01T12:00:00",
+      "value": 100,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-04-01T12:00:00",
+      "value": 18,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-05-01T12:00:00",
+      "value": 20,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-06-01T12:00:00",
+      "value": 22,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-07-01T12:00:00",
+      "value": 24,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-08-01T12:00:00",
+      "value": 26,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-09-01T12:00:00",
+      "value": 28,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-10-01T12:00:00",
+      "value": 30,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-11-01T12:00:00",
+      "value": 160,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2020-12-01T12:00:00",
+      "value": 100,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-01-01T12:00:00",
+      "value": 20,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-02-01T12:00:00",
+      "value": 160,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-03-01T12:00:00",
+      "value": 100,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-04-01T12:00:00",
+      "value": 18,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-05-01T12:00:00",
+      "value": 20,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-06-01T12:00:00",
+      "value": 22,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-07-01T12:00:00",
+      "value": 24,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-08-01T12:00:00",
+      "value": 26,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-09-01T12:00:00",
+      "value": 28,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-10-01T12:00:00",
+      "value": 30,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-11-01T12:00:00",
+      "value": 160,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2021-12-01T12:00:00",
+      "value": 100,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-01-01T12:00:00",
+      "value": 130,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-02-01T12:00:00",
+      "value": 160,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-03-01T12:00:00",
+      "value": 100,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-04-01T12:00:00",
+      "value": 18,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-05-01T12:00:00",
+      "value": 20,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-06-01T12:00:00",
+      "value": 22,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-07-01T12:00:00",
+      "value": 24,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-08-01T12:00:00",
+      "value": 26,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-09-01T12:00:00",
+      "value": 28,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-10-01T12:00:00",
+      "value": 30,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-11-01T12:00:00",
+      "value": 160,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2022-12-01T12:00:00",
+      "value": 100,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-01-01T12:00:00",
+      "value": 130,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-02-01T12:00:00",
+      "value": 160,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-03-01T12:00:00",
+      "value": 100,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-04-01T12:00:00",
+      "value": 18,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-05-01T12:00:00",
+      "value": 20,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-06-01T12:00:00",
+      "value": 22,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-07-01T12:00:00",
+      "value": 24,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-08-01T12:00:00",
+      "value": 26,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-09-01T12:00:00",
+      "value": 28,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-10-01T12:00:00",
+      "value": 30,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-11-01T12:00:00",
+      "value": 160,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    },
+    {
+      "timestamp": "2023-12-01T12:00:00",
+      "value": 100,
+      "unit": "mm",
+      "location": "Harare",
+      "crop": null,
+      "metadata": null
+    }
+  ]
+}

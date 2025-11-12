@@ -1,0 +1,19 @@
+{
+  "sync_intervals": {
+    "agritex": 24,
+    "ama": 24,
+    "zmx": 1,
+    "timb": 24,
+    "gmb": 24
+  },
+  "enabled_sources": [
+    "agritex",
+    "ama",
+    "zmx",
+    "timb",
+    "gmb"
+  ],
+  "conflict_resolution_strategy": "newest",
+  "retry_attempts": 3,
+  "timeout_seconds": 30
+}

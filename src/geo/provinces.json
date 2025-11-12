@@ -1,0 +1,546 @@
+{
+  "provinces": [
+    {
+      "name": "Mashonaland Central",
+      "districts": [
+        {
+          "name": "Bindura",
+          "region": "Region IIa",
+          "rainfall": "750-1000mm",
+          "soil_type": "Sandy loams to clay loams",
+          "coordinates": {"lat": -17.3010, "lon": 31.3327},
+          "nearest_market": "Bindura"
+        },
+        {
+          "name": "Guruve",
+          "region": "Region III",
+          "rainfall": "650-800mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -16.6500, "lon": 30.7000},
+          "nearest_market": "Guruve"
+        },
+        {
+          "name": "Mazowe",
+          "region": "Region IIa",
+          "rainfall": "750-1000mm",
+          "soil_type": "Red clay loams",
+          "coordinates": {"lat": -17.5167, "lon": 30.9667},
+          "nearest_market": "Mazowe"
+        },
+        {
+          "name": "Mount Darwin",
+          "region": "Region III",
+          "rainfall": "700-850mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -16.7833, "lon": 31.5833},
+          "nearest_market": "Mount Darwin"
+        },
+        {
+          "name": "Rushinga",
+          "region": "Region III",
+          "rainfall": "650-800mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -16.5000, "lon": 32.0833},
+          "nearest_market": "Rushinga"
+        }
+      ]
+    },
+    {
+      "name": "Mashonaland East",
+      "districts": [
+        {
+          "name": "Chikomba",
+          "region": "Region IIb",
+          "rainfall": "650-850mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -18.6167, "lon": 30.5333},
+          "nearest_market": "Chivhu"
+        },
+        {
+          "name": "Goromonzi",
+          "region": "Region IIb",
+          "rainfall": "700-850mm",
+          "soil_type": "Granite-derived sandy loams",
+          "coordinates": {"lat": -17.8833, "lon": 31.4833},
+          "nearest_market": "Ruwa"
+        },
+        {
+          "name": "Marondera",
+          "region": "Region IIa",
+          "rainfall": "750-900mm",
+          "soil_type": "Red clay loams",
+          "coordinates": {"lat": -18.1853, "lon": 31.5519},
+          "nearest_market": "Marondera"
+        },
+        {
+          "name": "Mudzi",
+          "region": "Region IV",
+          "rainfall": "500-650mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -16.9667, "lon": 32.7167},
+          "nearest_market": "Kotwa"
+        },
+        {
+          "name": "Mutoko",
+          "region": "Region III",
+          "rainfall": "650-750mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -17.4167, "lon": 32.2167},
+          "nearest_market": "Mutoko"
+        },
+        {
+          "name": "Seke",
+          "region": "Region IIb",
+          "rainfall": "700-850mm",
+          "soil_type": "Sandy clay loams",
+          "coordinates": {"lat": -17.9667, "lon": 31.1167},
+          "nearest_market": "Chitungwiza"
+        },
+        {
+          "name": "UMP",
+          "region": "Region IIb",
+          "rainfall": "700-850mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -17.9833, "lon": 32.0167},
+          "nearest_market": "Macheke"
+        }
+      ]
+    },
+    {
+      "name": "Mashonaland West",
+      "districts": [
+        {
+          "name": "Chegutu",
+          "region": "Region IIb",
+          "rainfall": "650-850mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -18.1333, "lon": 30.1500},
+          "nearest_market": "Chegutu"
+        },
+        {
+          "name": "Hurungwe",
+          "region": "Region III",
+          "rainfall": "600-750mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -16.5000, "lon": 29.5000},
+          "nearest_market": "Karoi"
+        },
+        {
+          "name": "Kadoma",
+          "region": "Region III",
+          "rainfall": "650-800mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -18.3333, "lon": 29.9167},
+          "nearest_market": "Kadoma"
+        },
+        {
+          "name": "Kariba",
+          "region": "Region V",
+          "rainfall": "450-650mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -16.5167, "lon": 28.8000},
+          "nearest_market": "Kariba"
+        },
+        {
+          "name": "Makonde",
+          "region": "Region IIa",
+          "rainfall": "800-1000mm",
+          "soil_type": "Red clay loams",
+          "coordinates": {"lat": -17.0833, "lon": 29.8333},
+          "nearest_market": "Chinhoyi"
+        },
+        {
+          "name": "Zvimba",
+          "region": "Region IIb",
+          "rainfall": "650-850mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -17.7333, "lon": 30.1333},
+          "nearest_market": "Banket"
+        }
+      ]
+    },
+    {
+      "name": "Manicaland",
+      "districts": [
+        {
+          "name": "Buhera",
+          "region": "Region IV",
+          "rainfall": "500-700mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -19.3000, "lon": 31.7500},
+          "nearest_market": "Murambinda"
+        },
+        {
+          "name": "Chimanimani",
+          "region": "Region I",
+          "rainfall": "1000-2000mm",
+          "soil_type": "Humic clay loams",
+          "coordinates": {"lat": -19.8000, "lon": 32.8667},
+          "nearest_market": "Chimanimani"
+        },
+        {
+          "name": "Chipinge",
+          "region": "Region I/II",
+          "rainfall": "800-1200mm",
+          "soil_type": "Clay loams",
+          "coordinates": {"lat": -20.2000, "lon": 32.6167},
+          "nearest_market": "Chipinge"
+        },
+        {
+          "name": "Makoni",
+          "region": "Region IIa",
+          "rainfall": "750-900mm",
+          "soil_type": "Red clay loams",
+          "coordinates": {"lat": -18.6667, "lon": 32.0000},
+          "nearest_market": "Rusape"
+        },
+        {
+          "name": "Mutare",
+          "region": "Region IIa",
+          "rainfall": "800-1000mm",
+          "soil_type": "Clay loams",
+          "coordinates": {"lat": -18.9707, "lon": 32.6700},
+          "nearest_market": "Mutare"
+        },
+        {
+          "name": "Mutasa",
+          "region": "Region I",
+          "rainfall": "900-1400mm",
+          "soil_type": "Clay loams",
+          "coordinates": {"lat": -18.5833, "lon": 32.5833},
+          "nearest_market": "Honde Valley"
+        },
+        {
+          "name": "Nyanga",
+          "region": "Region I",
+          "rainfall": "900-1500mm",
+          "soil_type": "Humic soils",
+          "coordinates": {"lat": -18.2167, "lon": 32.7500},
+          "nearest_market": "Nyanga"
+        }
+      ]
+    },
+    {
+      "name": "Midlands",
+      "districts": [
+        {
+          "name": "Chirumhanzu",
+          "region": "Region III",
+          "rainfall": "600-750mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -19.2667, "lon": 30.1667},
+          "nearest_market": "Mvuma"
+        },
+        {
+          "name": "Gokwe North",
+          "region": "Region III",
+          "rainfall": "650-800mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -18.2000, "lon": 28.9333},
+          "nearest_market": "Gokwe Centre"
+        },
+        {
+          "name": "Gokwe South",
+          "region": "Region IV",
+          "rainfall": "500-650mm",
+          "soil_type": "Sandy loam",
+          "coordinates": {"lat": -18.8333, "lon": 28.5833},
+          "nearest_market": "Gokwe South"
+        },
+        {
+          "name": "Gweru",
+          "region": "Region III",
+          "rainfall": "600-750mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -19.4500, "lon": 29.8167},
+          "nearest_market": "Gweru"
+        },
+        {
+          "name": "Kwekwe",
+          "region": "Region III",
+          "rainfall": "650-800mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -18.9333, "lon": 29.8167},
+          "nearest_market": "Kwekwe"
+        },
+        {
+          "name": "Mberengwa",
+          "region": "Region IV",
+          "rainfall": "450-650mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -20.4667, "lon": 30.1500},
+          "nearest_market": "Mberengwa"
+        },
+        {
+          "name": "Shurugwi",
+          "region": "Region III",
+          "rainfall": "600-750mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -19.6667, "lon": 30.0000},
+          "nearest_market": "Shurugwi"
+        },
+        {
+          "name": "Zvishavane",
+          "region": "Region IV",
+          "rainfall": "500-650mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -20.3333, "lon": 30.0667},
+          "nearest_market": "Zvishavane"
+        }
+      ]
+    },
+    {
+      "name": "Masvingo",
+      "districts": [
+        {
+          "name": "Bikita",
+          "region": "Region IV",
+          "rainfall": "500-650mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -20.0333, "lon": 31.5667},
+          "nearest_market": "Nyika"
+        },
+        {
+          "name": "Chiredzi",
+          "region": "Region V",
+          "rainfall": "400-600mm",
+          "soil_type": "Heavy clay to sandy loams",
+          "coordinates": {"lat": -21.0500, "lon": 31.6667},
+          "nearest_market": "Chiredzi"
+        },
+        {
+          "name": "Chivi",
+          "region": "Region IV/V",
+          "rainfall": "450-600mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -20.5000, "lon": 30.8833},
+          "nearest_market": "Chivi"
+        },
+        {
+          "name": "Gutu",
+          "region": "Region IV",
+          "rainfall": "500-650mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -19.7000, "lon": 31.1667},
+          "nearest_market": "Gutu"
+        },
+        {
+          "name": "Masvingo",
+          "region": "Region IV",
+          "rainfall": "500-700mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -20.0719, "lon": 30.8278},
+          "nearest_market": "Masvingo"
+        },
+        {
+          "name": "Mwenezi",
+          "region": "Region V",
+          "rainfall": "350-500mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -21.5000, "lon": 30.9167},
+          "nearest_market": "Rutenga"
+        },
+        {
+          "name": "Zaka",
+          "region": "Region IV",
+          "rainfall": "500-650mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -20.3167, "lon": 31.4500},
+          "nearest_market": "Zaka"
+        }
+      ]
+    },
+    {
+      "name": "Matabeleland North",
+      "districts": [
+        {
+          "name": "Binga",
+          "region": "Region V",
+          "rainfall": "450-600mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -17.6167, "lon": 27.3500},
+          "nearest_market": "Binga"
+        },
+        {
+          "name": "Bubi",
+          "region": "Region IV",
+          "rainfall": "450-650mm",
+          "soil_type": "Kalahari sands",
+          "coordinates": {"lat": -19.5833, "lon": 28.4167},
+          "nearest_market": "Inyathi"
+        },
+        {
+          "name": "Hwange",
+          "region": "Region V",
+          "rainfall": "400-600mm",
+          "soil_type": "Kalahari sands",
+          "coordinates": {"lat": -18.3667, "lon": 26.5000},
+          "nearest_market": "Hwange"
+        },
+        {
+          "name": "Lupane",
+          "region": "Region IV",
+          "rainfall": "450-650mm",
+          "soil_type": "Kalahari sands",
+          "coordinates": {"lat": -18.9333, "lon": 27.8000},
+          "nearest_market": "Lupane"
+        },
+        {
+          "name": "Nkayi",
+          "region": "Region IV",
+          "rainfall": "450-650mm",
+          "soil_type": "Kalahari sands",
+          "coordinates": {"lat": -19.4167, "lon": 28.8667},
+          "nearest_market": "Nkayi"
+        },
+        {
+          "name": "Tsholotsho",
+          "region": "Region IV",
+          "rainfall": "450-600mm",
+          "soil_type": "Kalahari sands",
+          "coordinates": {"lat": -19.7500, "lon": 27.7500},
+          "nearest_market": "Tsholotsho"
+        },
+        {
+          "name": "Umguza",
+          "region": "Region IV",
+          "rainfall": "450-650mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -19.8333, "lon": 28.6667},
+          "nearest_market": "Umguza"
+        }
+      ]
+    },
+    {
+      "name": "Matabeleland South",
+      "districts": [
+        {
+          "name": "Beitbridge",
+          "region": "Region V",
+          "rainfall": "300-450mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -22.2167, "lon": 30.0000},
+          "nearest_market": "Beitbridge"
+        },
+        {
+          "name": "Bulilima",
+          "region": "Region V",
+          "rainfall": "350-500mm",
+          "soil_type": "Kalahari sands",
+          "coordinates": {"lat": -21.0333, "lon": 27.5167},
+          "nearest_market": "Plumtree"
+        },
+        {
+          "name": "Gwanda",
+          "region": "Region IV/V",
+          "rainfall": "400-550mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -20.9333, "lon": 29.0167},
+          "nearest_market": "Gwanda"
+        },
+        {
+          "name": "Insiza",
+          "region": "Region IV",
+          "rainfall": "450-600mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -20.3500, "lon": 29.1667},
+          "nearest_market": "Filabusi"
+        },
+        {
+          "name": "Matobo",
+          "region": "Region IV",
+          "rainfall": "450-650mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -20.5000, "lon": 28.5000},
+          "nearest_market": "Kezi"
+        },
+        {
+          "name": "Mangwe",
+          "region": "Region V",
+          "rainfall": "350-500mm",
+          "soil_type": "Sandy soils",
+          "coordinates": {"lat": -20.7667, "lon": 27.6333},
+          "nearest_market": "Mangwe"
+        },
+        {
+          "name": "Umzingwane",
+          "region": "Region IV",
+          "rainfall": "450-600mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -20.3167, "lon": 28.7000},
+          "nearest_market": "Esigodini"
+        }
+      ]
+    },
+    {
+      "name": "Bulawayo Metropolitan",
+      "districts": [
+        {
+          "name": "Bulawayo",
+          "region": "Region IV",
+          "rainfall": "450-650mm",
+          "soil_type": "Sandy loams",
+          "coordinates": {"lat": -20.1500, "lon": 28.5833},
+          "nearest_market": "Bulawayo"
+        }
+      ]
+    },
+    {
+      "name": "Harare Metropolitan",
+      "districts": [
+        {
+          "name": "Harare",
+          "region": "Region IIa",
+          "rainfall": "800-900mm",
+          "soil_type": "Clay loams",
+          "coordinates": {"lat": -17.8252, "lon": 31.0335},
+          "nearest_market": "Mbare Musika"
+        }
+      ]
+    }
+  ],
+  "natural_regions": {
+    "Region I": {
+      "rainfall": "1000mm+",
+      "description": "Specialized and diversified farming (tea, coffee, fruits, forestry)",
+      "growing_season": "Main season: Nov-Apr; Perennial crops year-round",
+      "maize_planting_window": "November-December (main); February-March (possible second season)",
+      "recommended_crops": ["tea", "coffee", "macadamia", "timber", "horticulture"]
+    },
+    "Region IIa": {
+      "rainfall": "750-1000mm",
+      "description": "Intensive farming region (maize, tobacco, cotton)",
+      "growing_season": "Single season (Nov-Apr)",
+      "maize_planting_window": "November-December (optimal planting window)",
+      "recommended_crops": ["maize", "tobacco", "cotton", "wheat", "soya beans"]
+    },
+    "Region IIb": {
+      "rainfall": "650-800mm",
+      "description": "Intensive farming with periodic droughts",
+      "growing_season": "Single season (Nov-Apr)",
+      "maize_planting_window": "November-December (with first rains)",
+      "recommended_crops": ["maize", "tobacco", "cotton", "soya beans", "groundnuts"]
+    },
+    "Region III": {
+      "rainfall": "500-650mm",
+      "description": "Semi-intensive farming (livestock and crops)",
+      "growing_season": "Single season (Nov-Mar)",
+      "maize_planting_window": "November-December (short-season varieties recommended)",
+      "recommended_crops": ["drought-resistant maize", "sorghum", "millet", "groundnuts", "sunflower"]
+    },
+    "Region IV": {
+      "rainfall": "450-650mm",
+      "description": "Semi-extensive farming (livestock, drought-resistant crops)",
+      "growing_season": "Short season (Dec-Feb)",
+      "maize_planting_window": "December-early January (early maturing varieties only)",
+      "recommended_crops": ["small grains", "drought-resistant maize", "groundnuts", "cattle", "goats"]
+    },
+    "Region V": {
+      "rainfall": "<450mm",
+      "description": "Extensive farming (cattle ranching, game, tourism)",
+      "growing_season": "Marginal/irrigation required",
+      "maize_planting_window": "Not recommended without irrigation; if irrigated, plant Nov-Dec",
+      "recommended_crops": ["cattle ranching", "game", "drought-resistant crops with irrigation"]
+    }
+  }
+}

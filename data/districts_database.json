@@ -1,0 +1,442 @@
+{
+  "Beitbridge": {
+    "name": "Beitbridge",
+    "province": "Matabeleland South",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Beitbridge-District-Profile.pdf",
+    "pdf_size_mb": 12.98
+  },
+  "Bikita": {
+    "name": "Bikita",
+    "province": "Masvingo",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Bikita-District-Profile.pdf",
+    "pdf_size_mb": 6.98
+  },
+  "Bindura": {
+    "name": "Bindura",
+    "province": "Mashonaland Central",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Bindura-District-Profile.pdf",
+    "pdf_size_mb": 6.04
+  },
+  "Binga": {
+    "name": "Binga",
+    "province": "Matabeleland North",
+    "agro_zone": "IV",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Binga-District-Profile.pdf",
+    "pdf_size_mb": 2.16
+  },
+  "Bubi": {
+    "name": "Bubi",
+    "province": "Matabeleland North",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Bubi-District-Profile.pdf",
+    "pdf_size_mb": 14.22
+  },
+  "Buhera": {
+    "name": "Buhera",
+    "province": "Manicaland",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Buhera-District-Profile.pdf",
+    "pdf_size_mb": 10.54
+  },
+  "Bulilima": {
+    "name": "Bulilima",
+    "province": "Matabeleland South",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Bulilima-District-Profile.pdf",
+    "pdf_size_mb": 6.38
+  },
+  "Chegutu": {
+    "name": "Chegutu",
+    "province": "Midlands",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chegutu-District-Profile.pdf",
+    "pdf_size_mb": 3.69
+  },
+  "Chikomba": {
+    "name": "Chikomba",
+    "province": "Midlands",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chikomba-District-Profile.pdf",
+    "pdf_size_mb": 3.59
+  },
+  "Chimanimani": {
+    "name": "Chimanimani",
+    "province": "Manicaland",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chimanimani-District-Profile.pdf",
+    "pdf_size_mb": 4.69
+  },
+  "Chipinge": {
+    "name": "Chipinge",
+    "province": "Manicaland",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chipinge-District-Profile.pdf",
+    "pdf_size_mb": 6.08
+  },
+  "Chiredzi": {
+    "name": "Chiredzi",
+    "province": "Masvingo",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chiredzi-District-Profile.pdf",
+    "pdf_size_mb": 7.32
+  },
+  "Chirumhanzu": {
+    "name": "Chirumhanzu",
+    "province": "Midlands",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chirumhanzu-District-Profile.pdf",
+    "pdf_size_mb": 5.14
+  },
+  "Chivi": {
+    "name": "Chivi",
+    "province": "Masvingo",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Chivi-District-Profile.pdf",
+    "pdf_size_mb": 4.14
+  },
+  "Gokwe-North": {
+    "name": "Gokwe-North",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Gokwe-North-District-Profile.pdf",
+    "pdf_size_mb": 5.46
+  },
+  "Gokwe-South": {
+    "name": "Gokwe-South",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Gokwe-South-District-Profile.pdf",
+    "pdf_size_mb": 5.72
+  },
+  "Goromonzi": {
+    "name": "Goromonzi",
+    "province": "Harare",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Goromonzi-District-Profile.pdf",
+    "pdf_size_mb": 6.62
+  },
+  "Guruve": {
+    "name": "Guruve",
+    "province": "Mashonaland Central",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Guruve-District-Profile.pdf",
+    "pdf_size_mb": 3.86
+  },
+  "Gutu": {
+    "name": "Gutu",
+    "province": "Masvingo",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Gutu-District-Profile.pdf",
+    "pdf_size_mb": 7.71
+  },
+  "Gwanda": {
+    "name": "Gwanda",
+    "province": "Matabeleland South",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Gwanda-District-Profile.pdf",
+    "pdf_size_mb": 4.83
+  },
+  "Gweru": {
+    "name": "Gweru",
+    "province": "Midlands",
+    "agro_zone": "IIb",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Gweru-District-Profile.pdf",
+    "pdf_size_mb": 5.17
+  },
+  "HWEDZA": {
+    "name": "HWEDZA",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /HWEDZA-District-Profile.pdf",
+    "pdf_size_mb": 3.51
+  },
+  "Hwange": {
+    "name": "Hwange",
+    "province": "Matabeleland North",
+    "agro_zone": "IV",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Hwange-District-Profile.pdf",
+    "pdf_size_mb": 3.11
+  },
+  "Insiza": {
+    "name": "Insiza",
+    "province": "Matabeleland South",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Insiza-District-Profile.pdf",
+    "pdf_size_mb": 6.42
+  },
+  "Kariba": {
+    "name": "Kariba",
+    "province": "Mashonaland North",
+    "agro_zone": "IV",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Kariba-District-Profile.pdf",
+    "pdf_size_mb": 5.01
+  },
+  "Kwekwe": {
+    "name": "Kwekwe",
+    "province": "Midlands",
+    "agro_zone": "IIa",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Kwekwe-District-Profile.pdf",
+    "pdf_size_mb": 3.25
+  },
+  "Lupane": {
+    "name": "Lupane",
+    "province": "Matabeleland North",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Lupane-District-Profile.pdf",
+    "pdf_size_mb": 46.16
+  },
+  "MT-Darwin": {
+    "name": "MT-Darwin",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /MT-Darwin-District-Profile.pdf",
+    "pdf_size_mb": 7.44
+  },
+  "Makonde": {
+    "name": "Makonde",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Makonde-District-Profile.pdf",
+    "pdf_size_mb": 3.59
+  },
+  "Mangwe": {
+    "name": "Mangwe",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mangwe-District-Profile.pdf",
+    "pdf_size_mb": 5.75
+  },
+  "Marondera": {
+    "name": "Marondera",
+    "province": "Mashonaland East",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Marondera-District-Profile.pdf",
+    "pdf_size_mb": 4.7
+  },
+  "Masvingo": {
+    "name": "Masvingo",
+    "province": "Masvingo",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Masvingo-District-Profile.pdf",
+    "pdf_size_mb": 6.92
+  },
+  "Matobo": {
+    "name": "Matobo",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Matobo-District-Profile.pdf",
+    "pdf_size_mb": 10.9
+  },
+  "Mazowe": {
+    "name": "Mazowe",
+    "province": "Mashonaland Central",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mazowe-District-Profile.pdf",
+    "pdf_size_mb": 4.7
+  },
+  "Mberengwa": {
+    "name": "Mberengwa",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mberengwa-District-Profile.pdf",
+    "pdf_size_mb": 3.54
+  },
+  "Mbire": {
+    "name": "Mbire",
+    "province": "Mashonaland Central",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mbire-District-Profile.pdf",
+    "pdf_size_mb": 4.34
+  },
+  "Mhondoro-Ngezi": {
+    "name": "Mhondoro-Ngezi",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mhondoro-Ngezi-District-Profile.pdf",
+    "pdf_size_mb": 3.04
+  },
+  "Mudzi": {
+    "name": "Mudzi",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mudzi-District-Profile.pdf",
+    "pdf_size_mb": 6.24
+  },
+  "Murehwa": {
+    "name": "Murehwa",
+    "province": "Mashonaland East",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Murehwa-District-Profile.pdf",
+    "pdf_size_mb": 4.27
+  },
+  "Mutare": {
+    "name": "Mutare",
+    "province": "Manicaland",
+    "agro_zone": "IIa",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mutare-District-Profile.pdf",
+    "pdf_size_mb": 5.37
+  },
+  "Mutasa": {
+    "name": "Mutasa",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mutasa-District-Profile.pdf",
+    "pdf_size_mb": 9.84
+  },
+  "Mwenezi": {
+    "name": "Mwenezi",
+    "province": "Masvingo",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Mwenezi-District-Profile.pdf",
+    "pdf_size_mb": 5.57
+  },
+  "Nyanga": {
+    "name": "Nyanga",
+    "province": "Manicaland",
+    "agro_zone": "I",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Nyanga-District-Profile.pdf",
+    "pdf_size_mb": 8.6
+  },
+  "RUSHINGA": {
+    "name": "RUSHINGA",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /RUSHINGA-District-Profile.pdf",
+    "pdf_size_mb": 4.21
+  },
+  "Sanyati": {
+    "name": "Sanyati",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Sanyati-District-Profile.pdf",
+    "pdf_size_mb": 9.6
+  },
+  "Seke": {
+    "name": "Seke",
+    "province": "Harare",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Seke-District-Profile.pdf",
+    "pdf_size_mb": 3.68
+  },
+  "Shamva": {
+    "name": "Shamva",
+    "province": "Mashonaland Central",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Shamva-District-Profile.pdf",
+    "pdf_size_mb": 3.5
+  },
+  "Shurugwi": {
+    "name": "Shurugwi",
+    "province": "Midlands",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Shurugwi-District-Profile.pdf",
+    "pdf_size_mb": 3.33
+  },
+  "Tsholotsho": {
+    "name": "Tsholotsho",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Tsholotsho-District-Profile.pdf",
+    "pdf_size_mb": 2.99
+  },
+  "UMP": {
+    "name": "UMP",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /UMP-District-Profile.pdf",
+    "pdf_size_mb": 4.89
+  },
+  "Umguza": {
+    "name": "Umguza",
+    "province": "Matabeleland North",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Umguza-District-Profile.pdf",
+    "pdf_size_mb": 4.87
+  },
+  "Umzingwane": {
+    "name": "Umzingwane",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Umzingwane-District-Profile.pdf",
+    "pdf_size_mb": 4.56
+  },
+  "Zaka": {
+    "name": "Zaka",
+    "province": "Masvingo",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Zaka-District-Profile.pdf",
+    "pdf_size_mb": 3.26
+  },
+  "Zvimba": {
+    "name": "Zvimba",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Zvimba-District-Profile.pdf",
+    "pdf_size_mb": 6.65
+  },
+  "Zvishavane": {
+    "name": "Zvishavane",
+    "province": "Unknown",
+    "agro_zone": "III",
+    "has_pdf_data": true,
+    "pdf_path": "/Users/providencemtendereki/Zim District data /Zvishavane-District-Profile.pdf",
+    "pdf_size_mb": 11.2
+  }
+}

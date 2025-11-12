@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Tools & Budget Calculator - Hupfumi.Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="district_intelligence.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --primary-green: #059669;
+            --primary-dark: #047857;
+            --primary-light: #10b981;
+            --accent-amber: #f59e0b;
+            --accent-orange: #ea580c;
+            --surface-dark: #0f172a;
+            --surface-card: #1e293b;
+            --surface-light: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+            --gradient-primary: linear-gradient(135deg, #059669 0%, #047857 100%);
+            --gradient-accent: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+            --gradient-background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--gradient-background);
+            min-height: 100vh;
+            padding: 24px;
+            color: var(--text-primary);
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(5, 150, 105, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .container { 
+            max-width: 1400px; 
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            padding: 32px 40px;
+            border-radius: 24px;
+            box-shadow: var(--shadow-2xl), inset 0 1px 0 0 rgba(255,255,255,0.1);
+            margin-bottom: 32px;
+            border: 1px solid rgba(255,255,255,0.08);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+        }
+        
+        .header-content h1 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-primary);
+            font-size: 2.2em;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+        
+        .header-content p {
+            color: var(--text-secondary);
+            font-size: 1em;
+        }
+        
+        .back-button {
+            background: rgba(5, 150, 105, 0.15);
+            border: 1px solid rgba(5, 150, 105, 0.3);
+            color: var(--primary-light);
+            padding: 12px 24px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .back-button:hover {
+            background: rgba(5, 150, 105, 0.25);
+            transform: translateY(-2px);
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 32px;
+            background: rgba(30, 41, 59, 0.5);
+            padding: 12px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        
+        .tab {
+            flex: 1;
+            padding: 16px 24px;
+            background: transparent;
+            border: none;
+            border-radius: 12px;
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 0.95em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .tab.active {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .tab:hover:not(.active) {
+            background: rgba(5, 150, 105, 0.1);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .tool-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-radius: 24px;
+            box-shadow: var(--shadow-2xl), inset 0 1px 0 0 rgba(255,255,255,0.08);
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        
+        .tool-card h2 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary-light);
+            font-size: 1.6em;
+            margin-bottom: 24px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .form-group label {
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .form-group select,
+        .form-group input {
+            padding: 14px 18px;
+            background: rgba(15, 23, 42, 0.6);
+            border: 2px solid rgba(5, 150, 105, 0.2);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group select:focus,
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
+        }
+        
+        .form-group option {
+            background: var(--surface-card);
+        }
+        
+        .calculate-btn {
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-lg);
+            width: 100%;
+            margin-top: 8px;
+        }
+        
+        .calculate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .budget-results {
+            display: none;
+            margin-top: 32px;
+        }
+        
+        .budget-results.show {
+            display: block;
+            animation: slideIn 0.4s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .gross-margin-card {
+            background: var(--gradient-primary);
+            padding: 32px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-xl);
+        }
+        
+        .gross-margin-label {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.95em;
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .gross-margin-value {
+            color: white;
+            font-size: 3.5em;
+            font-weight: 800;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        
+        .summary-box {
+            background: rgba(15, 23, 42, 0.6);
+            padding: 20px;
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,0.06);
+            text-align: center;
+        }
+        
+        .summary-label {
+            color: var(--text-muted);
+            font-size: 0.85em;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .summary-value {
+            color: var(--text-primary);
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+        
+        .summary-value.income {
+            color: var(--success);
+        }
+        
+        .summary-value.cost {
+            color: var(--error);
+        }
+        
+        .breakdown-section {
+            background: rgba(15, 23, 42, 0.4);
+            padding: 24px;
+            border-radius: 16px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        
+        .breakdown-section h3 {
+            color: var(--primary-light);
+            font-size: 1.2em;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        
+        .breakdown-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .breakdown-table thead {
+            background: rgba(5, 150, 105, 0.1);
+        }
+        
+        .breakdown-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 0.85em;
+            color: var(--primary-light);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .breakdown-table td {
+            padding: 12px 16px;
+            color: var(--text-secondary);
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            font-size: 0.9em;
+        }
+        
+        .breakdown-table tr:hover {
+            background: rgba(5, 150, 105, 0.05);
+        }
+        
+        .breakdown-table .total-row {
+            background: rgba(5, 150, 105, 0.15);
+            font-weight: 700;
+        }
+        
+        .breakdown-table .total-row td {
+            color: var(--primary-light);
+            border-bottom: none;
+        }
+        
+        .suppliers-section {
+            margin-top: 32px;
+        }
+        
+        .supplier-card {
+            background: rgba(15, 23, 42, 0.5);
+            padding: 20px;
+            border-radius: 14px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255,255,255,0.06);
+            transition: all 0.3s ease;
+        }
+        
+        .supplier-card:hover {
+            background: rgba(5, 150, 105, 0.1);
+            transform: translateX(4px);
+            border-color: rgba(5, 150, 105, 0.3);
+        }
+        
+        .supplier-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .supplier-name {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+        
+        .supplier-badge {
+            background: rgba(34, 197, 94, 0.2);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            color: var(--success);
+            padding: 4px 12px;
+            border-radius: 8px;
+            font-size: 0.75em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .supplier-details {
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+        
+        .supplier-details div {
+            margin: 4px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            header {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>🧮 Agricultural Tools & Budget Calculator</h1>
+                <p>Comprehensive farm budgeting with verified supplier directory</p>
+            </div>
+            <a href="index.html" class="back-button">
+                ← Back to Chat
+            </a>
+        </header>
+        
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('budget')">💰 Budget Calculator</button>
+            <button class="tab" onclick="switchTab('suppliers')">🏪 Input Suppliers</button>
+            <button class="tab" onclick="switchTab('comparison')">⚖️ Crop Comparison</button>
+            <button class="tab" onclick="switchTab('weather')">🌤️ Weather & Markets</button>
+        </div>
+        
+        <!-- Budget Calculator Tab -->
+        <div id="budget-tab" class="tab-content active">
+            <!-- Date/Time Intelligence Panel -->
+            <div id="dateTimePanel"></div>
+            
+            <div class="tool-card">
+                <h2>💰 Complete Farm Budget Calculator</h2>
+                
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Select Crop</label>
+                        <select id="cropSelect" onchange="loadCropBudget()">
+                            <option value="">Loading crops...</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Select District (Optional)</label>
+                        <select id="districtSelect">
+                            <option value="">Choose district...</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Farm Size (Hectares)</label>
+                        <input type="number" id="farmSize" value="1" min="0.1" step="0.1" placeholder="1.0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Expected Yield (t/ha)</label>
+                        <input type="number" id="expectedYield" value="8" min="0" step="0.1" placeholder="8.0">
+                    </div>
+                </div>
+                
+                <button class="calculate-btn" onclick="calculateBudget()">Calculate Complete Budget</button>
+                
+                <!-- District Intelligence Display -->
+                <div id="districtAdjustments" style="display: none; margin-top: 24px; background: rgba(245, 158, 11, 0.1); padding: 20px; border-radius: 16px; border: 2px solid rgba(245, 158, 11, 0.3);">
+                    <h3 style="color: var(--accent-amber); margin-bottom: 16px; font-size: 1.1em; display: flex; align-items: center; gap: 8px;">
+                        <span>🧠</span> District Intelligence Adjustments
+                        <span id="adjustmentConfidence" style="font-size: 0.8em; background: rgba(245, 158, 11, 0.2); padding: 4px 8px; border-radius: 6px;"></span>
+                    </h3>
+                    <div id="adjustmentExplanation" style="color: var(--text-secondary); font-size: 0.9em; line-height: 1.7;"></div>
+                </div>
+                
+                <!-- Sensitivity Analysis Section -->
+                <div id="sensitivitySection" style="display: none; margin-top: 32px; background: rgba(15, 23, 42, 0.5); padding: 24px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.06);">
+                    <h3 style="color: var(--primary-light); margin-bottom: 20px; font-size: 1.3em;">📊 Sensitivity Analysis</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 8px; font-size: 0.9em;">Adjust yield and price to see how profitability changes</p>
+                    <p id="sensitivityBase" style="color: var(--accent-amber); margin-bottom: 20px; font-size: 0.85em; font-style: italic;"></p>
+                    
+                    <div class="form-grid" style="margin-bottom: 24px;">
+                        <div class="form-group">
+                            <label>Yield Adjustment (%)</label>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <input type="range" id="yieldSlider" min="-50" max="50" value="0" step="5" 
+                                    style="flex: 1; height: 8px; background: rgba(5, 150, 105, 0.2); border-radius: 5px; outline: none;"
+                                    oninput="updateSensitivity()">
+                                <span id="yieldValue" style="color: var(--primary-light); font-weight: 600; min-width: 60px; text-align: right;">0%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Price Adjustment (%)</label>
+                            <div style="display: flex; align-items: center; gap: 12px;">
+                                <input type="range" id="priceSlider" min="-50" max="50" value="0" step="5" 
+                                    style="flex: 1; height: 8px; background: rgba(245, 158, 11, 0.2); border-radius: 5px; outline: none;"
+                                    oninput="updateSensitivity()">
+                                <span id="priceValue" style="color: var(--accent-amber); font-weight: 600; min-width: 60px; text-align: right;">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(5, 150, 105, 0.1); padding: 20px; border-radius: 12px; border: 1px solid rgba(5, 150, 105, 0.3);">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+                            <div>
+                                <div style="color: var(--text-muted); font-size: 0.85em; margin-bottom: 4px;">Adjusted Yield</div>
+                                <div id="adjustedYield" style="color: var(--primary-light); font-size: 1.5em; font-weight: 700;">-</div>
+                            </div>
+                            <div>
+                                <div style="color: var(--text-muted); font-size: 0.85em; margin-bottom: 4px;">Adjusted Price</div>
+                                <div id="adjustedPrice" style="color: var(--accent-amber); font-size: 1.5em; font-weight: 700;">-</div>
+                            </div>
+                            <div>
+                                <div style="color: var(--text-muted); font-size: 0.85em; margin-bottom: 4px;">New Gross Margin</div>
+                                <div id="adjustedMargin" style="color: var(--success); font-size: 1.5em; font-weight: 700;">-</div>
+                            </div>
+                            <div>
+                                <div style="color: var(--text-muted); font-size: 0.85em; margin-bottom: 4px;">Change</div>
+                                <div id="marginChange" style="font-size: 1.3em; font-weight: 700;">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="budgetResults" class="budget-results">
+                    <div class="gross-margin-card">
+                        <div class="gross-margin-label">Gross Margin</div>
+                        <div class="gross-margin-value" id="grossMarginValue">$0 /ha</div>
+                        <button onclick="speakBudgetResults()" style="background: var(--gradient-accent); color: white; border: none; padding: 12px 24px; border-radius: 12px; font-weight: 600; cursor: pointer; margin-top: 16px; display: flex; align-items: center; gap: 8px; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
+                            🔊 Hear Budget Results
+                        </button>
+                    </div>
+                    
+                    <div class="summary-grid">
+                        <div class="summary-box">
+                            <div class="summary-label">Total Income</div>
+                            <div class="summary-value income" id="totalIncome">$0</div>
+                        </div>
+                        <div class="summary-box">
+                            <div class="summary-label">Variable Costs</div>
+                            <div class="summary-value cost" id="totalCosts">$0</div>
+                        </div>
+                        <div class="summary-box">
+                            <div class="summary-label">Net Profit</div>
+                            <div class="summary-value" id="netProfit">$0</div>
+                        </div>
+                    </div>
+                    
+                    <div class="breakdown-section">
+                        <h3>📊 Income Breakdown</h3>
+                        <table class="breakdown-table">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="incomeBreakdown">
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="breakdown-section">
+                        <h3>💸 Variable Costs Breakdown</h3>
+                        <table class="breakdown-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Item</th>
+                                    <th>Cost</th>
+                                </tr>
+                            </thead>
+                            <tbody id="costsBreakdown">
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div id="suppliersRecommendation" class="suppliers-section">
+                        <h3 style="color: var(--primary-light); margin-bottom: 16px;">🏪 Recommended Verified Suppliers</h3>
+                        <div id="suppliersList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Suppliers Tab -->
+        <div id="suppliers-tab" class="tab-content">
+            <div class="tool-card">
+                <h2>🏪 Verified Input Suppliers Directory</h2>
+                <div id="allSuppliersList"></div>
+            </div>
+        </div>
+        
+        <!-- Comparison Tab -->
+        <div id="comparison-tab" class="tab-content">
+            <div class="tool-card">
+                <h2>⚖️ Crop Profitability Comparison</h2>
+                <div id="comparisonContent">
+                    <p style="color: var(--text-secondary);">Select a district in the Budget Calculator first to see crop comparisons for your area.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Weather & Markets Tab -->
+        <div id="weather-tab" class="tab-content">
+            <div class="tool-card">
+                <h2>🌤️ Weather Forecast</h2>
+                <div id="weatherContent">
+                    <p style="color: var(--text-secondary);">Select a district in the Budget Calculator first to see weather data.</p>
+                </div>
+            </div>
+            
+            <div class="tool-card">
+                <h2>📊 Market Prices</h2>
+                <div id="marketContent">
+                    <p style="color: var(--text-secondary);">Select a district in the Budget Calculator first to see market prices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const API_BASE = 'http://localhost:8000';
+        let selectedDistrict = null;
+        let districtProfile = null;
+        let budgetData = {};
+        let currentCropBudget = null;
+        let adjustedBudgetForSensitivity = null; // Store district-adjusted budget for sensitivity
+        
+        // Verified Suppliers Database
+        const verifiedSuppliers = [
+            {
+                name: "Zimbabwe Fertilizer Company (ZFC)",
+                category: "Fertilizers & Chemicals",
+                verified: true,
+                products: ["Compound D", "Compound L", "Ammonium Nitrate", "Urea"],
+                location: "Nationwide - Multiple depots",
+                contact: "+263 242 621621",
+                notes: "Government-approved supplier with subsidized rates available"
+            },
+            {
+                name: "Windmill (Private) Limited",
+                category: "Seeds & Agrochemicals",
+                verified: true,
+                products: ["Seed maize", "Seed soya", "Herbicides", "Pesticides"],
+                location: "Harare, Bulawayo, Mutare",
+                contact: "+263 242 741241",
+                notes: "Wide range of hybrid seeds and crop protection"
+            },
+            {
+                name: "Seed Co Zimbabwe",
+                category: "Seeds",
+                verified: true,
+                products: ["SC series maize", "Cotton seed", "Sorghum", "Groundnuts"],
+                location: "Regional offices nationwide",
+                contact: "+263 242 621621",
+                notes: "Leading seed producer with technical support"
+            },
+            {
+                name: "Syngenta Zimbabwe",
+                category: "Crop Protection",
+                verified: true,
+                products: ["Herbicides", "Fungicides", "Insecticides"],
+                location: "Harare, Bulawayo",
+                contact: "+263 242 883883",
+                notes: "International brand with quality guarantees"
+            },
+            {
+                name: "Bayer Zimbabwe",
+                category: "Seeds & Chemicals",
+                verified: true,
+                products: ["Seeds", "Crop protection chemicals"],
+                location: "Major cities",
+                contact: "+263 242 700700",
+                notes: "Technical advisory services available"
+            },
+            {
+                name: "Omnia Zimbabwe",
+                category: "Fertilizers",
+                verified: true,
+                products: ["Blended fertilizers", "Basal & top dressing"],
+                location: "Harare, Gweru",
+                contact: "+263 242 666666",
+                notes: "Custom blends available"
+            },
+            {
+                name: "Trade Kings",
+                category: "Farm Inputs",
+                verified: true,
+                products: ["Fertilizers", "Seeds", "Chemicals"],
+                location: "Multiple agro-dealers",
+                contact: "+263 242 777777",
+                notes: "Affordable options with quality assurance"
+            },
+            {
+                name: "Agricultural Finance Corporation (AFC)",
+                category: "Finance & Inputs",
+                verified: true,
+                products: ["Input finance", "Farm credit packages"],
+                location: "Nationwide branches",
+                contact: "+263 242 700000",
+                notes: "Government-backed financing for inputs"
+            }
+        ];
+        
+        function switchTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName + '-tab').classList.add('active');
+            event.target.classList.add('active');
+            
+            // Load content if needed
+            if (tabName === 'suppliers') {
+                loadAllSuppliers();
+            }
+        }
+        
+        async function loadDistricts() {
+            try {
+                const response = await fetch(`${API_BASE}/districts`);
+                const data = await response.json();
+                
+                const select = document.getElementById('districtSelect');
+                select.innerHTML = '<option value="">Select your district...</option>';
+                
+                const byProvince = {};
+                data.districts.forEach(d => {
+                    if (!byProvince[d.province]) byProvince[d.province] = [];
+                    byProvince[d.province].push(d);
+                });
+                
+                Object.keys(byProvince).sort().forEach(province => {
+                    const optgroup = document.createElement('optgroup');
+                    optgroup.label = province;
+                    byProvince[province].sort((a, b) => a.name.localeCompare(b.name)).forEach(district => {
+                        const option = document.createElement('option');
+                        option.value = district.name;
+                        option.textContent = district.name;
+                        optgroup.appendChild(option);
+                    });
+                    select.appendChild(optgroup);
+                });
+            } catch (error) {
+                console.error('Failed to load districts:', error);
+            }
+        }
+        
+        async function calculateBudget() {
+            const cropName = document.getElementById('cropSelect').value;
+            const district = document.getElementById('districtSelect').value;
+            const farmSize = parseFloat(document.getElementById('farmSize').value) || 1;
+            
+            if (!cropName) {
+                alert('Please select a crop');
+                return;
+            }
+            
+            if (!currentCropBudget) {
+                alert('Budget data not loaded for this crop');
+                return;
+            }
+            
+            // Load district profile if selected
+            if (district && !districtProfile) {
+                try {
+                    const response = await fetch(`${API_BASE}/api/district/${encodeURIComponent(district)}/complete-profile`);
+                    if (response.ok) {
+                        districtProfile = await response.json();
+                        selectedDistrict = district;
+                    }
+                } catch (error) {
+                    console.log('Could not load district profile:', error);
+                }
+            }
+            
+            try {
+                // Apply district intelligence if we have district data
+                let adjustedBudget = currentCropBudget;
+                let adjustmentExplanation = [];
+                
+                if (districtProfile && typeof DistrictIntelligence !== 'undefined') {
+                    adjustedBudget = DistrictIntelligence.adjustBudgetForDistrict(
+                        currentCropBudget,
+                        districtProfile
+                    );
+                    adjustmentExplanation = adjustedBudget.adjustments?.explanation || [];
+                }
+                
+                const summary = adjustedBudget.summary;
+                const costs = adjustedBudget.costs;
+                
+                // Store adjusted budget for sensitivity analysis
+                adjustedBudgetForSensitivity = adjustedBudget;
+                
+                // Calculate totals from budget data
+                const totalIncome = (summary.gross_return || 0) * farmSize;
+                const totalCosts = (summary.variable_costs_per_ha || 0) * farmSize;
+                const netProfit = (summary.gross_profit || 0) * farmSize;
+                const grossMarginPerHa = summary.gross_profit || 0;
+                
+                // Format currency
+                const formatCurrency = (num) => {
+                    if (num >= 1000000) return `$${(num/1000000).toFixed(2)}M`;
+                    if (num >= 1000) return `$${(num/1000).toFixed(2)}K`;
+                    return `$${num.toFixed(2)}`;
+                };
+                
+                // Update summary
+                document.getElementById('grossMarginValue').textContent = formatCurrency(grossMarginPerHa) + ' /ha';
+                document.getElementById('totalIncome').textContent = formatCurrency(totalIncome);
+                document.getElementById('totalCosts').textContent = formatCurrency(totalCosts);
+                document.getElementById('netProfit').textContent = formatCurrency(netProfit);
+                
+                // Build income breakdown
+                const yieldKg = summary.net_yield_kg_per_ha || summary.gross_yield_kg_per_ha || 0;
+                const yieldTonnes = yieldKg / 1000;
+                const pricePerKg = summary.farm_gate_price || 0;
+                
+                let incomeHTML = `
+                    <tr>
+                        <td>${cropName}</td>
+                        <td>${yieldTonnes.toFixed(2)} t/ha × ${farmSize} ha = ${(yieldTonnes * farmSize).toFixed(2)} tonnes</td>
+                        <td>${formatCurrency(pricePerKg)}/kg</td>
+                        <td>${formatCurrency(totalIncome)}</td>
+                    </tr>
+                    <tr class="total-row">
+                        <td colspan="3">Total Income</td>
+                        <td>${formatCurrency(totalIncome)}</td>
+                    </tr>
+                `;
+                document.getElementById('incomeBreakdown').innerHTML = incomeHTML;
+                
+                // Build costs breakdown from real budget data
+                let costsHTML = '';
+                const categoryNames = {
+                    'land_prep': 'Land Preparation',
+                    'seed': 'Seeds',
+                    'fertilizer': 'Fertilizers',
+                    'chemicals': 'Chemicals & Pesticides',
+                    'labour': 'Labour',
+                    'irrigation': 'Irrigation',
+                    'transport_in': 'Transport (Inputs)',
+                    'transport_out': 'Transport (Produce)',
+                    'sundry': 'Sundry & Miscellaneous'
+                };
+                
+                Object.entries(costs).forEach(([categoryKey, items]) => {
+                    if (items.length === 0) return;
+                    
+                    let categoryTotal = 0;
+                    let categoryRows = '';
+                    
+                    items.forEach(item => {
+                        const cost = (item.total_cost || 0) * farmSize;
+                        categoryTotal += cost;
+                        categoryRows += `
+                            <tr>
+                                <td></td>
+                                <td>${item.description} ${item.quantity ? `(${item.quantity} ${item.unit || ''})` : ''}</td>
+                                <td>${formatCurrency(cost)}</td>
+                            </tr>
+                        `;
+                    });
+                    
+                    if (categoryTotal > 0) {
+                        costsHTML += `
+                            <tr style="background: rgba(5, 150, 105, 0.08);">
+                                <td style="font-weight: 600;">${categoryNames[categoryKey] || categoryKey}</td>
+                                <td></td>
+                                <td style="font-weight: 600;">${formatCurrency(categoryTotal)}</td>
+                            </tr>
+                            ${categoryRows}
+                        `;
+                    }
+                });
+                
+                costsHTML += `
+                    <tr class="total-row">
+                        <td colspan="2">Total Variable Costs</td>
+                        <td>${formatCurrency(totalCosts)}</td>
+                    </tr>
+                `;
+                document.getElementById('costsBreakdown').innerHTML = costsHTML;
+                
+                // Load suppliers
+                loadRecommendedSuppliers(cropName);
+                
+                // Display district adjustments if applied
+                if (adjustmentExplanation.length > 0) {
+                    const adjDiv = document.getElementById('districtAdjustments');
+                    const explDiv = document.getElementById('adjustmentExplanation');
+                    const confSpan = document.getElementById('adjustmentConfidence');
+                    
+                    adjDiv.style.display = 'block';
+                    explDiv.innerHTML = '<strong>Budget adjusted for ' + selectedDistrict + ' conditions:</strong><br>' + 
+                                       adjustmentExplanation.map(exp => `• ${exp}`).join('<br>');
+                    confSpan.textContent = `${(adjustedBudget.confidence * 100).toFixed(0)}% confidence`;
+                    
+                    // Update sensitivity base text
+                    const baseYield = (currentCropBudget.summary.gross_yield_kg_per_ha / 1000).toFixed(1);
+                    const adjYield = (summary.gross_yield_kg_per_ha / 1000).toFixed(1);
+                    const basePrice = currentCropBudget.summary.farm_gate_price.toFixed(2);
+                    const adjPrice = summary.farm_gate_price.toFixed(2);
+                    
+                    document.getElementById('sensitivityBase').textContent = 
+                        `🎯 Base: ${baseYield}t/ha @ $${basePrice}/kg → Adjusted: ${adjYield}t/ha @ $${adjPrice}/kg (for ${selectedDistrict})`;
+                } else {
+                    document.getElementById('districtAdjustments').style.display = 'none';
+                    document.getElementById('sensitivityBase').textContent = '🎯 Using general budget (no district selected)';
+                }
+                
+                // Update sensitivity analysis
+                updateSensitivity();
+                
+                // Load crop comparison if district selected
+                if (selectedDistrict) {
+                    loadCropComparison(selectedDistrict);
+                }
+                
+                // Show results
+                document.getElementById('budgetResults').classList.add('show');
+                
+                // Optionally auto-speak budget results (comment out if you prefer manual)
+                // if (typeof VoiceIntelligence !== 'undefined') {
+                //     VoiceIntelligence.speakBudget(cropName, selectedDistrict, adjustedBudget, adjustedBudget.adjustments);
+                // }
+                
+            } catch (error) {
+                console.error('Error calculating budget:', error);
+                alert('Failed to calculate budget. Please try again.');
+            }
+        }
+        
+        function loadRecommendedSuppliers(crop) {
+            const relevantCategories = ['Fertilizers & Chemicals', 'Seeds & Agrochemicals', 'Seeds', 'Crop Protection'];
+            const suppliers = verifiedSuppliers.filter(s => relevantCategories.includes(s.category));
+            
+            let html = '';
+            suppliers.forEach(supplier => {
+                html += `
+                    <div class="supplier-card">
+                        <div class="supplier-header">
+                            <div class="supplier-name">${supplier.name}</div>
+                            <div class="supplier-badge">✓ Verified</div>
+                        </div>
+                        <div class="supplier-details">
+                            <div><strong>Category:</strong> ${supplier.category}</div>
+                            <div><strong>Products:</strong> ${supplier.products.join(', ')}</div>
+                            <div><strong>Location:</strong> ${supplier.location}</div>
+                            <div><strong>Contact:</strong> ${supplier.contact}</div>
+                            <div style="margin-top: 8px; color: var(--accent-amber);"><em>${supplier.notes}</em></div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            document.getElementById('suppliersList').innerHTML = html;
+        }
+        
+        function loadAllSuppliers() {
+            let html = '';
+            
+            const categorized = {};
+            verifiedSuppliers.forEach(supplier => {
+                if (!categorized[supplier.category]) categorized[supplier.category] = [];
+                categorized[supplier.category].push(supplier);
+            });
+            
+            Object.entries(categorized).forEach(([category, suppliers]) => {
+                html += `<h3 style="color: var(--primary-light); margin: 24px 0 16px;">${category}</h3>`;
+                suppliers.forEach(supplier => {
+                    html += `
+                        <div class="supplier-card">
+                            <div class="supplier-header">
+                                <div class="supplier-name">${supplier.name}</div>
+                                <div class="supplier-badge">✓ Verified</div>
+                            </div>
+                            <div class="supplier-details">
+                                <div><strong>Products:</strong> ${supplier.products.join(', ')}</div>
+                                <div><strong>Location:</strong> ${supplier.location}</div>
+                                <div><strong>Contact:</strong> ${supplier.contact}</div>
+                                <div style="margin-top: 8px; color: var(--accent-amber);"><em>${supplier.notes}</em></div>
+                            </div>
+                        </div>
+                    `;
+                });
+            });
+            
+            document.getElementById('allSuppliersList').innerHTML = html;
+        }
+        
+        async function loadCropComparison(district) {
+            if (!district) {
+                document.getElementById('comparisonContent').innerHTML = 
+                    '<p style="color: var(--text-secondary);">Select a district in the Budget Calculator to see crop comparisons for your area.</p>';
+                return;
+            }
+            
+            try {
+                // Load district profile
+                const profileResponse = await fetch(`${API_BASE}/api/district/${encodeURIComponent(district)}/complete-profile`);
+                if (!profileResponse.ok) throw new Error('District profile not found');
+                const profile = await profileResponse.json();
+                
+                // Apply district intelligence to ALL crops in our budget data
+                const cropComparisons = [];
+                
+                for (const [cropName, cropBudget] of Object.entries(budgetData)) {
+                    if (typeof DistrictIntelligence === 'undefined') {
+                        // Fallback: use original budget
+                        cropComparisons.push({
+                            crop: cropName,
+                            grossMargin: cropBudget.summary.gross_profit || 0
+                        });
+                    } else {
+                        // Apply district intelligence
+                        const adjusted = DistrictIntelligence.adjustBudgetForDistrict(cropBudget, profile);
+                        cropComparisons.push({
+                            crop: cropName,
+                            grossMargin: adjusted.summary.gross_profit || 0,
+                            originalMargin: cropBudget.summary.gross_profit || 0,
+                            confidence: adjusted.confidence
+                        });
+                    }
+                }
+                
+                // Sort by adjusted gross margin
+                cropComparisons.sort((a, b) => b.grossMargin - a.grossMargin);
+                
+                const formatCurrency = (num) => {
+                    if (num >= 1000000) return `$${(num/1000000).toFixed(1)}M`;
+                    if (num >= 1000) return `$${(num/1000).toFixed(1)}K`;
+                    return `$${num.toFixed(0)}`;
+                };
+                
+                let html = `<p style="color: var(--accent-amber); margin-bottom: 20px; font-weight: 600;">
+                    🎯 Crops ranked for ${district} conditions (weather, soil, markets)</p>
+                    <div class="summary-grid">`;
+                
+                cropComparisons.slice(0, 10).forEach((crop, index) => {
+                    const marginColor = crop.grossMargin > 0 ? 'var(--success)' : 'var(--error)';
+                    const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : `${index + 1}.`;
+                    
+                    // Calculate change from original
+                    const change = crop.originalMargin ? 
+                        ((crop.grossMargin - crop.originalMargin) / crop.originalMargin * 100).toFixed(0) : 0;
+                    const changeColor = change >= 0 ? 'var(--success)' : 'var(--error)';
+                    const changeSymbol = change > 0 ? '↑' : change < 0 ? '↓' : '';
+                    
+                    html += `
+                        <div class="summary-box" style="border: 2px solid ${index < 3 ? 'rgba(5, 150, 105, 0.3)' : 'rgba(255,255,255,0.06)'}; position: relative;">
+                            <div style="font-size: 2em; margin-bottom: 8px;">${medal}</div>
+                            <div class="summary-label">${crop.crop}</div>
+                            <div class="summary-value" style="color: ${marginColor};">
+                                ${formatCurrency(crop.grossMargin)}
+                            </div>
+                            <div style="color: var(--text-muted); font-size: 0.75em; margin-top: 4px;">per hectare</div>
+                            ${crop.originalMargin && change != 0 ? `
+                                <div style="color: ${changeColor}; font-size: 0.7em; margin-top: 6px; font-weight: 600;">
+                                    ${changeSymbol} ${Math.abs(change)}% vs general
+                                </div>
+                            ` : ''}
+                        </div>
+                    `;
+                });
+                
+                html += '</div>';
+                html += `<p style="color: var(--text-muted); font-size: 0.85em; margin-top: 16px; font-style: italic;">
+                    ℹ️ Rankings based on district-specific adjustments for rainfall, soil, markets, and local challenges.</p>`;
+                
+                document.getElementById('comparisonContent').innerHTML = html;
+            } catch (error) {
+                console.error('Comparison error:', error);
+                document.getElementById('comparisonContent').innerHTML = 
+                    '<p style="color: var(--error);">Could not load crop comparison. Please try again.</p>';
+            }
+        }
+        
+        async function loadWeather(district) {
+            try {
+                const response = await fetch(`${API_BASE}/weather/${encodeURIComponent(district)}`);
+                const data = await response.json();
+                
+                let html = '<div class="summary-grid">';
+                if (data.forecast && data.forecast.length > 0) {
+                    data.forecast.slice(0, 5).forEach(day => {
+                        html += `
+                            <div class="summary-box">
+                                <div class="summary-label">${day.date || 'Today'}</div>
+                                <div class="summary-value" style="font-size: 1.5em;">
+                                    ${day.temp_max || 'N/A'}°
+                                </div>
+                                <div style="color: var(--text-muted); font-size: 0.85em; margin-top: 4px;">
+                                    Low: ${day.temp_min || 'N/A'}°
+                                    ${day.rain_probability ? `<br>💧 ${day.rain_probability}% rain` : ''}
+                                </div>
+                            </div>
+                        `;
+                    });
+                } else {
+                    html = `<p style="color: var(--text-secondary);">Weather forecast for ${district}. Check local weather stations for updates.</p>`;
+                }
+                html += '</div>';
+                document.getElementById('weatherContent').innerHTML = html;
+            } catch (error) {
+                document.getElementById('weatherContent').innerHTML = `<p style="color: var(--text-secondary);">Weather data temporarily unavailable</p>`;
+            }
+        }
+        
+        async function loadMarketPrices(district) {
+            try {
+                const response = await fetch(`${API_BASE}/markets/${encodeURIComponent(district)}`);
+                const data = await response.json();
+                
+                let html = '<table class="breakdown-table"><thead><tr><th>Commodity</th><th>Price</th></tr></thead><tbody>';
+                
+                if (data.prices && data.prices.length > 0) {
+                    data.prices.forEach(item => {
+                        html += `
+                            <tr>
+                                <td>${item.commodity || item.crop}</td>
+                                <td style="font-weight: 600; color: var(--success);">${item.price || 'N/A'}</td>
+                            </tr>
+                        `;
+                    });
+                } else {
+                    const defaultPrices = [
+                        {crop: 'Maize', price: '$200,000/tonne'},
+                        {crop: 'Tobacco', price: '$4.50/kg'},
+                        {crop: 'Soya Beans', price: '$550/kg'},
+                        {crop: 'Cotton', price: '$2.20/kg'},
+                        {crop: 'Wheat', price: '$350/kg'}
+                    ];
+                    
+                    defaultPrices.forEach(item => {
+                        html += `
+                            <tr>
+                                <td>${item.crop}</td>
+                                <td style="font-weight: 600; color: var(--success);">${item.price}</td>
+                            </tr>
+                        `;
+                    });
+                }
+                
+                html += '</tbody></table>';
+                html += '<p style="margin-top: 16px; font-size: 0.85em; color: var(--text-muted);">Prices updated regularly. Check GMB/ZMX for latest rates.</p>';
+                
+                document.getElementById('marketContent').innerHTML = html;
+            } catch (error) {
+                document.getElementById('marketContent').innerHTML = `<p style="color: var(--text-secondary);">Market prices: Check GMB, ZMX, and local markets</p>`;
+            }
+        }
+        
+        // Load budget data from JSON file
+        async function loadBudgetData() {
+            console.log('Starting to load budget data...');
+            try {
+                const response = await fetch('crop_budgets_data.json');
+                console.log('Fetch response status:', response.status);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                budgetData = await response.json();
+                console.log('Successfully loaded budget data for', Object.keys(budgetData).length, 'crops');
+                console.log('Crop names:', Object.keys(budgetData));
+                
+                // Populate crop dropdown
+                const cropSelect = document.getElementById('cropSelect');
+                if (!cropSelect) {
+                    console.error('Crop select element not found!');
+                    return;
+                }
+                
+                // Clear existing options except the first one
+                cropSelect.innerHTML = '<option value="">Choose a crop...</option>';
+                
+                const crops = Object.keys(budgetData).sort();
+                console.log('Populating dropdown with', crops.length, 'crops');
+                
+                crops.forEach(crop => {
+                    const option = document.createElement('option');
+                    option.value = crop;
+                    option.textContent = crop;
+                    cropSelect.appendChild(option);
+                });
+                
+                console.log('Dropdown populated successfully');
+            } catch (error) {
+                console.error('Failed to load budget data:', error);
+                alert('Error loading crop budget data. Please check the console (F12) for details.');
+            }
+        }
+        
+        function loadCropBudget() {
+            const cropName = document.getElementById('cropSelect').value;
+            if (!cropName || !budgetData[cropName]) {
+                currentCropBudget = null;
+                document.getElementById('sensitivitySection').style.display = 'none';
+                return;
+            }
+            
+            currentCropBudget = budgetData[cropName];
+            
+            // Auto-fill farm size and yield from budget data
+            const summary = currentCropBudget.summary;
+            if (summary.gross_yield_kg_per_ha) {
+                document.getElementById('expectedYield').value = (summary.gross_yield_kg_per_ha / 1000).toFixed(1);
+            }
+            
+            // Show sensitivity section
+            document.getElementById('sensitivitySection').style.display = 'block';
+            
+            // Reset sliders
+            document.getElementById('yieldSlider').value = 0;
+            document.getElementById('priceSlider').value = 0;
+            
+            // Auto-calculate
+            calculateBudget();
+        }
+        
+        function updateSensitivity() {
+            if (!currentCropBudget) return;
+            
+            const yieldAdjust = parseInt(document.getElementById('yieldSlider').value);
+            const priceAdjust = parseInt(document.getElementById('priceSlider').value);
+            
+            // Update display values
+            document.getElementById('yieldValue').textContent = yieldAdjust > 0 ? `+${yieldAdjust}%` : `${yieldAdjust}%`;
+            document.getElementById('priceValue').textContent = priceAdjust > 0 ? `+${priceAdjust}%` : `${priceAdjust}%`;
+            
+            // Use district-adjusted budget if available, otherwise use original
+            const budgetToUse = adjustedBudgetForSensitivity || currentCropBudget;
+            const summary = budgetToUse.summary;
+            const baseYieldKg = summary.gross_yield_kg_per_ha || 0;
+            const basePrice = summary.farm_gate_price || 0;
+            const baseCosts = summary.variable_costs_per_ha || 0;
+            const baseMargin = summary.gross_profit || 0;
+            const farmSize = parseFloat(document.getElementById('farmSize').value) || 1;
+            const packOut = summary.pack_out_percent || 1;
+            
+            // Calculate adjusted values
+            const adjustedYieldKg = baseYieldKg * (1 + yieldAdjust / 100);
+            const adjustedPrice = basePrice * (1 + priceAdjust / 100);
+            
+            // Calculate adjusted income: (yield in kg * pack out %) * price per kg
+            const adjustedNetYieldKg = adjustedYieldKg * packOut;
+            const adjustedIncome = adjustedNetYieldKg * adjustedPrice;
+            
+            // Adjusted margin = Income - Costs (costs don't change with yield/price)
+            const adjustedMargin = adjustedIncome - baseCosts;
+            const marginChange = adjustedMargin - baseMargin;
+            const marginChangePct = baseMargin ? ((marginChange / baseMargin) * 100) : 0;
+            
+            // Format currency
+            const formatCurrency = (num) => {
+                if (num >= 1000000) return `$${(num/1000000).toFixed(2)}M`;
+                if (num >= 1000) return `$${(num/1000).toFixed(2)}K`;
+                return `$${num.toFixed(2)}`;
+            };
+            
+            // Update display
+            document.getElementById('adjustedYield').textContent = `${(adjustedYieldKg/1000).toFixed(1)} t/ha`;
+            document.getElementById('adjustedPrice').textContent = formatCurrency(adjustedPrice) + '/kg';
+            document.getElementById('adjustedMargin').textContent = formatCurrency(adjustedMargin * farmSize);
+            
+            const changeColor = marginChange >= 0 ? 'var(--success)' : 'var(--error)';
+            const changeSymbol = marginChange >= 0 ? '↑' : '↓';
+            document.getElementById('marginChange').innerHTML = `<span style="color: ${changeColor};">${changeSymbol} ${formatCurrency(Math.abs(marginChange * farmSize))} (${marginChangePct.toFixed(1)}%)</span>`;
+        }
+        
+        window.onload = function() {
+            loadDistricts();
+            loadAllSuppliers();
+            loadBudgetData();
+            
+            // Initialize Voice Intelligence
+            if (typeof VoiceIntelligence !== 'undefined') {
+                VoiceIntelligence.init('sk_2d285c737f4b126d866eb64c7cbe788921afef2355d80829');
+                console.log('🎤 Voice Intelligence initialized');
+            }
+            
+            // Initialize Date/Time Intelligence
+            if (typeof DateTimeIntelligence !== 'undefined') {
+                DateTimeIntelligence.displayCurrentInfo('dateTimePanel');
+                console.log('📅 DateTime Intelligence initialized');
+            }
+        };
+        
+        // Voice function to speak budget results
+        function speakBudgetResults() {
+            if (typeof VoiceIntelligence === 'undefined' || !adjustedBudgetForSensitivity) {
+                alert('Voice system not ready or no budget calculated yet');
+                return;
+            }
+            
+            const cropName = document.getElementById('cropSelect').value;
+            VoiceIntelligence.speakBudget(
+                cropName,
+                selectedDistrict,
+                adjustedBudgetForSensitivity,
+                adjustedBudgetForSensitivity.adjustments
+            );
+        }
+    </script>
+    <script src="datetime_intelligence.js"></script>
+    <script src="voice_intelligence.js"></script>
+</body>
+</html>

@@ -1,0 +1,1131 @@
+{
+  "metadata": {
+    "country": "Zimbabwe",
+    "description": "Regional agricultural data for 10 provinces - crops (Maize, Wheat, Potatoes) and livestock (Cattle, Goats)",
+    "last_updated": "2024-11",
+    "data_sources": [
+      "Ministry of Agriculture Zimbabwe",
+      "AGRITEX Extension Services",
+      "Zimbabwe National Statistics Agency (ZIMSTAT)",
+      "Food and Agriculture Organization (FAO)",
+      "FEWS NET Zimbabwe"
+    ],
+    "currency": "USD",
+    "area_units": "hectares",
+    "yield_units": "tonnes/hectare",
+    "livestock_units": "head"
+  },
+  "provinces": [
+    {
+      "province_id": "01",
+      "name": "Harare Metropolitan",
+      "population": 2123132,
+      "area_km2": 960,
+      "dominant_natural_regions": ["II", "III"],
+      "rainfall_range_mm": [650, 1000],
+      "growing_season": "November - April",
+      "main_agricultural_activity": "Urban agriculture, intensive vegetable production",
+      
+      "crops": {
+        "maize": {
+          "area_planted_ha": 8500,
+          "production_tonnes": 18700,
+          "yield_avg_t_ha": 2.2,
+          "natural_regions": ["II", "III"],
+          "main_varieties": ["SC513", "SC627", "PAN413"],
+          "planting_window": "November - December",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 250 kg/ha",
+            "topdress": "Ammonium Nitrate 150 kg/ha at 4-6 weeks"
+          },
+          "input_cost_per_ha_usd": 420,
+          "market_price_per_tonne_usd": 320,
+          "gross_margin_per_ha_usd": 284,
+          "main_constraints": ["Urban encroachment", "Limited land", "High input costs"],
+          "suitable_districts": ["Harare Urban", "Epworth", "Chitungwiza"]
+        },
+        "wheat": {
+          "area_planted_ha": 450,
+          "production_tonnes": 1800,
+          "yield_avg_t_ha": 4.0,
+          "natural_regions": ["II"],
+          "main_varieties": ["Mwenje", "Pungwe", "SC Sable"],
+          "planting_window": "May - June (winter crop)",
+          "fertilizer_recommendation": {
+            "basal": "Compound L 300 kg/ha",
+            "topdress": "Urea 200 kg/ha at tillering"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 890,
+          "market_price_per_tonne_usd": 450,
+          "gross_margin_per_ha_usd": 910,
+          "main_constraints": ["Irrigation availability", "High setup costs"],
+          "suitable_districts": ["Goromonzi", "Seke"]
+        },
+        "potatoes": {
+          "area_planted_ha": 1200,
+          "production_tonnes": 24000,
+          "yield_avg_t_ha": 20.0,
+          "natural_regions": ["II"],
+          "main_varieties": ["BP1", "Montclare", "Amethyst"],
+          "planting_window": "March - April, August - September",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 600 kg/ha",
+            "topdress": "Potassium sulphate 150 kg/ha at tuber initiation"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 1450,
+          "market_price_per_tonne_usd": 550,
+          "gross_margin_per_ha_usd": 9550,
+          "main_constraints": ["Disease pressure", "Storage facilities"],
+          "suitable_districts": ["Goromonzi", "Seke", "Harare Rural"]
+        }
+      },
+      
+      "livestock": {
+        "cattle": {
+          "population": 12500,
+          "breeds": ["Mashona", "Tuli", "Brahman crosses", "Dairy (Holstein, Jersey)"],
+          "production_system": "Intensive dairy, semi-intensive beef",
+          "avg_herd_size": 15,
+          "milk_production_litres_per_cow_per_year": 3200,
+          "beef_price_per_kg_usd": 4.50,
+          "milk_price_per_litre_usd": 0.85,
+          "main_diseases": ["Tick-borne diseases", "Mastitis", "Foot and mouth disease"],
+          "veterinary_services": "Excellent (urban proximity)",
+          "feed_cost_per_animal_per_year_usd": 420,
+          "main_constraints": ["Limited grazing land", "High feed costs"],
+          "market_access": "Excellent"
+        },
+        "goats": {
+          "population": 18200,
+          "breeds": ["Mashona", "Boer crosses", "Matabele"],
+          "production_system": "Semi-intensive, urban farming",
+          "avg_herd_size": 8,
+          "meat_price_per_kg_usd": 5.20,
+          "main_diseases": ["Pneumonia", "Internal parasites", "Skin diseases"],
+          "veterinary_services": "Excellent",
+          "feed_cost_per_animal_per_year_usd": 85,
+          "kidding_rate_percent": 160,
+          "mortality_rate_percent": 12,
+          "main_constraints": ["Limited grazing", "Theft in urban areas"],
+          "market_access": "Excellent"
+        }
+      }
+    },
+    
+    {
+      "province_id": "02",
+      "name": "Bulawayo Metropolitan",
+      "population": 653337,
+      "area_km2": 479,
+      "dominant_natural_regions": ["IV", "V"],
+      "rainfall_range_mm": [450, 650],
+      "growing_season": "November - March",
+      "main_agricultural_activity": "Urban agriculture, drought-resistant crops, livestock",
+      
+      "crops": {
+        "maize": {
+          "area_planted_ha": 3200,
+          "production_tonnes": 4480,
+          "yield_avg_t_ha": 1.4,
+          "natural_regions": ["IV", "V"],
+          "main_varieties": ["ZM421", "ZM521", "SC403 (drought-tolerant)"],
+          "planting_window": "November - early December (with first rains)",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 150 kg/ha (reduced for low rainfall)",
+            "topdress": "Ammonium Nitrate 100 kg/ha (only if good rains)"
+          },
+          "input_cost_per_ha_usd": 285,
+          "market_price_per_tonne_usd": 340,
+          "gross_margin_per_ha_usd": 191,
+          "main_constraints": ["Low rainfall", "Drought risk", "Poor soils"],
+          "suitable_districts": ["Bulawayo Urban"]
+        },
+        "wheat": {
+          "area_planted_ha": 80,
+          "production_tonnes": 240,
+          "yield_avg_t_ha": 3.0,
+          "natural_regions": ["IV"],
+          "main_varieties": ["Mwenje", "SC Sable"],
+          "planting_window": "May - June (irrigation essential)",
+          "fertilizer_recommendation": {
+            "basal": "Compound L 250 kg/ha",
+            "topdress": "Urea 150 kg/ha"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 920,
+          "market_price_per_tonne_usd": 450,
+          "gross_margin_per_ha_usd": 430,
+          "main_constraints": ["Water scarcity", "Limited irrigation infrastructure"],
+          "suitable_districts": ["Peri-urban areas with irrigation"]
+        },
+        "potatoes": {
+          "area_planted_ha": 180,
+          "production_tonnes": 2700,
+          "yield_avg_t_ha": 15.0,
+          "natural_regions": ["IV"],
+          "main_varieties": ["BP1", "Montclare"],
+          "planting_window": "August - September (winter crop with irrigation)",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 500 kg/ha",
+            "topdress": "Potassium sulphate 100 kg/ha"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 1380,
+          "market_price_per_tonne_usd": 580,
+          "gross_margin_per_ha_usd": 7320,
+          "main_constraints": ["Water availability", "High temperatures"],
+          "suitable_districts": ["Bulawayo peri-urban"]
+        }
+      },
+      
+      "livestock": {
+        "cattle": {
+          "population": 8500,
+          "breeds": ["Tuli", "Brahman", "Mashona"],
+          "production_system": "Semi-intensive, communal",
+          "avg_herd_size": 12,
+          "milk_production_litres_per_cow_per_year": 800,
+          "beef_price_per_kg_usd": 4.20,
+          "milk_price_per_litre_usd": 0.90,
+          "main_diseases": ["Tick-borne diseases", "Drought stress"],
+          "veterinary_services": "Good",
+          "feed_cost_per_animal_per_year_usd": 320,
+          "main_constraints": ["Water scarcity", "Poor grazing", "Drought"],
+          "market_access": "Excellent"
+        },
+        "goats": {
+          "population": 28500,
+          "breeds": ["Matabele", "Mashona", "Boer crosses"],
+          "production_system": "Extensive, communal",
+          "avg_herd_size": 15,
+          "meat_price_per_kg_usd": 5.00,
+          "main_diseases": ["Internal parasites", "Pneumonia", "Drought stress"],
+          "veterinary_services": "Good",
+          "feed_cost_per_animal_per_year_usd": 65,
+          "kidding_rate_percent": 145,
+          "mortality_rate_percent": 15,
+          "main_constraints": ["Drought", "Water scarcity", "Overgrazing"],
+          "market_access": "Excellent"
+        }
+      }
+    },
+    
+    {
+      "province_id": "03",
+      "name": "Manicaland",
+      "population": 2037762,
+      "area_km2": 36459,
+      "dominant_natural_regions": ["I", "II", "III"],
+      "rainfall_range_mm": [700, 1500],
+      "growing_season": "November - May (extended in Region I)",
+      "main_agricultural_activity": "Tea, coffee, forestry, maize, horticulture",
+      
+      "crops": {
+        "maize": {
+          "area_planted_ha": 185000,
+          "production_tonnes": 462500,
+          "yield_avg_t_ha": 2.5,
+          "natural_regions": ["I", "II", "III"],
+          "main_varieties": ["SC513", "SC627", "PAN413", "Hybrid 614"],
+          "planting_window": "November - December",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 300 kg/ha (Region I-II), 250 kg/ha (Region III)",
+            "topdress": "Ammonium Nitrate 200 kg/ha at 4-6 weeks"
+          },
+          "input_cost_per_ha_usd": 485,
+          "market_price_per_tonne_usd": 310,
+          "gross_margin_per_ha_usd": 290,
+          "main_constraints": ["Fall armyworm", "Stalk borers", "Transport costs"],
+          "suitable_districts": ["Mutare", "Chimanimani", "Chipinge", "Makoni", "Nyanga", "Mutasa"]
+        },
+        "wheat": {
+          "area_planted_ha": 1200,
+          "production_tonnes": 5400,
+          "yield_avg_t_ha": 4.5,
+          "natural_regions": ["I", "II"],
+          "main_varieties": ["Mwenje", "Pungwe", "SC Sable"],
+          "planting_window": "May - June",
+          "fertilizer_recommendation": {
+            "basal": "Compound L 350 kg/ha",
+            "topdress": "Urea 250 kg/ha at tillering"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 945,
+          "market_price_per_tonne_usd": 440,
+          "gross_margin_per_ha_usd": 1035,
+          "main_constraints": ["Irrigation infrastructure", "Rust diseases"],
+          "suitable_districts": ["Mutare", "Nyanga"]
+        },
+        "potatoes": {
+          "area_planted_ha": 3800,
+          "production_tonnes": 91200,
+          "yield_avg_t_ha": 24.0,
+          "natural_regions": ["I", "II"],
+          "main_varieties": ["BP1", "Amethyst", "Diamant", "Mondial"],
+          "planting_window": "March - April, August - September",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 700 kg/ha",
+            "topdress": "Potassium sulphate 200 kg/ha + foliar feeds"
+          },
+          "irrigation_required": false,
+          "input_cost_per_ha_usd": 1520,
+          "market_price_per_tonne_usd": 520,
+          "gross_margin_per_ha_usd": 10948,
+          "main_constraints": ["Blight diseases", "Bacterial wilt", "Storage"],
+          "suitable_districts": ["Nyanga", "Mutasa", "Chimanimani"]
+        }
+      },
+      
+      "livestock": {
+        "cattle": {
+          "population": 285000,
+          "breeds": ["Mashona", "Tuli", "Brahman", "Dairy breeds (Nyanga)"],
+          "production_system": "Mixed (communal and commercial)",
+          "avg_herd_size": 18,
+          "milk_production_litres_per_cow_per_year": 2400,
+          "beef_price_per_kg_usd": 4.30,
+          "milk_price_per_litre_usd": 0.80,
+          "main_diseases": ["Tick-borne diseases", "Foot and mouth", "Trypanosomiasis"],
+          "veterinary_services": "Good to moderate",
+          "feed_cost_per_animal_per_year_usd": 280,
+          "main_constraints": ["Tsetse fly (lowveld)", "Tick-borne diseases"],
+          "market_access": "Good (Mutare, Beira corridor)"
+        },
+        "goats": {
+          "population": 320000,
+          "breeds": ["Mashona", "Matabele", "Boer crosses"],
+          "production_system": "Extensive communal",
+          "avg_herd_size": 12,
+          "meat_price_per_kg_usd": 4.80,
+          "main_diseases": ["Internal parasites", "Pneumonia", "PPR"],
+          "veterinary_services": "Moderate",
+          "feed_cost_per_animal_per_year_usd": 75,
+          "kidding_rate_percent": 155,
+          "mortality_rate_percent": 14,
+          "main_constraints": ["Predators", "Disease control", "Marketing"],
+          "market_access": "Good"
+        }
+      }
+    },
+    
+    {
+      "province_id": "04",
+      "name": "Mashonaland Central",
+      "population": 1152520,
+      "area_km2": 28347,
+      "dominant_natural_regions": ["II", "III"],
+      "rainfall_range_mm": [700, 1000],
+      "growing_season": "November - April",
+      "main_agricultural_activity": "Tobacco, maize, horticulture, cattle ranching",
+      
+      "crops": {
+        "maize": {
+          "area_planted_ha": 165000,
+          "production_tonnes": 396000,
+          "yield_avg_t_ha": 2.4,
+          "natural_regions": ["II", "III"],
+          "main_varieties": ["SC513", "SC627", "PAN53", "PAN413"],
+          "planting_window": "November - early December",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 300 kg/ha (Region II), 250 kg/ha (Region III)",
+            "topdress": "Ammonium Nitrate 200 kg/ha at 4-6 weeks"
+          },
+          "input_cost_per_ha_usd": 470,
+          "market_price_per_tonne_usd": 315,
+          "gross_margin_per_ha_usd": 286,
+          "main_constraints": ["Fall armyworm", "Mid-season dry spells"],
+          "suitable_districts": ["Bindura", "Mount Darwin", "Guruve", "Muzarabani", "Rushinga", "Shamva", "Mbire"]
+        },
+        "wheat": {
+          "area_planted_ha": 890,
+          "production_tonnes": 3738,
+          "yield_avg_t_ha": 4.2,
+          "natural_regions": ["II"],
+          "main_varieties": ["Mwenje", "Pungwe", "SC Sable"],
+          "planting_window": "May - June",
+          "fertilizer_recommendation": {
+            "basal": "Compound L 320 kg/ha",
+            "topdress": "Urea 220 kg/ha at tillering"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 925,
+          "market_price_per_tonne_usd": 445,
+          "gross_margin_per_ha_usd": 944,
+          "main_constraints": ["Irrigation infrastructure", "Power outages"],
+          "suitable_districts": ["Bindura", "Shamva"]
+        },
+        "potatoes": {
+          "area_planted_ha": 650,
+          "production_tonnes": 13650,
+          "yield_avg_t_ha": 21.0,
+          "natural_regions": ["II"],
+          "main_varieties": ["BP1", "Montclare", "Amethyst"],
+          "planting_window": "March - April, August - September",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 650 kg/ha",
+            "topdress": "Potassium sulphate 180 kg/ha"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 1480,
+          "market_price_per_tonne_usd": 540,
+          "gross_margin_per_ha_usd": 9860,
+          "main_constraints": ["Disease pressure", "Market access"],
+          "suitable_districts": ["Bindura", "Shamva", "Mazowe"]
+        }
+      },
+      
+      "livestock": {
+        "cattle": {
+          "population": 195000,
+          "breeds": ["Mashona", "Tuli", "Brahman", "Beef crosses"],
+          "production_system": "Mixed (commercial and communal)",
+          "avg_herd_size": 22,
+          "milk_production_litres_per_cow_per_year": 1200,
+          "beef_price_per_kg_usd": 4.25,
+          "milk_price_per_litre_usd": 0.75,
+          "main_diseases": ["Tick-borne diseases", "Anthrax", "Foot and mouth"],
+          "veterinary_services": "Good",
+          "feed_cost_per_animal_per_year_usd": 295,
+          "main_constraints": ["Cattle rustling", "Tick resistance"],
+          "market_access": "Good (Harare proximity)"
+        },
+        "goats": {
+          "population": 180000,
+          "breeds": ["Mashona", "Boer crosses"],
+          "production_system": "Mixed (commercial and communal)",
+          "avg_herd_size": 14,
+          "meat_price_per_kg_usd": 4.90,
+          "main_diseases": ["Internal parasites", "Pneumonia", "PPR"],
+          "veterinary_services": "Good",
+          "feed_cost_per_animal_per_year_usd": 78,
+          "kidding_rate_percent": 158,
+          "mortality_rate_percent": 13,
+          "main_constraints": ["Marketing", "Disease control"],
+          "market_access": "Excellent (Harare proximity)"
+        }
+      }
+    },
+    
+    {
+      "province_id": "05",
+      "name": "Mashonaland East",
+      "population": 1344955,
+      "area_km2": 32230,
+      "dominant_natural_regions": ["II", "III"],
+      "rainfall_range_mm": [650, 1000],
+      "growing_season": "November - April",
+      "main_agricultural_activity": "Tobacco, maize, horticulture, intensive livestock",
+      
+      "crops": {
+        "maize": {
+          "area_planted_ha": 195000,
+          "production_tonnes": 487500,
+          "yield_avg_t_ha": 2.5,
+          "natural_regions": ["II", "III"],
+          "main_varieties": ["SC513", "SC627", "PAN413", "PAN53"],
+          "planting_window": "November - December",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 300 kg/ha (Region II), 250 kg/ha (Region III)",
+            "topdress": "Ammonium Nitrate 200 kg/ha at 5-6 weeks"
+          },
+          "input_cost_per_ha_usd": 475,
+          "market_price_per_tonne_usd": 312,
+          "gross_margin_per_ha_usd": 305,
+          "main_constraints": ["Fall armyworm", "Stalk borers", "Mid-season droughts"],
+          "suitable_districts": ["Goromonzi", "Marondera", "Mudzi", "Mutoko", "Seke", "UMP", "Wedza", "Chikomba"]
+        },
+        "wheat": {
+          "area_planted_ha": 2100,
+          "production_tonnes": 9450,
+          "yield_avg_t_ha": 4.5,
+          "natural_regions": ["II"],
+          "main_varieties": ["Mwenje", "Pungwe", "SC Sable"],
+          "planting_window": "May - June",
+          "fertilizer_recommendation": {
+            "basal": "Compound L 330 kg/ha",
+            "topdress": "Urea 230 kg/ha at tillering"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 930,
+          "market_price_per_tonne_usd": 442,
+          "gross_margin_per_ha_usd": 1249,
+          "main_constraints": ["Irrigation costs", "Rust diseases"],
+          "suitable_districts": ["Goromonzi", "Marondera", "Wedza"]
+        },
+        "potatoes": {
+          "area_planted_ha": 1800,
+          "production_tonnes": 39600,
+          "yield_avg_t_ha": 22.0,
+          "natural_regions": ["II"],
+          "main_varieties": ["BP1", "Montclare", "Amethyst", "Mondial"],
+          "planting_window": "March - April, August - September",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 680 kg/ha",
+            "topdress": "Potassium sulphate 190 kg/ha"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 1495,
+          "market_price_per_tonne_usd": 535,
+          "gross_margin_per_ha_usd": 10175,
+          "main_constraints": ["Blight", "Market competition"],
+          "suitable_districts": ["Goromonzi", "Marondera", "Wedza"]
+        }
+      },
+      
+      "livestock": {
+        "cattle": {
+          "population": 242000,
+          "breeds": ["Mashona", "Tuli", "Brahman", "Dairy (Holstein, Jersey)"],
+          "production_system": "Mixed (intensive dairy and commercial beef)",
+          "avg_herd_size": 25,
+          "milk_production_litres_per_cow_per_year": 3500,
+          "beef_price_per_kg_usd": 4.40,
+          "milk_price_per_litre_usd": 0.82,
+          "main_diseases": ["Tick-borne diseases", "Mastitis", "Anthrax"],
+          "veterinary_services": "Excellent",
+          "feed_cost_per_animal_per_year_usd": 385,
+          "main_constraints": ["High feed costs", "Tick resistance"],
+          "market_access": "Excellent (Harare proximity)"
+        },
+        "goats": {
+          "population": 215000,
+          "breeds": ["Mashona", "Boer", "Boer crosses"],
+          "production_system": "Mixed (commercial and smallholder)",
+          "avg_herd_size": 16,
+          "meat_price_per_kg_usd": 5.10,
+          "main_diseases": ["Internal parasites", "Pneumonia", "PPR"],
+          "veterinary_services": "Excellent",
+          "feed_cost_per_animal_per_year_usd": 82,
+          "kidding_rate_percent": 165,
+          "mortality_rate_percent": 11,
+          "main_constraints": ["Disease management", "Marketing"],
+          "market_access": "Excellent"
+        }
+      }
+    },
+    
+    {
+      "province_id": "06",
+      "name": "Mashonaland West",
+      "population": 1501656,
+      "area_km2": 57441,
+      "dominant_natural_regions": ["II", "III", "IV"],
+      "rainfall_range_mm": [450, 900],
+      "growing_season": "November - April",
+      "main_agricultural_activity": "Tobacco, maize, cotton, horticulture, cattle",
+      
+      "crops": {
+        "maize": {
+          "area_planted_ha": 220000,
+          "production_tonnes": 506000,
+          "yield_avg_t_ha": 2.3,
+          "natural_regions": ["II", "III", "IV"],
+          "main_varieties": ["SC513", "SC627", "PAN413", "ZM421 (drought-tolerant)"],
+          "planting_window": "November - early December",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 280 kg/ha (Region II-III), 200 kg/ha (Region IV)",
+            "topdress": "Ammonium Nitrate 180 kg/ha (Region II-III), 120 kg/ha (Region IV)"
+          },
+          "input_cost_per_ha_usd": 445,
+          "market_price_per_tonne_usd": 318,
+          "gross_margin_per_ha_usd": 286,
+          "main_constraints": ["Variable rainfall", "Fall armyworm", "Mid-season droughts"],
+          "suitable_districts": ["Chegutu", "Hurungwe", "Kadoma", "Kariba", "Makonde", "Zvimba"]
+        },
+        "wheat": {
+          "area_planted_ha": 3200,
+          "production_tonnes": 14080,
+          "yield_avg_t_ha": 4.4,
+          "natural_regions": ["II", "III"],
+          "main_varieties": ["Mwenje", "Pungwe", "SC Sable"],
+          "planting_window": "May - June",
+          "fertilizer_recommendation": {
+            "basal": "Compound L 340 kg/ha",
+            "topdress": "Urea 240 kg/ha at tillering"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 940,
+          "market_price_per_tonne_usd": 438,
+          "gross_margin_per_ha_usd": 1192,
+          "main_constraints": ["Power for irrigation", "Water availability"],
+          "suitable_districts": ["Kadoma", "Chegutu", "Makonde"]
+        },
+        "potatoes": {
+          "area_planted_ha": 980,
+          "production_tonnes": 20580,
+          "yield_avg_t_ha": 21.0,
+          "natural_regions": ["II"],
+          "main_varieties": ["BP1", "Montclare", "Amethyst"],
+          "planting_window": "March - April, August - September",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 660 kg/ha",
+            "topdress": "Potassium sulphate 185 kg/ha"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 1490,
+          "market_price_per_tonne_usd": 545,
+          "gross_margin_per_ha_usd": 9956,
+          "main_constraints": ["Irrigation reliability", "Disease"],
+          "suitable_districts": ["Makonde", "Chegutu", "Zvimba"]
+        }
+      },
+      
+      "livestock": {
+        "cattle": {
+          "population": 328000,
+          "breeds": ["Mashona", "Tuli", "Brahman", "Beef crosses"],
+          "production_system": "Mixed (large-scale commercial and communal)",
+          "avg_herd_size": 28,
+          "milk_production_litres_per_cow_per_year": 1400,
+          "beef_price_per_kg_usd": 4.20,
+          "milk_price_per_litre_usd": 0.73,
+          "main_diseases": ["Tick-borne diseases", "Anthrax", "Foot and mouth"],
+          "veterinary_services": "Good to moderate",
+          "feed_cost_per_animal_per_year_usd": 275,
+          "main_constraints": ["Cattle rustling", "Drought in Region IV"],
+          "market_access": "Good"
+        },
+        "goats": {
+          "population": 265000,
+          "breeds": ["Mashona", "Matabele", "Boer crosses"],
+          "production_system": "Mixed (commercial and communal)",
+          "avg_herd_size": 15,
+          "meat_price_per_kg_usd": 4.85,
+          "main_diseases": ["Internal parasites", "Pneumonia", "PPR"],
+          "veterinary_services": "Good to moderate",
+          "feed_cost_per_animal_per_year_usd": 72,
+          "kidding_rate_percent": 152,
+          "mortality_rate_percent": 14,
+          "main_constraints": ["Disease control", "Marketing in remote areas"],
+          "market_access": "Good"
+        }
+      }
+    },
+    
+    {
+      "province_id": "07",
+      "name": "Matabeleland North",
+      "population": 827645,
+      "area_km2": 75025,
+      "dominant_natural_regions": ["IV", "V"],
+      "rainfall_range_mm": [350, 650],
+      "growing_season": "November - March (short)",
+      "main_agricultural_activity": "Livestock (cattle, goats), drought-resistant crops",
+      
+      "crops": {
+        "maize": {
+          "area_planted_ha": 78000,
+          "production_tonnes": 93600,
+          "yield_avg_t_ha": 1.2,
+          "natural_regions": ["IV", "V"],
+          "main_varieties": ["ZM421", "ZM521", "SC403 (drought-tolerant)", "OPVs"],
+          "planting_window": "First rains (November - December)",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 150 kg/ha (Region IV), 100 kg/ha (Region V)",
+            "topdress": "Ammonium Nitrate 80 kg/ha (only if adequate rains)"
+          },
+          "input_cost_per_ha_usd": 265,
+          "market_price_per_tonne_usd": 345,
+          "gross_margin_per_ha_usd": 149,
+          "main_constraints": ["Low erratic rainfall", "Drought", "Poor soils", "Wildlife damage"],
+          "suitable_districts": ["Binga", "Bubi", "Hwange", "Lupane", "Nkayi", "Tsholotsho", "Umguza"]
+        },
+        "wheat": {
+          "area_planted_ha": 120,
+          "production_tonnes": 336,
+          "yield_avg_t_ha": 2.8,
+          "natural_regions": ["IV"],
+          "main_varieties": ["Mwenje", "drought-tolerant varieties"],
+          "planting_window": "May - June (irrigation essential)",
+          "fertilizer_recommendation": {
+            "basal": "Compound L 220 kg/ha",
+            "topdress": "Urea 140 kg/ha"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 950,
+          "market_price_per_tonne_usd": 455,
+          "gross_margin_per_ha_usd": 324,
+          "main_constraints": ["Water scarcity", "Limited irrigation"],
+          "suitable_districts": ["Limited - mostly trial plots"]
+        },
+        "potatoes": {
+          "area_planted_ha": 45,
+          "production_tonnes": 630,
+          "yield_avg_t_ha": 14.0,
+          "natural_regions": ["IV"],
+          "main_varieties": ["BP1", "drought-tolerant varieties"],
+          "planting_window": "August - September (winter irrigation)",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 480 kg/ha",
+            "topdress": "Potassium sulphate 120 kg/ha"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 1420,
+          "market_price_per_tonne_usd": 600,
+          "gross_margin_per_ha_usd": 6980,
+          "main_constraints": ["Water availability", "High temperatures", "Limited market"],
+          "suitable_districts": ["Very limited - peri-urban only"]
+        }
+      },
+      
+      "livestock": {
+        "cattle": {
+          "population": 385000,
+          "breeds": ["Tuli", "Brahman", "Mashona", "Indigenous"],
+          "production_system": "Extensive communal and commercial ranching",
+          "avg_herd_size": 32,
+          "milk_production_litres_per_cow_per_year": 600,
+          "beef_price_per_kg_usd": 4.10,
+          "milk_price_per_litre_usd": 0.95,
+          "main_diseases": ["Tick-borne diseases", "Anthrax", "Drought stress", "Trypanosomiasis"],
+          "veterinary_services": "Moderate to poor",
+          "feed_cost_per_animal_per_year_usd": 185,
+          "main_constraints": ["Water scarcity", "Poor grazing", "Cattle rustling", "Tsetse fly"],
+          "market_access": "Moderate"
+        },
+        "goats": {
+          "population": 520000,
+          "breeds": ["Matabele", "Mashona", "Indigenous"],
+          "production_system": "Extensive communal",
+          "avg_herd_size": 25,
+          "meat_price_per_kg_usd": 4.70,
+          "main_diseases": ["Internal parasites", "Drought stress", "PPR"],
+          "veterinary_services": "Poor to moderate",
+          "feed_cost_per_animal_per_year_usd": 58,
+          "kidding_rate_percent": 140,
+          "mortality_rate_percent": 18,
+          "main_constraints": ["Water scarcity", "Drought", "Predators", "Disease"],
+          "market_access": "Moderate"
+        }
+      }
+    },
+    
+    {
+      "province_id": "08",
+      "name": "Matabeleland South",
+      "population": 683893,
+      "area_km2": 54172,
+      "dominant_natural_regions": ["IV", "V"],
+      "rainfall_range_mm": [300, 600],
+      "growing_season": "November - February (very short)",
+      "main_agricultural_activity": "Livestock (cattle, goats), drought-resistant crops, wildlife",
+      
+      "crops": {
+        "maize": {
+          "area_planted_ha": 52000,
+          "production_tonnes": 57200,
+          "yield_avg_t_ha": 1.1,
+          "natural_regions": ["IV", "V"],
+          "main_varieties": ["ZM421", "ZM521", "SC403", "OPVs (open-pollinated)"],
+          "planting_window": "Immediate first rains (November - early December)",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 120 kg/ha (Region IV), 80 kg/ha (Region V)",
+            "topdress": "Ammonium Nitrate 60 kg/ha (only if good rains)"
+          },
+          "input_cost_per_ha_usd": 245,
+          "market_price_per_tonne_usd": 350,
+          "gross_margin_per_ha_usd": 140,
+          "main_constraints": ["Very low rainfall", "Severe drought risk", "Poor sandy soils"],
+          "suitable_districts": ["Beitbridge", "Bulilima", "Gwanda", "Insiza", "Matobo", "Mangwe", "Umzingwane"]
+        },
+        "wheat": {
+          "area_planted_ha": 35,
+          "production_tonnes": 88,
+          "yield_avg_t_ha": 2.5,
+          "natural_regions": ["IV"],
+          "main_varieties": ["Mwenje (with irrigation)"],
+          "planting_window": "May - June (full irrigation required)",
+          "fertilizer_recommendation": {
+            "basal": "Compound L 200 kg/ha",
+            "topdress": "Urea 120 kg/ha"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 970,
+          "market_price_per_tonne_usd": 460,
+          "gross_margin_per_ha_usd": 180,
+          "main_constraints": ["Severe water scarcity", "Almost no irrigation infrastructure"],
+          "suitable_districts": ["Not commercially viable"]
+        },
+        "potatoes": {
+          "area_planted_ha": 15,
+          "production_tonnes": 195,
+          "yield_avg_t_ha": 13.0,
+          "natural_regions": ["IV"],
+          "main_varieties": ["BP1"],
+          "planting_window": "August - September (winter with irrigation)",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 450 kg/ha",
+            "topdress": "Potassium sulphate 100 kg/ha"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 1450,
+          "market_price_per_tonne_usd": 620,
+          "gross_margin_per_ha_usd": 6610,
+          "main_constraints": ["Extreme water scarcity", "High temperatures", "No market"],
+          "suitable_districts": ["Not commercially viable"]
+        }
+      },
+      
+      "livestock": {
+        "cattle": {
+          "population": 425000,
+          "breeds": ["Tuli", "Brahman", "Indigenous adapted breeds"],
+          "production_system": "Extensive communal and commercial ranching",
+          "avg_herd_size": 35,
+          "milk_production_litres_per_cow_per_year": 450,
+          "beef_price_per_kg_usd": 4.05,
+          "milk_price_per_litre_usd": 1.00,
+          "main_diseases": ["Tick-borne diseases", "Anthrax", "Severe drought stress"],
+          "veterinary_services": "Poor",
+          "feed_cost_per_animal_per_year_usd": 165,
+          "main_constraints": ["Severe water scarcity", "Overgrazing", "Recurrent droughts"],
+          "market_access": "Poor to moderate"
+        },
+        "goats": {
+          "population": 680000,
+          "breeds": ["Matabele", "Indigenous adapted breeds"],
+          "production_system": "Extensive communal (primary livelihood)",
+          "avg_herd_size": 30,
+          "meat_price_per_kg_usd": 4.60,
+          "main_diseases": ["Internal parasites", "Severe drought stress", "PPR"],
+          "veterinary_services": "Poor",
+          "feed_cost_per_animal_per_year_usd": 52,
+          "kidding_rate_percent": 135,
+          "mortality_rate_percent": 22,
+          "main_constraints": ["Water scarcity", "Recurrent droughts", "Overgrazing"],
+          "market_access": "Poor to moderate"
+        }
+      }
+    },
+    
+    {
+      "province_id": "09",
+      "name": "Midlands",
+      "population": 1614941,
+      "area_km2": 49166,
+      "dominant_natural_regions": ["III", "IV", "V"],
+      "rainfall_range_mm": [400, 800],
+      "growing_season": "November - March",
+      "main_agricultural_activity": "Maize, cotton, livestock, mining",
+      
+      "crops": {
+        "maize": {
+          "area_planted_ha": 185000,
+          "production_tonnes": 314500,
+          "yield_avg_t_ha": 1.7,
+          "natural_regions": ["III", "IV", "V"],
+          "main_varieties": ["SC513", "ZM421", "ZM521", "SC403"],
+          "planting_window": "November - early December",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 220 kg/ha (Region III), 170 kg/ha (Region IV), 120 kg/ha (Region V)",
+            "topdress": "Ammonium Nitrate 150 kg/ha (Region III), 100 kg/ha (Region IV), 70 kg/ha (Region V)"
+          },
+          "input_cost_per_ha_usd": 385,
+          "market_price_per_tonne_usd": 325,
+          "gross_margin_per_ha_usd": 167,
+          "main_constraints": ["Variable rainfall", "Drought risk", "Fall armyworm"],
+          "suitable_districts": ["Chirumhanzu", "Gokwe North", "Gokwe South", "Gweru", "Kwekwe", "Mberengwa", "Shurugwi", "Zvishavane"]
+        },
+        "wheat": {
+          "area_planted_ha": 420,
+          "production_tonnes": 1512,
+          "yield_avg_t_ha": 3.6,
+          "natural_regions": ["III"],
+          "main_varieties": ["Mwenje", "Pungwe"],
+          "planting_window": "May - June",
+          "fertilizer_recommendation": {
+            "basal": "Compound L 280 kg/ha",
+            "topdress": "Urea 180 kg/ha"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 935,
+          "market_price_per_tonne_usd": 442,
+          "gross_margin_per_ha_usd": 656,
+          "main_constraints": ["Irrigation infrastructure", "Water availability"],
+          "suitable_districts": ["Gweru", "Kwekwe"]
+        },
+        "potatoes": {
+          "area_planted_ha": 280,
+          "production_tonnes": 5040,
+          "yield_avg_t_ha": 18.0,
+          "natural_regions": ["III"],
+          "main_varieties": ["BP1", "Montclare"],
+          "planting_window": "March - April, August - September",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 580 kg/ha",
+            "topdress": "Potassium sulphate 160 kg/ha"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 1465,
+          "market_price_per_tonne_usd": 555,
+          "gross_margin_per_ha_usd": 8525,
+          "main_constraints": ["Irrigation", "Disease"],
+          "suitable_districts": ["Gweru", "Kwekwe"]
+        }
+      },
+      
+      "livestock": {
+        "cattle": {
+          "population": 358000,
+          "breeds": ["Mashona", "Tuli", "Brahman", "Indigenous"],
+          "production_system": "Mixed (commercial and communal)",
+          "avg_herd_size": 24,
+          "milk_production_litres_per_cow_per_year": 950,
+          "beef_price_per_kg_usd": 4.15,
+          "milk_price_per_litre_usd": 0.78,
+          "main_diseases": ["Tick-borne diseases", "Anthrax", "Drought stress"],
+          "veterinary_services": "Good to moderate",
+          "feed_cost_per_animal_per_year_usd": 245,
+          "main_constraints": ["Variable rainfall", "Tick resistance", "Cattle theft"],
+          "market_access": "Good"
+        },
+        "goats": {
+          "population": 485000,
+          "breeds": ["Mashona", "Matabele", "Indigenous"],
+          "production_system": "Mixed (communal dominant)",
+          "avg_herd_size": 18,
+          "meat_price_per_kg_usd": 4.75,
+          "main_diseases": ["Internal parasites", "Pneumonia", "PPR", "Drought stress"],
+          "veterinary_services": "Moderate",
+          "feed_cost_per_animal_per_year_usd": 68,
+          "kidding_rate_percent": 148,
+          "mortality_rate_percent": 16,
+          "main_constraints": ["Drought", "Disease control", "Marketing"],
+          "market_access": "Good to moderate"
+        }
+      }
+    },
+    
+    {
+      "province_id": "10",
+      "name": "Masvingo",
+      "population": 1485090,
+      "area_km2": 56566,
+      "dominant_natural_regions": ["IV", "V"],
+      "rainfall_range_mm": [350, 650],
+      "growing_season": "November - March",
+      "main_agricultural_activity": "Livestock (cattle, goats), drought-resistant crops, wildlife",
+      
+      "crops": {
+        "maize": {
+          "area_planted_ha": 142000,
+          "production_tonnes": 184600,
+          "yield_avg_t_ha": 1.3,
+          "natural_regions": ["IV", "V"],
+          "main_varieties": ["ZM421", "ZM521", "SC403", "OPVs"],
+          "planting_window": "First effective rains (November - early December)",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 150 kg/ha (Region IV), 100 kg/ha (Region V)",
+            "topdress": "Ammonium Nitrate 90 kg/ha (only if adequate rains)"
+          },
+          "input_cost_per_ha_usd": 275,
+          "market_price_per_tonne_usd": 335,
+          "gross_margin_per_ha_usd": 160,
+          "main_constraints": ["Low erratic rainfall", "Drought", "Poor sandy soils", "Wildlife"],
+          "suitable_districts": ["Bikita", "Chiredzi", "Chivi", "Gutu", "Masvingo", "Mwenezi", "Zaka"]
+        },
+        "wheat": {
+          "area_planted_ha": 180,
+          "production_tonnes": 558,
+          "yield_avg_t_ha": 3.1,
+          "natural_regions": ["IV"],
+          "main_varieties": ["Mwenje", "SC Sable"],
+          "planting_window": "May - June (irrigation essential)",
+          "fertilizer_recommendation": {
+            "basal": "Compound L 240 kg/ha",
+            "topdress": "Urea 150 kg/ha"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 945,
+          "market_price_per_tonne_usd": 448,
+          "gross_margin_per_ha_usd": 443,
+          "main_constraints": ["Water scarcity", "Limited irrigation (mainly Triangle/Hippo Valley estates)"],
+          "suitable_districts": ["Chiredzi (irrigation estates)"]
+        },
+        "potatoes": {
+          "area_planted_ha": 95,
+          "production_tonnes": 1425,
+          "yield_avg_t_ha": 15.0,
+          "natural_regions": ["IV"],
+          "main_varieties": ["BP1", "Montclare"],
+          "planting_window": "August - September (winter with irrigation)",
+          "fertilizer_recommendation": {
+            "basal": "Compound D 520 kg/ha",
+            "topdress": "Potassium sulphate 140 kg/ha"
+          },
+          "irrigation_required": true,
+          "input_cost_per_ha_usd": 1440,
+          "market_price_per_tonne_usd": 590,
+          "gross_margin_per_ha_usd": 7410,
+          "main_constraints": ["Water availability", "High temperatures", "Limited market"],
+          "suitable_districts": ["Chiredzi (irrigation estates)", "Masvingo peri-urban"]
+        }
+      },
+      
+      "livestock": {
+        "cattle": {
+          "population": 456000,
+          "breeds": ["Tuli", "Brahman", "Mashona", "Beef crosses"],
+          "production_system": "Extensive communal and commercial ranching",
+          "avg_herd_size": 30,
+          "milk_production_litres_per_cow_per_year": 720,
+          "beef_price_per_kg_usd": 4.08,
+          "milk_price_per_litre_usd": 0.88,
+          "main_diseases": ["Tick-borne diseases", "Anthrax", "Drought stress", "January disease"],
+          "veterinary_services": "Moderate",
+          "feed_cost_per_animal_per_year_usd": 195,
+          "main_constraints": ["Water scarcity", "Poor grazing", "Recurrent droughts"],
+          "market_access": "Moderate"
+        },
+        "goats": {
+          "population": 625000,
+          "breeds": ["Matabele", "Mashona", "Indigenous"],
+          "production_system": "Extensive communal (primary livelihood asset)",
+          "avg_herd_size": 22,
+          "meat_price_per_kg_usd": 4.65,
+          "main_diseases": ["Internal parasites", "Drought stress", "PPR", "Pneumonia"],
+          "veterinary_services": "Moderate to poor",
+          "feed_cost_per_animal_per_year_usd": 60,
+          "kidding_rate_percent": 142,
+          "mortality_rate_percent": 17,
+          "main_constraints": ["Water scarcity", "Recurrent droughts", "Predators"],
+          "market_access": "Moderate"
+        }
+      }
+    }
+  ],
+  
+  "natural_region_profiles": {
+    "region_I": {
+      "name": "Region I - Specialized and Diversified Farming",
+      "rainfall_mm": "1000+",
+      "description": "High rainfall, suitable for intensive farming",
+      "suitable_crops": ["Coffee", "Tea", "Fruit", "Timber", "Maize", "Potatoes", "Horticulture"],
+      "livestock_suitability": "Dairy cattle, intensive production",
+      "risk_level": "Low",
+      "provinces": ["Manicaland (Nyanga, Chimanimani)"]
+    },
+    "region_II": {
+      "name": "Region II - Intensive Farming",
+      "rainfall_mm": "700-1000",
+      "description": "Reliable rainfall, intensive crop and livestock production",
+      "suitable_crops": ["Maize", "Tobacco", "Cotton", "Wheat", "Soybeans", "Groundnuts", "Potatoes"],
+      "livestock_suitability": "High - dairy and beef cattle",
+      "risk_level": "Low",
+      "provinces": ["Mashonaland Central", "Mashonaland East", "Mashonaland West", "Manicaland", "Harare"]
+    },
+    "region_III": {
+      "name": "Region III - Semi-intensive Farming",
+      "rainfall_mm": "650-800",
+      "description": "Moderate rainfall, suitable for drought-resistant varieties",
+      "suitable_crops": ["Maize", "Tobacco", "Cotton", "Sorghum", "Sunflower"],
+      "livestock_suitability": "Beef cattle, moderate production",
+      "risk_level": "Medium",
+      "provinces": ["Parts of Mashonaland West", "Midlands", "Manicaland"]
+    },
+    "region_IV": {
+      "name": "Region IV - Semi-extensive Farming",
+      "rainfall_mm": "450-650",
+      "description": "Low and erratic rainfall, drought-resistant crops and livestock",
+      "suitable_crops": ["Drought-resistant maize", "Sorghum", "Millet", "Groundnuts", "Cotton"],
+      "livestock_suitability": "Beef cattle (hardy breeds), goats",
+      "risk_level": "Medium-High",
+      "provinces": ["Masvingo", "Southern Midlands", "Matabeleland North", "Matabeleland South"]
+    },
+    "region_V": {
+      "name": "Region V - Extensive Farming",
+      "rainfall_mm": "Below 450",
+      "description": "Very low rainfall, suitable for livestock and drought-resistant crops",
+      "suitable_crops": ["Millet", "Sorghum", "Livestock (primary)", "Drought-resistant varieties"],
+      "livestock_suitability": "Extensive cattle and goat ranching (primary activity)",
+      "risk_level": "High",
+      "provinces": ["Southern Matabeleland", "Lowveld Masvingo", "Parts of Midlands"]
+    }
+  },
+  
+  "recommendations": {
+    "maize": {
+      "region_I_II": {
+        "varieties": ["SC513", "SC627", "PAN413", "Hybrid 614"],
+        "fertilizer_basal_kg_ha": 300,
+        "fertilizer_topdress_kg_ha": 200,
+        "expected_yield_t_ha": "4.5-6.0",
+        "planting_density_plants_ha": 37000
+      },
+      "region_III": {
+        "varieties": ["SC513", "SC627", "PAN413"],
+        "fertilizer_basal_kg_ha": 250,
+        "fertilizer_topdress_kg_ha": 150,
+        "expected_yield_t_ha": "3.0-4.5",
+        "planting_density_plants_ha": 37000
+      },
+      "region_IV": {
+        "varieties": ["ZM421", "ZM521", "SC403"],
+        "fertilizer_basal_kg_ha": 175,
+        "fertilizer_topdress_kg_ha": 100,
+        "expected_yield_t_ha": "1.5-2.5",
+        "planting_density_plants_ha": 32000
+      },
+      "region_V": {
+        "varieties": ["ZM521", "OPVs", "SC403"],
+        "fertilizer_basal_kg_ha": 100,
+        "fertilizer_topdress_kg_ha": 60,
+        "expected_yield_t_ha": "0.8-1.5",
+        "planting_density_plants_ha": 28000
+      }
+    },
+    "wheat": {
+      "all_regions": {
+        "note": "Wheat requires irrigation in Zimbabwe",
+        "varieties": ["Mwenje", "Pungwe", "SC Sable"],
+        "fertilizer_basal_kg_ha": 320,
+        "fertilizer_topdress_kg_ha": 220,
+        "expected_yield_t_ha": "4.0-5.5",
+        "irrigation_mm_total": "450-550",
+        "suitable_regions": ["I", "II", "III with irrigation"]
+      }
+    },
+    "potatoes": {
+      "region_I_II": {
+        "varieties": ["BP1", "Montclare", "Amethyst", "Mondial", "Diamant"],
+        "fertilizer_basal_kg_ha": 680,
+        "fertilizer_topdress_kg_ha": 190,
+        "expected_yield_t_ha": "20-30",
+        "irrigation_required": "Supplementary",
+        "plant_spacing_cm": "30x80"
+      },
+      "region_III_IV": {
+        "varieties": ["BP1", "Montclare"],
+        "fertilizer_basal_kg_ha": 550,
+        "fertilizer_topdress_kg_ha": 150,
+        "expected_yield_t_ha": "15-22",
+        "irrigation_required": "Essential",
+        "plant_spacing_cm": "30x80"
+      }
+    },
+    "cattle": {
+      "high_rainfall_regions": {
+        "breeds": ["Holstein", "Jersey", "Mashona", "Tuli"],
+        "production_focus": "Dairy and beef",
+        "supplementary_feeding": "Moderate (dry season)",
+        "veterinary_care": "Regular dipping, vaccination"
+      },
+      "low_rainfall_regions": {
+        "breeds": ["Tuli", "Brahman", "Indigenous adapted"],
+        "production_focus": "Beef (extensive)",
+        "supplementary_feeding": "Minimal to moderate",
+        "veterinary_care": "Essential tick control, drought management"
+      }
+    },
+    "goats": {
+      "all_regions": {
+        "breeds": ["Mashona", "Matabele", "Boer", "Boer crosses"],
+        "production_focus": "Meat (primary), supplementary income",
+        "advantages": ["Drought-resistant", "Low input costs", "Fast reproduction"],
+        "management": "Deworming every 3 months, vaccination, rotational grazing"
+      }
+    }
+  }
+}

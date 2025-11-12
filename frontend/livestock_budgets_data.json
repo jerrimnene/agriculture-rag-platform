@@ -1,0 +1,324 @@
+{
+  "BEEF CATTLE - COMMUNAL": {
+    "summary": {
+      "herd_size": 10,
+      "gross_yield_kg": 2500,
+      "mortality_rate": 5,
+      "net_yield_kg": 2375,
+      "farm_gate_price": 4.50,
+      "gross_return": 10687.50,
+      "variable_costs": 5570,
+      "gross_profit": 5117.50,
+      "profit_per_head": 511.75,
+      "cycle_days": 365,
+      "cycles_per_year": 1
+    },
+    "costs": {
+      "feed": [
+        {"description": "Grazing supplement (dry season)", "quantity": 500, "unit": "kg", "total_cost": 250},
+        {"description": "Mineral licks", "quantity": 12, "unit": "blocks", "total_cost": 60},
+        {"description": "Salt blocks", "quantity": 12, "unit": "blocks", "total_cost": 48}
+      ],
+      "veterinary": [
+        {"description": "Vaccines (FMD, Anthrax, Blackleg)", "quantity": 10, "unit": "doses", "total_cost": 80},
+        {"description": "Deworming", "quantity": 10, "unit": "doses", "total_cost": 40},
+        {"description": "Dipping (tick control)", "quantity": 24, "unit": "sessions", "total_cost": 120},
+        {"description": "Disease treatment fund", "quantity": 1, "unit": "lump", "total_cost": 200},
+        {"description": "Vet consultation", "quantity": 2, "unit": "visits", "total_cost": 60}
+      ],
+      "housing": [
+        {"description": "Kraal maintenance", "quantity": 1, "unit": "lump", "total_cost": 150},
+        {"description": "Fencing repairs", "quantity": 1, "unit": "lump", "total_cost": 200}
+      ],
+      "water": [
+        {"description": "Borehole pumping/delivery", "quantity": 365, "unit": "days", "total_cost": 180},
+        {"description": "Trough maintenance", "quantity": 1, "unit": "lump", "total_cost": 50}
+      ],
+      "breeding": [
+        {"description": "Bull service fees", "quantity": 10, "unit": "services", "total_cost": 200},
+        {"description": "Pregnancy testing", "quantity": 10, "unit": "tests", "total_cost": 50},
+        {"description": "Breeding stock replacement", "quantity": 1, "unit": "head", "total_cost": 650}
+      ],
+      "labour": [
+        {"description": "Herding/supervision", "quantity": 12, "unit": "months", "total_cost": 600},
+        {"description": "General labor", "quantity": 12, "unit": "months", "total_cost": 900}
+      ],
+      "transport_in": [
+        {"description": "Feed/supplement delivery", "quantity": 12, "unit": "trips", "total_cost": 120},
+        {"description": "Medicine delivery", "quantity": 4, "unit": "trips", "total_cost": 40}
+      ],
+      "transport_out": [
+        {"description": "To dip tank", "quantity": 24, "unit": "trips", "total_cost": 120},
+        {"description": "To market/abattoir", "quantity": 2, "unit": "trips", "total_cost": 200}
+      ],
+      "sundry": [
+        {"description": "Ear tags", "quantity": 10, "unit": "units", "total_cost": 20},
+        {"description": "Record keeping", "quantity": 1, "unit": "lump", "total_cost": 30},
+        {"description": "Mortality buffer (5%)", "quantity": 1, "unit": "lump", "total_cost": 250},
+        {"description": "Miscellaneous", "quantity": 1, "unit": "lump", "total_cost": 100}
+      ]
+    }
+  },
+  "BROILERS - 100 BIRDS": {
+    "summary": {
+      "herd_size": 100,
+      "gross_yield_kg": 180,
+      "mortality_rate": 8,
+      "net_yield_kg": 165.6,
+      "farm_gate_price": 4.00,
+      "gross_return": 662.40,
+      "variable_costs": 520,
+      "gross_profit": 142.40,
+      "profit_per_head": 1.42,
+      "cycle_days": 42,
+      "cycles_per_year": 8
+    },
+    "costs": {
+      "feed": [
+        {"description": "Starter feed (0-21 days)", "quantity": 50, "unit": "kg", "total_cost": 40},
+        {"description": "Grower feed (21-35 days)", "quantity": 80, "unit": "kg", "total_cost": 56},
+        {"description": "Finisher feed (35-42 days)", "quantity": 120, "unit": "kg", "total_cost": 84},
+        {"description": "Feed additives/supplements", "quantity": 1, "unit": "lump", "total_cost": 20}
+      ],
+      "veterinary": [
+        {"description": "Vaccines (Newcastle, Gumboro)", "quantity": 100, "unit": "doses", "total_cost": 15},
+        {"description": "Antibiotics/medication", "quantity": 1, "unit": "lump", "total_cost": 10}
+      ],
+      "housing": [
+        {"description": "Brooder maintenance", "quantity": 1, "unit": "lump", "total_cost": 15},
+        {"description": "Feeders & waterers", "quantity": 1, "unit": "lump", "total_cost": 15}
+      ],
+      "water": [
+        {"description": "Water supply", "quantity": 42, "unit": "days", "total_cost": 10}
+      ],
+      "breeding": [
+        {"description": "Day-old chicks", "quantity": 100, "unit": "chicks", "total_cost": 50}
+      ],
+      "labour": [
+        {"description": "Feeding & management", "quantity": 42, "unit": "days", "total_cost": 40}
+      ],
+      "transport_in": [
+        {"description": "Chick delivery", "quantity": 1, "unit": "trip", "total_cost": 10},
+        {"description": "Feed delivery", "quantity": 3, "unit": "trips", "total_cost": 10}
+      ],
+      "transport_out": [
+        {"description": "To market", "quantity": 1, "unit": "trip", "total_cost": 20}
+      ],
+      "sundry": [
+        {"description": "Sawdust/litter", "quantity": 1, "unit": "lump", "total_cost": 15},
+        {"description": "Mortality buffer (8%)", "quantity": 1, "unit": "lump", "total_cost": 10}
+      ]
+    }
+  },
+  "GOATS - MEAT": {
+    "summary": {
+      "herd_size": 20,
+      "gross_yield_kg": 600,
+      "mortality_rate": 7,
+      "net_yield_kg": 558,
+      "farm_gate_price": 5.00,
+      "gross_return": 2790,
+      "variable_costs": 1650,
+      "gross_profit": 1140,
+      "profit_per_head": 57,
+      "cycle_days": 365,
+      "cycles_per_year": 1
+    },
+    "costs": {
+      "feed": [
+        {"description": "Browse supplement", "quantity": 200, "unit": "kg", "total_cost": 100},
+        {"description": "Mineral supplement", "quantity": 12, "unit": "kg", "total_cost": 60},
+        {"description": "Dry season hay", "quantity": 300, "unit": "kg", "total_cost": 90}
+      ],
+      "veterinary": [
+        {"description": "Vaccines (PPR, Goat pox)", "quantity": 20, "unit": "doses", "total_cost": 40},
+        {"description": "Deworming", "quantity": 20, "unit": "doses", "total_cost": 30},
+        {"description": "Dipping/spraying", "quantity": 12, "unit": "sessions", "total_cost": 60},
+        {"description": "Disease treatment", "quantity": 1, "unit": "lump", "total_cost": 100}
+      ],
+      "housing": [
+        {"description": "Kraal maintenance", "quantity": 1, "unit": "lump", "total_cost": 100},
+        {"description": "Fencing", "quantity": 1, "unit": "lump", "total_cost": 150}
+      ],
+      "water": [
+        {"description": "Water supply", "quantity": 365, "unit": "days", "total_cost": 100}
+      ],
+      "breeding": [
+        {"description": "Buck service", "quantity": 20, "unit": "services", "total_cost": 100},
+        {"description": "Breeding stock", "quantity": 1, "unit": "head", "total_cost": 200}
+      ],
+      "labour": [
+        {"description": "Herding", "quantity": 12, "unit": "months", "total_cost": 360},
+        {"description": "General care", "quantity": 12, "unit": "months", "total_cost": 240}
+      ],
+      "transport_in": [
+        {"description": "Supplement delivery", "quantity": 4, "unit": "trips", "total_cost": 40}
+      ],
+      "transport_out": [
+        {"description": "To dip/market", "quantity": 12, "unit": "trips", "total_cost": 60}
+      ],
+      "sundry": [
+        {"description": "Ear tags", "quantity": 20, "unit": "units", "total_cost": 20},
+        {"description": "Mortality buffer (7%)", "quantity": 1, "unit": "lump", "total_cost": 80},
+        {"description": "Miscellaneous", "quantity": 1, "unit": "lump", "total_cost": 70}
+      ]
+    }
+  },
+  "LAYERS - 100 BIRDS": {
+    "summary": {
+      "herd_size": 100,
+      "gross_yield_kg": 1750,
+      "mortality_rate": 5,
+      "net_yield_kg": 1662.5,
+      "farm_gate_price": 2.50,
+      "gross_return": 4156.25,
+      "variable_costs": 2800,
+      "gross_profit": 1356.25,
+      "profit_per_head": 13.56,
+      "cycle_days": 365,
+      "cycles_per_year": 1
+    },
+    "costs": {
+      "feed": [
+        {"description": "Layer mash", "quantity": 1800, "unit": "kg", "total_cost": 1260},
+        {"description": "Grit & oyster shell", "quantity": 50, "unit": "kg", "total_cost": 25}
+      ],
+      "veterinary": [
+        {"description": "Vaccines", "quantity": 100, "unit": "doses", "total_cost": 20},
+        {"description": "Deworming/medication", "quantity": 1, "unit": "lump", "total_cost": 15}
+      ],
+      "housing": [
+        {"description": "Cage/house maintenance", "quantity": 1, "unit": "lump", "total_cost": 50},
+        {"description": "Feeders & waterers", "quantity": 1, "unit": "lump", "total_cost": 30}
+      ],
+      "water": [
+        {"description": "Water supply", "quantity": 365, "unit": "days", "total_cost": 50}
+      ],
+      "breeding": [
+        {"description": "Point-of-lay pullets", "quantity": 100, "unit": "birds", "total_cost": 800}
+      ],
+      "labour": [
+        {"description": "Daily management", "quantity": 12, "unit": "months", "total_cost": 480}
+      ],
+      "transport_in": [
+        {"description": "Feed delivery", "quantity": 12, "unit": "trips", "total_cost": 60}
+      ],
+      "transport_out": [
+        {"description": "Egg delivery to market", "quantity": 52, "unit": "trips", "total_cost": 52}
+      ],
+      "sundry": [
+        {"description": "Egg trays/packaging", "quantity": 1, "unit": "lump", "total_cost": 30},
+        {"description": "Mortality buffer (5%)", "quantity": 1, "unit": "lump", "total_cost": 40},
+        {"description": "Miscellaneous", "quantity": 1, "unit": "lump", "total_cost": 38}
+      ]
+    }
+  },
+  "PIGS - 5 SOWS": {
+    "summary": {
+      "herd_size": 5,
+      "gross_yield_kg": 900,
+      "mortality_rate": 10,
+      "net_yield_kg": 810,
+      "farm_gate_price": 4.50,
+      "gross_return": 3645,
+      "variable_costs": 2400,
+      "gross_profit": 1245,
+      "profit_per_head": 249,
+      "cycle_days": 365,
+      "cycles_per_year": 1
+    },
+    "costs": {
+      "feed": [
+        {"description": "Sow feed", "quantity": 900, "unit": "kg", "total_cost": 540},
+        {"description": "Piglet/grower feed", "quantity": 1200, "unit": "kg", "total_cost": 720},
+        {"description": "Forage/kitchen waste", "quantity": 1, "unit": "lump", "total_cost": 50}
+      ],
+      "veterinary": [
+        {"description": "Vaccines (swine fever)", "quantity": 5, "unit": "doses", "total_cost": 25},
+        {"description": "Deworming", "quantity": 5, "unit": "doses", "total_cost": 15},
+        {"description": "Medication/treatment", "quantity": 1, "unit": "lump", "total_cost": 80}
+      ],
+      "housing": [
+        {"description": "Sty maintenance", "quantity": 1, "unit": "lump", "total_cost": 150},
+        {"description": "Farrowing pens", "quantity": 1, "unit": "lump", "total_cost": 100}
+      ],
+      "water": [
+        {"description": "Water supply", "quantity": 365, "unit": "days", "total_cost": 100}
+      ],
+      "breeding": [
+        {"description": "Boar service/AI", "quantity": 10, "unit": "services", "total_cost": 150},
+        {"description": "Breeding stock", "quantity": 1, "unit": "lump", "total_cost": 200}
+      ],
+      "labour": [
+        {"description": "Feeding & cleaning", "quantity": 12, "unit": "months", "total_cost": 480}
+      ],
+      "transport_in": [
+        {"description": "Feed delivery", "quantity": 12, "unit": "trips", "total_cost": 60}
+      ],
+      "transport_out": [
+        {"description": "To market", "quantity": 2, "unit": "trips", "total_cost": 40}
+      ],
+      "sundry": [
+        {"description": "Bedding/litter", "quantity": 1, "unit": "lump", "total_cost": 50},
+        {"description": "Mortality buffer (10%)", "quantity": 1, "unit": "lump", "total_cost": 100},
+        {"description": "Miscellaneous", "quantity": 1, "unit": "lump", "total_cost": 40}
+      ]
+    }
+  },
+  "DAIRY CATTLE - 5 COWS": {
+    "summary": {
+      "herd_size": 5,
+      "gross_yield_kg": 18250,
+      "mortality_rate": 3,
+      "net_yield_kg": 17702.5,
+      "farm_gate_price": 0.80,
+      "gross_return": 14162,
+      "variable_costs": 9800,
+      "gross_profit": 4362,
+      "profit_per_head": 872.4,
+      "cycle_days": 365,
+      "cycles_per_year": 1
+    },
+    "costs": {
+      "feed": [
+        {"description": "Dairy meal/concentrates", "quantity": 3650, "unit": "kg", "total_cost": 2920},
+        {"description": "Forage (napier/hay)", "quantity": 5000, "unit": "kg", "total_cost": 1500},
+        {"description": "Mineral supplements", "quantity": 60, "unit": "kg", "total_cost": 180}
+      ],
+      "veterinary": [
+        {"description": "Vaccines (FMD, Anthrax, Brucella)", "quantity": 5, "unit": "doses", "total_cost": 50},
+        {"description": "Deworming", "quantity": 5, "unit": "doses", "total_cost": 25},
+        {"description": "Mastitis treatment", "quantity": 1, "unit": "lump", "total_cost": 150},
+        {"description": "Vet consultations", "quantity": 4, "unit": "visits", "total_cost": 120}
+      ],
+      "housing": [
+        {"description": "Shed maintenance", "quantity": 1, "unit": "lump", "total_cost": 200},
+        {"description": "Milking equipment", "quantity": 1, "unit": "lump", "total_cost": 150}
+      ],
+      "water": [
+        {"description": "Water supply (high demand)", "quantity": 365, "unit": "days", "total_cost": 300}
+      ],
+      "breeding": [
+        {"description": "Artificial insemination", "quantity": 10, "unit": "AI", "total_cost": 300},
+        {"description": "Pregnancy testing", "quantity": 5, "unit": "tests", "total_cost": 50},
+        {"description": "Breeding stock replacement", "quantity": 1, "unit": "lump", "total_cost": 800}
+      ],
+      "labour": [
+        {"description": "Milking labor", "quantity": 12, "unit": "months", "total_cost": 1200},
+        {"description": "Herding & feeding", "quantity": 12, "unit": "months", "total_cost": 1080}
+      ],
+      "transport_in": [
+        {"description": "Feed delivery", "quantity": 24, "unit": "trips", "total_cost": 240}
+      ],
+      "transport_out": [
+        {"description": "Milk delivery", "quantity": 365, "unit": "trips", "total_cost": 730}
+      ],
+      "sundry": [
+        {"description": "Milk cans/containers", "quantity": 1, "unit": "lump", "total_cost": 80},
+        {"description": "Ear tags & records", "quantity": 1, "unit": "lump", "total_cost": 40},
+        {"description": "Mortality buffer (3%)", "quantity": 1, "unit": "lump", "total_cost": 150},
+        {"description": "Miscellaneous", "quantity": 1, "unit": "lump", "total_cost": 135}
+      ]
+    }
+  }
+}

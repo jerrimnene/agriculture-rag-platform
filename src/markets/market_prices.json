@@ -1,0 +1,129 @@
+{
+  "last_updated": "2025-11-09",
+  "currency": "USD",
+  "markets": {
+    "Mbare Musika": {
+      "district": "Harare",
+      "province": "Harare Metropolitan",
+      "type": "wholesale",
+      "commodities": {
+        "maize": {"price_per_kg": 0.65, "unit": "kg", "availability": "high"},
+        "wheat": {"price_per_kg": 0.85, "unit": "kg", "availability": "medium"},
+        "soya_beans": {"price_per_kg": 1.20, "unit": "kg", "availability": "high"},
+        "groundnuts": {"price_per_kg": 2.50, "unit": "kg", "availability": "medium"},
+        "sugar_beans": {"price_per_kg": 1.80, "unit": "kg", "availability": "high"},
+        "cattle_live": {"price_per_kg": 3.50, "unit": "kg_live_weight", "availability": "medium"},
+        "goats_live": {"price_per_kg": 4.00, "unit": "kg_live_weight", "availability": "high"},
+        "tomatoes": {"price_per_kg": 1.20, "unit": "kg", "availability": "high"},
+        "onions": {"price_per_kg": 0.90, "unit": "kg", "availability": "high"}
+      }
+    },
+    "Bulawayo": {
+      "district": "Bulawayo",
+      "province": "Bulawayo Metropolitan",
+      "type": "wholesale",
+      "commodities": {
+        "maize": {"price_per_kg": 0.68, "unit": "kg", "availability": "high"},
+        "wheat": {"price_per_kg": 0.88, "unit": "kg", "availability": "medium"},
+        "soya_beans": {"price_per_kg": 1.25, "unit": "kg", "availability": "medium"},
+        "groundnuts": {"price_per_kg": 2.60, "unit": "kg", "availability": "medium"},
+        "cattle_live": {"price_per_kg": 3.40, "unit": "kg_live_weight", "availability": "high"},
+        "goats_live": {"price_per_kg": 3.90, "unit": "kg_live_weight", "availability": "high"}
+      }
+    },
+    "Mutare": {
+      "district": "Mutare",
+      "province": "Manicaland",
+      "type": "wholesale",
+      "commodities": {
+        "maize": {"price_per_kg": 0.62, "unit": "kg", "availability": "high"},
+        "soya_beans": {"price_per_kg": 1.15, "unit": "kg", "availability": "high"},
+        "groundnuts": {"price_per_kg": 2.40, "unit": "kg", "availability": "high"},
+        "sugar_beans": {"price_per_kg": 1.75, "unit": "kg", "availability": "high"},
+        "tomatoes": {"price_per_kg": 1.10, "unit": "kg", "availability": "high"},
+        "bananas": {"price_per_kg": 0.80, "unit": "kg", "availability": "high"}
+      }
+    },
+    "Gweru": {
+      "district": "Gweru",
+      "province": "Midlands",
+      "type": "wholesale",
+      "commodities": {
+        "maize": {"price_per_kg": 0.64, "unit": "kg", "availability": "high"},
+        "soya_beans": {"price_per_kg": 1.18, "unit": "kg", "availability": "medium"},
+        "groundnuts": {"price_per_kg": 2.45, "unit": "kg", "availability": "medium"},
+        "cattle_live": {"price_per_kg": 3.45, "unit": "kg_live_weight", "availability": "medium"}
+      }
+    },
+    "Masvingo": {
+      "district": "Masvingo",
+      "province": "Masvingo",
+      "type": "wholesale",
+      "commodities": {
+        "maize": {"price_per_kg": 0.63, "unit": "kg", "availability": "medium"},
+        "groundnuts": {"price_per_kg": 2.35, "unit": "kg", "availability": "high"},
+        "cattle_live": {"price_per_kg": 3.35, "unit": "kg_live_weight", "availability": "high"},
+        "goats_live": {"price_per_kg": 3.85, "unit": "kg_live_weight", "availability": "high"}
+      }
+    },
+    "Chinhoyi": {
+      "district": "Makonde",
+      "province": "Mashonaland West",
+      "type": "wholesale",
+      "commodities": {
+        "maize": {"price_per_kg": 0.66, "unit": "kg", "availability": "high"},
+        "tobacco": {"price_per_kg": 5.50, "unit": "kg", "availability": "medium"},
+        "soya_beans": {"price_per_kg": 1.22, "unit": "kg", "availability": "medium"}
+      }
+    },
+    "Bindura": {
+      "district": "Bindura",
+      "province": "Mashonaland Central",
+      "type": "wholesale",
+      "commodities": {
+        "maize": {"price_per_kg": 0.67, "unit": "kg", "availability": "high"},
+        "tobacco": {"price_per_kg": 5.45, "unit": "kg", "availability": "medium"},
+        "cattle_live": {"price_per_kg": 3.55, "unit": "kg_live_weight", "availability": "medium"}
+      }
+    },
+    "Gokwe South": {
+      "district": "Gokwe South",
+      "province": "Midlands",
+      "type": "local",
+      "commodities": {
+        "maize": {"price_per_kg": 0.58, "unit": "kg", "availability": "medium"},
+        "groundnuts": {"price_per_kg": 2.20, "unit": "kg", "availability": "high"},
+        "cotton": {"price_per_kg": 0.95, "unit": "kg", "availability": "high"},
+        "goats_live": {"price_per_kg": 3.70, "unit": "kg_live_weight", "availability": "high"}
+      }
+    }
+  },
+  "price_trends": {
+    "maize": {
+      "trend": "stable",
+      "change_30d": "+2%",
+      "seasonal_note": "Prices stable as new harvest approaches"
+    },
+    "soya_beans": {
+      "trend": "increasing",
+      "change_30d": "+8%",
+      "seasonal_note": "High demand for oil extraction"
+    },
+    "groundnuts": {
+      "trend": "stable",
+      "change_30d": "+1%",
+      "seasonal_note": "Good harvest expected"
+    },
+    "cattle_live": {
+      "trend": "increasing",
+      "change_30d": "+5%",
+      "seasonal_note": "Drought conditions limiting supply"
+    },
+    "tobacco": {
+      "trend": "stable",
+      "change_30d": "0%",
+      "seasonal_note": "Auction season concluded"
+    }
+  },
+  "notes": "Prices are indicative wholesale rates. Actual prices vary by quality, grade, and market conditions. Contact local markets for current rates."
+}

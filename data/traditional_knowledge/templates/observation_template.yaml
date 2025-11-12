@@ -1,0 +1,210 @@
+# Traditional Knowledge Observation Template
+# Use this to capture elder wisdom in structured format
+
+traditional_knowledge_entry:
+  id: "TK_[NUMBER]"  # e.g., TK_001, TK_002
+  date_recorded: "YYYY-MM-DD"
+  recorded_by: "[Your Name]"
+  
+  # ELDER INFORMATION
+  elder:
+    name: "Sekuru/Gogo [Name]"
+    location: "[District], [Province]"
+    age: "[Age]"
+    language: "Shona/Ndebele/English"
+    specialties:
+      - "[e.g., Cattle health]"
+      - "[e.g., Weather prediction]"
+      - "[e.g., Soil management]"
+  
+  # WHAT TYPE OF KNOWLEDGE?
+  knowledge_type: "[Weather/Soil/Animal/Plant/Pest/Timing/Ceremony]"
+  
+  # THE OBSERVATION
+  observation:
+    description: "[Exactly what the elder observes - in their words]"
+    
+    # HOW DO THEY KNOW?
+    sensory_method:
+      sight: "[What they see - color, movement, behavior]"
+      smell: "[What they smell - sweet, sour, bitter, strong]"
+      sound: "[What they hear - animal calls, wind, insects]"
+      touch: "[What they feel - soil texture, temperature, moisture]"
+      taste: "[What they taste - yes, elders taste soil!]"
+    
+    timing: "[When does this occur - season, time of day, moon phase]"
+    location_specificity: "[Is this for specific regions/districts?]"
+    
+  # WHAT DOES IT MEAN?
+  interpretation:
+    meaning: "[What this sign/observation indicates]"
+    context: "[Environmental or seasonal conditions]"
+    urgency: "[How soon to act - immediate, within days, within weeks]"
+    
+  # WHAT TO DO?
+  action:
+    recommendation: "[Practical action to take]"
+    timing: "[When to act]"
+    materials_needed: "[Any tools, plants, preparations needed]"
+    warnings: "[What NOT to do]"
+  
+  # HOW RELIABLE IS THIS?
+  validation:
+    how_verified: "[Veterinary, scientific, repeated observation]"
+    outcomes: "[Results when this knowledge was followed]"
+    success_rate: "[High/Medium/Low or percentage if known]"
+    confidence: "[Elder's confidence: Very High/High/Medium]"
+    times_observed: "[How many times elder has seen this]"
+  
+  # WHERE DID THIS KNOWLEDGE COME FROM?
+  transmission:
+    source: "[Who taught this - father, grandfather, mentor]"
+    generations: "[How many generations - 2+, 3+, 5+]"
+    community_agreement: "[Do other elders agree? Yes/Mostly/Some/Unknown]"
+    other_elders_confirming:
+      - "[Name of other elder who knows this]"
+      - "[Name of another elder]"
+  
+  # CONNECTIONS
+  related_knowledge:
+    connects_to:
+      - "[Other observations that relate to this]"
+      - "[Patterns that align with this]"
+    contradicts: "[Any conflicting knowledge - be honest]"
+    complementary_practices:
+      - "[Other methods that work together with this]"
+  
+  # ECOLOGICAL RELATIONSHIPS
+  ecosystem_context:
+    plants_involved: "[Any specific plants, trees, grasses]"
+    animals_involved: "[Any animal behaviors or indicators]"
+    weather_patterns: "[Rain, wind, temperature connections]"
+    soil_conditions: "[How soil relates to this]"
+  
+  # CULTURAL CONTEXT
+  cultural_significance:
+    ceremonies: "[Any rituals or ceremonies associated]"
+    taboos: "[Things not to do]"
+    respect_protocols: "[How to honor this knowledge]"
+    
+  # MODERN VALIDATION
+  scientific_correlations:
+    research_support: "[Any scientific studies that confirm this]"
+    mechanism_explanation: "[Why this works scientifically, if known]"
+    university_validation: "[Has a university studied this?]"
+  
+  # NOTES & STORIES
+  additional_notes:
+    stories: "[Any stories elder shared about this]"
+    memorable_cases: "[Specific times this knowledge saved the day]"
+    teaching_tips: "[How elder teaches this to young people]"
+    
+  # MEDIA
+  documentation:
+    audio_recording: "[Path to audio file if recorded]"
+    video_recording: "[Path to video file if recorded]"
+    photos: "[Paths to any photos taken]"
+    consent: "[Did elder consent to recording? Yes/No]"
+
+# EXAMPLE - The Sick Cow Story
+example_entry:
+  id: "TK_001"
+  date_recorded: "2024-11-12"
+  recorded_by: "Providence Mtendereki"
+  
+  elder:
+    name: "Sekuru [Name]"
+    location: "[District], Zimbabwe"
+    age: "70+"
+    language: "Shona"
+    specialties:
+      - "Cattle health diagnosis"
+      - "Traditional veterinary medicine"
+  
+  knowledge_type: "Animal Health"
+  
+  observation:
+    description: "Can diagnose cattle kidney/liver stress by smelling urine"
+    
+    sensory_method:
+      sight: "Yellow eyes, lethargy, animal not eating"
+      smell: "Sweet smell in cow's urine indicates kidney stress"
+      sound: "Animal may make low distressed sounds"
+      touch: "Skin less elastic, dehydration"
+      taste: "N/A"
+    
+    timing: "Any time of year, but more common in dry season or after eating new plants"
+    location_specificity: "All regions"
+    
+  interpretation:
+    meaning: "Kidney or liver stress, often from poisoning or dehydration"
+    context: "Usually happens when cattle eat unfamiliar plants or drought stress"
+    urgency: "Immediate to 48 hours"
+    
+  action:
+    recommendation: |
+      1. Check what animal has been eating
+      2. Observe what medicinal plants animal chooses (aloe, bitter herbs)
+      3. Let animal self-medicate - don't force feed
+      4. Provide clean water and shade
+      5. If no improvement in 48 hours, call veterinarian
+    timing: "Start observation immediately"
+    materials_needed: "Access to medicinal plants (aloe, bitter leaf), clean water"
+    warnings: "Don't force-feed. Don't give human medicine without vet advice."
+  
+  validation:
+    how_verified: "Veterinary examination confirmed kidney stress"
+    outcomes: "Diagnosis matched laboratory blood tests"
+    success_rate: "High - elder has diagnosed 15+ cases correctly"
+    confidence: "Very High"
+    times_observed: "40+ years of experience, 50+ cases"
+  
+  transmission:
+    source: "Father and grandfather, both traditional healers"
+    generations: "3+ generations"
+    community_agreement: "Yes - multiple elders confirm this method"
+    other_elders_confirming:
+      - "Gogo [Name] - uses same diagnostic method"
+  
+  related_knowledge:
+    connects_to:
+      - "Animal self-medication behavior"
+      - "Medicinal plant identification"
+      - "Poisonous plant identification"
+    contradicts: "None known"
+    complementary_practices:
+      - "Herbal treatment preparation"
+      - "Prayer/ritual for animal healing"
+  
+  ecosystem_context:
+    plants_involved: 
+      - "Aloe vera (gavakava) - animal eats for liver cleanse"
+      - "Bitter leaf (murara) - anti-parasitic"
+    animals_involved: "Cattle self-medication behavior"
+    weather_patterns: "More common in drought or after first rains (new plant growth)"
+    soil_conditions: "N/A"
+  
+  cultural_significance:
+    ceremonies: "May involve ritual asking ancestors for guidance"
+    taboos: "Don't slaughter sick animal - respect its healing process"
+    respect_protocols: "Thank the animal for showing you what it needs"
+    
+  scientific_correlations:
+    research_support: "Zoopharmacognosy - scientific field studying animal self-medication"
+    mechanism_explanation: "Sweet urine smell = ketones or glucose from kidney dysfunction"
+    university_validation: "Veterinary science confirms olfactory diagnosis validity"
+  
+  additional_notes:
+    stories: |
+      "One time a cow was dying and the young farmers wanted to call the vet immediately.
+      I smelled the urine and told them to wait and watch. The cow went straight to 
+      the aloe plants and ate them for two days. The cow recovered completely. 
+      The animals know their medicine - we just need to watch and learn."
+    memorable_cases: "15+ successful diagnoses confirmed by veterinarians"
+    teaching_tips: "Teach young people to use ALL their senses. Books can't teach you smell."
+    
+  documentation:
+    audio_recording: ""
+    video_recording: ""
+    photos: ""
+    consent: "Yes"

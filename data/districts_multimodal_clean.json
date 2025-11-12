@@ -1,0 +1,2796 @@
+{
+  "Beitbridge": {
+    "name": "Beitbridge",
+    "rainfall": {
+      "annual_mm": 657,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Type of Market",
+        "Commodity",
+        "Livestock type",
+        "Availability",
+        "Market name",
+        "Vegetable production and marketing",
+        "Average Price\n(US$) 2022",
+        "Ward Number",
+        "Fish (dried & fresh)",
+        "Not readily available"
+      ],
+      "commodities": [
+        "wheat",
+        "millet",
+        "rice",
+        "tobacco",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2022,
+    "extraction_metadata": {
+      "images_detected": 10,
+      "graphics_detected": 10963,
+      "tables_extracted": 54
+    }
+  },
+  "Bikita": {
+    "name": "Bikita",
+    "rainfall": {
+      "annual_mm": 1000,
+      "source": "text"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "cotton",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "Livelihoods",
+        "Availability",
+        "Commodity",
+        "All wards of\nthe Bikita\ndistrict",
+        "27 November\n2020\nTo 27\nNovember\n2022",
+        "Source Of Commodity",
+        "Market Name",
+        "Type Of Market",
+        "Gathering of wild products"
+      ],
+      "commodities": [
+        "groundnuts",
+        "fruits",
+        "millet",
+        "rice",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2021,
+    "extraction_metadata": {
+      "images_detected": 384,
+      "graphics_detected": 13601,
+      "tables_extracted": 60
+    }
+  },
+  "Bindura": {
+    "name": "Bindura",
+    "rainfall": {
+      "annual_mm": 750,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {
+        "sorghum": 6.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "9056.727",
+        "16, 310",
+        "All wards",
+        "Bulk grain is marketed to GMB\nConcession.",
+        "Indigenous\nChicken",
+        "Petty trading",
+        "Cotton",
+        "Trading and retailing",
+        "Average\nPrice 2016\n(US$)",
+        "Type Of Market"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2022,
+    "extraction_metadata": {
+      "images_detected": 16,
+      "graphics_detected": 13275,
+      "tables_extracted": 72
+    }
+  },
+  "Binga": {
+    "name": "Binga",
+    "rainfall": {
+      "annual_mm": 790,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "sandy",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "cotton",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {
+        "cotton": 14.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Source Of\nCommodity",
+        "Availability",
+        "Commodity",
+        "Western Kalahari\nSandveld Communal",
+        "14,16,17,23,2,19 and 8",
+        "24, 17 and 2\n1-25\n8 and 24\n24\n12",
+        "Market Name",
+        "Value\nAddition and\nBeneficiation",
+        "Kariba Valley\nKariangwe Jambezi\nCommunal",
+        "Number Of\nMarkets"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2012,
+    "extraction_metadata": {
+      "images_detected": 18,
+      "graphics_detected": 6465,
+      "tables_extracted": 52
+    }
+  },
+  "Bubi": {
+    "name": "Bubi",
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Source Of\nCommodity",
+        "Average price\n(2022) USD",
+        "Availability",
+        "Commodity",
+        "Food security",
+        "15, 16, 17,\n18, 19,\n20, 21,\n22 and\n23",
+        "Average price (2016) USD",
+        "Ward Number",
+        "Livestock and\nCereal Farming\nCommunal in\nForests",
+        "Type of market"
+      ],
+      "commodities": [
+        "groundnuts",
+        "fruits",
+        "millet",
+        "rice",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize"
+      ]
+    },
+    "population": 2012,
+    "extraction_metadata": {
+      "images_detected": 13,
+      "graphics_detected": 6437,
+      "tables_extracted": 49
+    }
+  },
+  "Buhera": {
+    "name": "Buhera",
+    "rainfall": {
+      "annual_mm": 600,
+      "source": "table"
+    },
+    "soil_types": [
+      "loam",
+      "sandy",
+      "sandy loam"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Muzokomba (24), Buhera (5)",
+        "Food and\nNutrition\nsecurity",
+        "Livestock, markets,\nhousehold economy",
+        "7, 13 and\n15",
+        "Market shades",
+        "January disease",
+        "AGRITES, Buhera\nRDC",
+        "Gathering of wild products",
+        "Training of farmers on\nlivestock management"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2022,
+    "extraction_metadata": {
+      "images_detected": 401,
+      "graphics_detected": 15483,
+      "tables_extracted": 60
+    }
+  },
+  "Bulilima": {
+    "name": "Bulilima",
+    "rainfall": {
+      "annual_mm": 900,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy clay",
+      "sandy loam",
+      "silt",
+      "vertisol"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "Availability",
+        "Commodity",
+        "All wards",
+        "Source Of Commodity",
+        "Market Name",
+        "Average In 2016",
+        "Crop and Livestock Development",
+        "Average In 2021",
+        "Ward No."
+      ],
+      "commodities": [
+        "groundnuts",
+        "fruits",
+        "millet",
+        "rice",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize"
+      ]
+    },
+    "population": 2012,
+    "extraction_metadata": {
+      "images_detected": 13,
+      "graphics_detected": 13279,
+      "tables_extracted": 63
+    }
+  },
+  "Chegutu": {
+    "name": "Chegutu",
+    "rainfall": {
+      "annual_mm": 650,
+      "source": "table"
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Irrigation schemes",
+        "Wards 20 and 1"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 8710,
+    "extraction_metadata": {
+      "images_detected": 20,
+      "graphics_detected": 9674,
+      "tables_extracted": 56
+    }
+  },
+  "Chikomba": {
+    "name": "Chikomba",
+    "rainfall": {
+      "annual_mm": 143,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Northern Cattle\nand Cereal Farming",
+        "1, 2, 3, 4, 6, 7, 8, 10,\n13 and 14",
+        "Chivhu \u2013 9, 10, 11\nand 12",
+        "Organized market places",
+        "Sadza \u2013 25,\nNharira 16"
+      ],
+      "commodities": [
+        "groundnuts",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2012,
+    "extraction_metadata": {
+      "images_detected": 18,
+      "graphics_detected": 11276,
+      "tables_extracted": 53
+    }
+  },
+  "Chimanimani": {
+    "name": "Chimanimani",
+    "rainfall": {
+      "annual_mm": 800,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "loam",
+      "sandy",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "wheat",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "PVO\n19/11",
+        "Active\nbefore\ncyclone",
+        "2016\n2020",
+        "Crop\ndevelopment\nMarket\nlinkages",
+        "500\nhouseholds"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize"
+      ]
+    },
+    "population": 2022,
+    "extraction_metadata": {
+      "images_detected": 28,
+      "graphics_detected": 8146,
+      "tables_extracted": 52
+    }
+  },
+  "Chipinge": {
+    "name": "Chipinge",
+    "rainfall": {
+      "annual_mm": 120,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Eastern\nHighlands\nLarge Scale\nCommercial",
+        "Save River\nValley and\nNdowoyo\nLowveld\nCommunal",
+        "6, 7, 8, 9,\n10, 11, 12,\n13, 14, 15,\n19"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2022,
+    "extraction_metadata": {
+      "images_detected": 30,
+      "graphics_detected": 16344,
+      "tables_extracted": 61
+    }
+  },
+  "Chiredzi": {
+    "name": "Chiredzi",
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "vertisol"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "cotton",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {
+        "cotton": 1.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Lockdown\nrestrictions",
+        "Livestock Type",
+        "All wards",
+        "Vegetable production and marketing",
+        "13, 14\nand 15",
+        "6-urban 4",
+        "Source Of Commodity",
+        "winter season",
+        "Petty trading",
+        "Mkwasine"
+      ],
+      "commodities": [
+        "groundnuts",
+        "fruits",
+        "millet",
+        "rice",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 443861,
+    "extraction_metadata": {
+      "images_detected": 57,
+      "graphics_detected": 15078,
+      "tables_extracted": 69
+    }
+  },
+  "Chirumhanzu": {
+    "name": "Chirumhanzu",
+    "rainfall": {
+      "annual_mm": 650,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Local farmers,\nexternal suppliers",
+        "All wards",
+        "Ward Number",
+        "Hand In Hand",
+        "CRDC, DDC, SW,\nWomen Affairs,\nSME\u2019S",
+        "Lalapanzi market\nplace",
+        "20 and 15",
+        "1, 2, 5, 7, 8, 11, 16,\n20, 22 and 25",
+        "8, 21, 23, 25, 7, 3, 10,\n4 and 9",
+        "Local farmers,\nExternal suppliers"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize"
+      ]
+    },
+    "population": 2021,
+    "extraction_metadata": {
+      "images_detected": 13,
+      "graphics_detected": 12772,
+      "tables_extracted": 60
+    }
+  },
+  "Chivi": {
+    "name": "Chivi",
+    "rainfall": {
+      "annual_mm": 500,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Jan 2022\n- Jan 2027",
+        "Chemmonics\nTrust Zimbabwe",
+        "Farm\nAgriculture",
+        "1, 6, 13, 17, 21, 22, 28, 30 and 32",
+        "23, 24, 25, 26,\n27, 28, 29 and 31",
+        "Barter trade in all wards\nOpen markets",
+        "Average Price\n2016 (Us$)",
+        "Jan 2020-\nJan 2023",
+        "Livelihoods\nProductions\nMarket Linkages",
+        "20, 21, 22, 25, 26\nand 32"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "millet",
+        "rice",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize"
+      ]
+    },
+    "population": 2012,
+    "extraction_metadata": {
+      "images_detected": 29,
+      "graphics_detected": 13273,
+      "tables_extracted": 95
+    }
+  },
+  "Gokwe North": {
+    "name": "Gokwe North",
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy clay",
+      "sandy loam"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {
+        "cotton": 1.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "All wards",
+        "Indigenous\nChicken",
+        "Ward Number",
+        "Petty trading",
+        "Cereal and\nLow Cotton\nCommunal",
+        "Average Price\n2016 (Us$)",
+        "Market Name",
+        "MOPSE, MLGPW\nDDF, RDC,\nMOHCC",
+        "1/5/17to\n30/4/22"
+      ],
+      "commodities": [
+        "groundnuts",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 134431,
+    "extraction_metadata": {
+      "images_detected": 19,
+      "graphics_detected": 18484,
+      "tables_extracted": 74
+    }
+  },
+  "Gokwe South": {
+    "name": "Gokwe South",
+    "rainfall": {
+      "annual_mm": 540,
+      "source": "text"
+    },
+    "soil_types": [
+      "clay",
+      "sandy"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "cotton",
+        "rice"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Gokwe Craft,\nNyaradza, Gokwe\nGMB, Market 37",
+        "Ward Number",
+        "Gokwe Centre",
+        "perennial, Seasonal",
+        "All rural and urban wards",
+        "Market Name",
+        "Type Of Market",
+        "Availability",
+        "Commodity",
+        "Own production &\nvending"
+      ],
+      "commodities": [
+        "groundnuts",
+        "millet",
+        "rice",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2021,
+    "extraction_metadata": {
+      "images_detected": 15,
+      "graphics_detected": 15070,
+      "tables_extracted": 68
+    }
+  },
+  "Goromonzi": {
+    "name": "Goromonzi",
+    "rainfall": {
+      "annual_mm": 236,
+      "source": "table"
+    },
+    "soil_types": [
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Seventh Day\nAdventist\nChurch\nAustralia.",
+        "All wards",
+        "European\nUnion",
+        "221 Fife Avenue\n,Harare",
+        "Petty trading",
+        "ADRA(Adventist\nDevelopment and\nRelief Agency)",
+        "40 Farming\nHouseholds",
+        "Farmer Market\nSchool",
+        "Munyawiri\nWard 1 and\nChinyika Ward\n16",
+        "SAVE THE CHILDREN"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2021,
+    "extraction_metadata": {
+      "images_detected": 45,
+      "graphics_detected": 14704,
+      "tables_extracted": 86
+    }
+  },
+  "Guruve": {
+    "name": "Guruve",
+    "rainfall": {
+      "annual_mm": 660,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy clay",
+      "sandy loam"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "soybeans",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "Type of Market",
+        "Market name",
+        "All wards",
+        "Ward Number",
+        "Petty trading",
+        "Average Price\n2022 (US$)",
+        "Sometimes\navailable",
+        "Tobacco and all crops",
+        "Cross border trading"
+      ],
+      "commodities": [
+        "soybeans",
+        "groundnuts",
+        "wheat",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2012,
+    "extraction_metadata": {
+      "images_detected": 11,
+      "graphics_detected": 13777,
+      "tables_extracted": 72
+    }
+  },
+  "Gutu": {
+    "name": "Gutu",
+    "rainfall": {
+      "annual_mm": 650,
+      "source": "table"
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Source of Commodity",
+        "Availability",
+        "Commodity",
+        "All wards",
+        "15, 16 and 18",
+        "Ward Number",
+        "Small and medium enterprises",
+        "Masvingo,\nManicaland\nMiddleveld\ncommunal",
+        "Market Name"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2012,
+    "extraction_metadata": {
+      "images_detected": 12,
+      "graphics_detected": 11972,
+      "tables_extracted": 55
+    }
+  },
+  "Gwanda": {
+    "name": "Gwanda",
+    "rainfall": {
+      "annual_mm": 110,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "Availability",
+        "Commodity",
+        "1, 2, 8, 14, 17 and 9",
+        "Ward Number",
+        "Average Price (US$)\n2016",
+        "Gwanda Market",
+        "Source Of Commodity",
+        "Available",
+        "Beitbridge South\nWestern lowveld\ncommunal"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize"
+      ]
+    },
+    "population": 2021,
+    "extraction_metadata": {
+      "images_detected": 13,
+      "graphics_detected": 10076,
+      "tables_extracted": 50
+    }
+  },
+  "Gweru": {
+    "name": "Gweru",
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "sandy",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Across the district",
+        "Technosave",
+        "Type of Market",
+        "All wards",
+        "Ward Number",
+        "Hand In Hand",
+        "CRDC, DDC, SW,\nWomen Affairs,\nSME\u2019S",
+        "8, 16, 14, 11\nand 12",
+        "Average Price 2016 (US$)",
+        "Source of Commodity"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2022,
+    "extraction_metadata": {
+      "images_detected": 16,
+      "graphics_detected": 8963,
+      "tables_extracted": 57
+    }
+  },
+  "Hwedza": {
+    "name": "Hwedza",
+    "rainfall": {
+      "annual_mm": 800,
+      "source": "table"
+    },
+    "soil_types": [
+      "loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "5,7, 8,9",
+        "13 and 14",
+        "Northern cattle\nand cereal\nfarming"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2012,
+    "extraction_metadata": {
+      "images_detected": 10,
+      "graphics_detected": 6178,
+      "tables_extracted": 60
+    }
+  },
+  "Hwange": {
+    "name": "Hwange",
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "beans",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "Availability",
+        "Commodity",
+        "2, 3, 4, 5, 7,\n8, 9 and 10",
+        "10, 14\nand 20",
+        "Average Price 2022 (USD)",
+        "Source Of Commodity",
+        "Market Name",
+        "Rehabilitation of Roads and communication",
+        "Ward No."
+      ],
+      "commodities": [
+        "fruits",
+        "millet",
+        "rice",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize"
+      ]
+    },
+    "population": 2021,
+    "extraction_metadata": {
+      "images_detected": 14,
+      "graphics_detected": 7883,
+      "tables_extracted": 59
+    }
+  },
+  "Insiza": {
+    "name": "Insiza",
+    "rainfall": {
+      "annual_mm": 242,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Type of Market",
+        "Periodic",
+        "15 and 23",
+        "Market name",
+        "Horticulture\nproducts",
+        "Horticulture\ncommodities",
+        "Mthwakazi Vendors\nmarkets",
+        "External Markets",
+        "Source of commodity",
+        "Horticulture\ncommodites"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2000,
+    "extraction_metadata": {
+      "images_detected": 186,
+      "graphics_detected": 19035,
+      "tables_extracted": 68
+    }
+  },
+  "Kariba": {
+    "name": "Kariba",
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "rice"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Kariba Valley\nand\nKariangwe\nJambezi\nCommunal",
+        "3, 5, 6\nand 4"
+      ],
+      "commodities": [
+        "groundnuts",
+        "millet",
+        "rice",
+        "tobacco",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2012,
+    "extraction_metadata": {
+      "images_detected": 16,
+      "graphics_detected": 5581,
+      "tables_extracted": 60
+    }
+  },
+  "Kwekwe": {
+    "name": "Kwekwe",
+    "rainfall": {
+      "annual_mm": 650,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "groundnuts",
+        "wheat"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "Type of Market",
+        "Ward Number",
+        "Chicken",
+        "Average Price 2016 (US$)",
+        "Source of Commodity",
+        "Open market, butcheries",
+        "Cattle",
+        "Market Name",
+        "Horticultural and field crops"
+      ],
+      "commodities": [
+        "wheat",
+        "sorghum",
+        "groundnuts",
+        "maize"
+      ]
+    },
+    "population": 2021,
+    "extraction_metadata": {
+      "images_detected": 14,
+      "graphics_detected": 10344,
+      "tables_extracted": 61
+    }
+  },
+  "Lupane": {
+    "name": "Lupane",
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "text"
+    },
+    "soil_types": [
+      "clay",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "cotton",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "Availability",
+        "Commodity",
+        "To establish 2 markets for\nselling produce",
+        "Source Of Commodity",
+        "Food security and nutrition",
+        "8 and 20",
+        "Average Price 2022 (US$)",
+        "Market Name",
+        "Eastern Kalahari\nSandveld\nCommunal"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2021,
+    "extraction_metadata": {
+      "images_detected": 16,
+      "graphics_detected": 11312,
+      "tables_extracted": 53
+    }
+  },
+  "MT Darwin": {
+    "name": "MT Darwin",
+    "rainfall": {
+      "annual_mm": 700,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Availability",
+        "Commodity",
+        "Average Price\n2022 (Us$)",
+        "Market name",
+        "Poultry\nindigenous\nchicken",
+        "Ward Number",
+        "Average Price\n2016 (Us$)",
+        "Outside district",
+        "Source Of Commodity",
+        "Pet trading"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2022,
+    "extraction_metadata": {
+      "images_detected": 49,
+      "graphics_detected": 8597,
+      "tables_extracted": 62
+    }
+  },
+  "Makonde": {
+    "name": "Makonde",
+    "rainfall": {
+      "annual_mm": 150,
+      "source": "table"
+    },
+    "soil_types": [],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice"
+      ],
+      "yields": {
+        "cotton": 18.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Type of Market",
+        "Beef cattle",
+        "Indigenous\nChicken",
+        "Average Price\n2016 (US$)",
+        "Average Price\n2022 (US$)",
+        "Livestock\nType"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "millet",
+        "rice",
+        "tobacco",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2012,
+    "extraction_metadata": {
+      "images_detected": 19,
+      "graphics_detected": 5535,
+      "tables_extracted": 42
+    }
+  },
+  "Mangwe": {
+    "name": "Mangwe",
+    "rainfall": {
+      "annual_mm": 200,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "Type of Market",
+        "Target supermarkets in Bulawayo and\nPlumtree.",
+        "Average Price\n(US$) 2016",
+        "Economic &\nInfrastructure\nDevelopment",
+        "Beitbridge\nand South-\nWestern Lowveld\nCommunal",
+        "Average Price\n(ZA Rand)\n2022"
+      ],
+      "commodities": [
+        "groundnuts",
+        "millet",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize"
+      ]
+    },
+    "population": 65562,
+    "extraction_metadata": {
+      "images_detected": 12,
+      "graphics_detected": 7428,
+      "tables_extracted": 57
+    }
+  },
+  "Marondera": {
+    "name": "Marondera",
+    "rainfall": {
+      "annual_mm": 986,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "loam",
+      "sandy",
+      "sandy clay",
+      "sandy loam"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "LR\nFrost",
+        "Type of Market",
+        "Medium",
+        "Average Price\n(US$) 2016",
+        "HR\nFluctuating market\nprices",
+        "All wards",
+        "Average Price\n(US$) 2022",
+        "Petty trading",
+        "Fluctuating market price"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize"
+      ]
+    },
+    "population": 28418,
+    "extraction_metadata": {
+      "images_detected": 16,
+      "graphics_detected": 10186,
+      "tables_extracted": 53
+    }
+  },
+  "Masvingo": {
+    "name": "Masvingo",
+    "rainfall": {
+      "annual_mm": 200,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "cotton",
+        "soybeans",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "Average Price 2016 (Us$)",
+        "Poverty",
+        "Indigenous chickens",
+        "Tourism",
+        "Ward Number",
+        "Source Of Commodity",
+        "Pigs( porker)",
+        "Broilers",
+        "Ward 4, 5,6, 8, 9, 21, 22, 31, 32,"
+      ],
+      "commodities": [
+        "soybeans",
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 109839,
+    "extraction_metadata": {
+      "images_detected": 49,
+      "graphics_detected": 15241,
+      "tables_extracted": 77
+    }
+  },
+  "Matobo": {
+    "name": "Matobo",
+    "rainfall": {
+      "annual_mm": 600,
+      "source": "text"
+    },
+    "soil_types": [
+      "clay",
+      "loam",
+      "sandy",
+      "sandy loam"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "wheat",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "Availability",
+        "Commodity",
+        "Average Price\n2022 (Us$)",
+        "Ward No",
+        "RDC,\nLocal Government,",
+        "Average Price\n2016 (Us$)",
+        "Source Of Commodity",
+        "Market Name",
+        "Type Of Market"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize"
+      ]
+    },
+    "population": 2012,
+    "extraction_metadata": {
+      "images_detected": 69,
+      "graphics_detected": 23004,
+      "tables_extracted": 51
+    }
+  },
+  "Mazowe": {
+    "name": "Mazowe",
+    "rainfall": {
+      "annual_mm": 581,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "sandy"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "soybeans",
+        "wheat",
+        "rice"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Source of Commodity",
+        "Ward 1- ward 13",
+        "Availability",
+        "Commodity",
+        "Local markets\n(sale amongst\nfarmers)",
+        "Market gardening",
+        "Markets availability and access",
+        "All wards",
+        "Market Gardening",
+        "Ward Number"
+      ],
+      "commodities": [
+        "soybeans",
+        "groundnuts",
+        "wheat",
+        "millet",
+        "rice",
+        "tobacco",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2021,
+    "extraction_metadata": {
+      "images_detected": 22,
+      "graphics_detected": 20387,
+      "tables_extracted": 60
+    }
+  },
+  "Mberengwa": {
+    "name": "Mberengwa",
+    "rainfall": {
+      "annual_mm": 650,
+      "source": "text"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Type of Market",
+        "Livelihoods, human death.",
+        "Horticultural\nproduce,\ncereals and\nPulses",
+        "October",
+        "Average Price (US$)",
+        "Covid-19",
+        "Source of Commodity",
+        "1, 2, 35 and 36",
+        "December",
+        "Horticultural\nproduce,\nCereal, and\nPulses"
+      ],
+      "commodities": [
+        "groundnuts",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": null,
+    "extraction_metadata": {
+      "images_detected": 12,
+      "graphics_detected": 11515,
+      "tables_extracted": 80
+    }
+  },
+  "Mbire": {
+    "name": "Mbire",
+    "rainfall": {
+      "annual_mm": 741,
+      "source": "table"
+    },
+    "soil_types": [
+      "loam",
+      "sandy",
+      "sandy loam"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {
+        "cotton": 3.0
+      }
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "Type of Market",
+        "Commodity",
+        "Availability",
+        "Source\nOf Commodity",
+        "7, 8, 10, 13 and 17",
+        "Poor bridges which affects market accessibility",
+        "Indigenous poultry",
+        "Petty trading",
+        "Average Price 2022 (US$)"
+      ],
+      "commodities": [
+        "groundnuts",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 83724,
+    "extraction_metadata": {
+      "images_detected": 19,
+      "graphics_detected": 6083,
+      "tables_extracted": 52
+    }
+  },
+  "Mhondoro Ngezi": {
+    "name": "Mhondoro Ngezi",
+    "rainfall": {
+      "annual_mm": 921,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Market Type",
+        "Agricultural Markets\nand access to\nDevelopment",
+        "All wards",
+        "Cattle",
+        "Average Price 2022 (USD)",
+        "Livestock",
+        "Poultry",
+        "Donkeys",
+        "Open Market",
+        "Average Price 2016 (USD)"
+      ],
+      "commodities": [
+        "groundnuts",
+        "millet",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2012,
+    "extraction_metadata": {
+      "images_detected": 13,
+      "graphics_detected": 5911,
+      "tables_extracted": 38
+    }
+  },
+  "Mudzi": {
+    "name": "Mudzi",
+    "rainfall": {
+      "annual_mm": 500,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "1, 11, 12 and 16",
+        "Type of Market",
+        "8, 13, 14, 18, 7,\n3, 10, 4, 9, 15\nand 12",
+        "All wards",
+        "Cereals,\nhorticultural,\nlegumes and\npulses",
+        "Average Price\n2022 (US$)",
+        "Local restaurants,\nfarmer to farmer",
+        "2, 4, 3, 6 and 15",
+        "10, 12, 11, 19,\n2,\n1, 8, 9 and 5",
+        "All Wards"
+      ],
+      "commodities": [
+        "groundnuts",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 162381,
+    "extraction_metadata": {
+      "images_detected": 27,
+      "graphics_detected": 7679,
+      "tables_extracted": 50
+    }
+  },
+  "Murehwa": {
+    "name": "Murehwa",
+    "rainfall": {
+      "annual_mm": 600,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "Informal trading",
+        "Commodity",
+        "All wards",
+        "All wards but more\npronounced in Ward 29\nand 30",
+        "Available",
+        "Market Name",
+        "Source of commodity",
+        "Average Price 2016",
+        "Type Of Market"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2021,
+    "extraction_metadata": {
+      "images_detected": 15,
+      "graphics_detected": 9517,
+      "tables_extracted": 67
+    }
+  },
+  "Mutare": {
+    "name": "Mutare",
+    "rainfall": {
+      "annual_mm": 221,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "loam",
+      "sandy",
+      "sandy clay",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Inconsistent supply of products",
+        "Shortages of some product on the market",
+        "Poor access to finance",
+        "Long distances to market places",
+        "2016 Price (US)",
+        "Poor turn over.",
+        "Market Linkages ( availability and acces)s",
+        "Poor sanity on market places.",
+        "Inflation",
+        "Poor market infrastructure"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2019,
+    "extraction_metadata": {
+      "images_detected": 21,
+      "graphics_detected": 24130,
+      "tables_extracted": 93
+    }
+  },
+  "Mutasa": {
+    "name": "Mutasa",
+    "rainfall": {
+      "annual_mm": 1200,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "loam",
+      "sandy",
+      "sandy clay",
+      "sandy loam"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "soybeans",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Livestock Type",
+        "Type of Market",
+        "Average Price (Us$) 2022",
+        "Market name",
+        "All wards",
+        "Open market, local\nbutcheries and\nindividuals",
+        "Mutasa",
+        "7, 8, 9 and 10",
+        "Cattle",
+        "Horticultural\ncommodities and\nCereals"
+      ],
+      "commodities": [
+        "soybeans",
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2021,
+    "extraction_metadata": {
+      "images_detected": 50,
+      "graphics_detected": 11535,
+      "tables_extracted": 65
+    }
+  },
+  "Mwenezi": {
+    "name": "Mwenezi",
+    "rainfall": {
+      "annual_mm": 450,
+      "source": "table"
+    },
+    "soil_types": [],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "cotton",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "4, 6, 7, 8, 9,\n10, 11, 12, 13,\n16, 17 and 18",
+        "Source Of\nCommodity",
+        "Availability",
+        "Commodity",
+        "Livestock type",
+        "Males and Females 20-50 years",
+        "Average Price 2016\n(US$)",
+        "Ward Number",
+        "Females and Males 24-49 years",
+        "Market Name"
+      ],
+      "commodities": [
+        "groundnuts",
+        "fruits",
+        "millet",
+        "rice",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2012,
+    "extraction_metadata": {
+      "images_detected": 16,
+      "graphics_detected": 9707,
+      "tables_extracted": 46
+    }
+  },
+  "Nyanga": {
+    "name": "Nyanga",
+    "rainfall": {
+      "annual_mm": 500,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 20600,
+    "extraction_metadata": {
+      "images_detected": 14,
+      "graphics_detected": 12861,
+      "tables_extracted": 61
+    }
+  },
+  "Sanyati": {
+    "name": "Sanyati",
+    "rainfall": {
+      "annual_mm": 344,
+      "source": "table"
+    },
+    "soil_types": [],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Source of Commodity",
+        "Availability",
+        "Commodity",
+        "All wards",
+        "Market Name",
+        "Markets linkages and\naccessibility",
+        "Ward\nNumber"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "tobacco",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2016,
+    "extraction_metadata": {
+      "images_detected": 19,
+      "graphics_detected": 11336,
+      "tables_extracted": 65
+    }
+  },
+  "Shamva": {
+    "name": "Shamva",
+    "rainfall": {
+      "annual_mm": 500,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Turkey",
+        "Principe",
+        "Source Of Commodity",
+        "Local produce and supply to Wadzanayi\nmarket",
+        "Average Price (USD) 2022",
+        "Horticulture",
+        "All Wards",
+        "Market Name",
+        "Type Of Market",
+        "6, 7, 9, 10, 27, 11, 12, 13, 19 and 26"
+      ],
+      "commodities": [
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2021,
+    "extraction_metadata": {
+      "images_detected": 13,
+      "graphics_detected": 10862,
+      "tables_extracted": 68
+    }
+  },
+  "Shurugwi": {
+    "name": "Shurugwi",
+    "rainfall": {
+      "annual_mm": 750,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "sandy"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Individual farmers",
+        "Availability",
+        "Commodity",
+        "2021 (USD)",
+        "Readily available",
+        "Cattle rearing and Cereal Farming",
+        "All wards",
+        "Subsistence farming, livestock, horticulture",
+        "2016 (USD)",
+        "Ward Number"
+      ],
+      "commodities": [
+        "groundnuts",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2021,
+    "extraction_metadata": {
+      "images_detected": 12,
+      "graphics_detected": 8202,
+      "tables_extracted": 53
+    }
+  },
+  "Tsholotsho": {
+    "name": "Tsholotsho",
+    "rainfall": {
+      "annual_mm": 500,
+      "source": "table"
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Road Rehabilitation",
+        "Source Of\nCommodity",
+        "Availability",
+        "Commodity",
+        "Western Kalahari\nSand Veld Communal",
+        "Unit Price",
+        "Value As\nOf 2022",
+        "Type Of Markets",
+        "Ward Number",
+        "22, 15, 17, 2, 6,\n5, 19 and 20"
+      ],
+      "commodities": [
+        "groundnuts",
+        "fruits",
+        "millet",
+        "rice",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize"
+      ]
+    },
+    "population": 3300,
+    "extraction_metadata": {
+      "images_detected": 16,
+      "graphics_detected": 7641,
+      "tables_extracted": 54
+    }
+  },
+  "UMP": {
+    "name": "UMP",
+    "rainfall": {
+      "annual_mm": 750,
+      "source": "table"
+    },
+    "soil_types": [
+      "clay",
+      "clay loam",
+      "loam",
+      "sandy",
+      "sandy loam",
+      "silt"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "soybeans",
+        "wheat",
+        "rice",
+        "vegetables"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Traditional Markets",
+        "All wards",
+        "Hacterage",
+        "To improve accessibility to and from\nmarkets",
+        "Main Uses",
+        "Type Of Crop"
+      ],
+      "commodities": [
+        "soybeans",
+        "groundnuts",
+        "wheat",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "vegetables",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 122853,
+    "extraction_metadata": {
+      "images_detected": 38,
+      "graphics_detected": 11414,
+      "tables_extracted": 52
+    }
+  },
+  "Zvimba": {
+    "name": "Zvimba",
+    "rainfall": {
+      "annual_mm": 700,
+      "source": "table"
+    },
+    "soil_types": [
+      "sandy"
+    ],
+    "crops": {
+      "primary": [
+        "maize",
+        "sorghum",
+        "millet",
+        "groundnuts",
+        "beans",
+        "tobacco",
+        "cotton",
+        "rice"
+      ],
+      "yields": {}
+    },
+    "markets": {
+      "trading_centers": [
+        "Type of Market",
+        "All wards",
+        "Sustainable\nAgriculture\nTechnology",
+        "a. Petty trading",
+        "January to December",
+        "Petty trading",
+        "25, 26, 35,\n6 and 10",
+        "Average Price\n2022 (US$)",
+        "Indigenous Chicken",
+        "25, 26, 35, 6\nand 10"
+      ],
+      "commodities": [
+        "groundnuts",
+        "fruits",
+        "millet",
+        "rice",
+        "tobacco",
+        "sorghum",
+        "beans",
+        "maize",
+        "cotton"
+      ]
+    },
+    "population": 2016,
+    "extraction_metadata": {
+      "images_detected": 14,
+      "graphics_detected": 11569,
+      "tables_extracted": 51
+    }
+  }
+}

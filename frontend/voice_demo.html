@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Intelligence Demo - Hupfumi.Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            padding: 40px;
+            color: #f8fafc;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #10b981 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .subtitle {
+            color: #cbd5e1;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+        
+        .demo-section {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        
+        .demo-section h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #10b981;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        .status-panel {
+            background: rgba(15, 23, 42, 0.6);
+            padding: 20px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            border: 2px solid rgba(16, 185, 129, 0.3);
+        }
+        
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .status-item:last-child {
+            border-bottom: none;
+        }
+        
+        .status-label {
+            color: #94a3b8;
+            font-weight: 600;
+        }
+        
+        .status-value {
+            color: #10b981;
+            font-weight: 700;
+        }
+        
+        .status-value.inactive {
+            color: #64748b;
+        }
+        
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        
+        button {
+            padding: 16px 24px;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 12px rgba(5, 150, 105, 0.3);
+        }
+        
+        .btn-accent {
+            background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+            color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .btn-accent:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 12px rgba(245, 158, 11, 0.3);
+        }
+        
+        .btn-secondary {
+            background: rgba(51, 65, 85, 0.8);
+            color: #cbd5e1;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(51, 65, 85, 1);
+        }
+        
+        .btn-danger {
+            background: #ef4444;
+            color: white;
+        }
+        
+        .btn-danger:hover {
+            background: #dc2626;
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none !important;
+        }
+        
+        .voice-button {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+        
+        .voice-button.listening {
+            animation: pulse 1.5s infinite;
+        }
+        
+        .voice-button.speaking {
+            animation: speaking 0.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        @keyframes speaking {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+        
+        .transcript-box {
+            background: rgba(15, 23, 42, 0.8);
+            padding: 20px;
+            border-radius: 12px;
+            min-height: 100px;
+            margin-bottom: 20px;
+            color: #cbd5e1;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .transcript-box.empty {
+            color: #64748b;
+            font-style: italic;
+        }
+        
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid rgba(5, 150, 105, 0.3);
+            border-radius: 12px;
+            background: rgba(30, 41, 59, 0.8);
+            color: #f8fafc;
+            font-family: 'Inter', sans-serif;
+            font-size: 1em;
+            margin-bottom: 16px;
+        }
+        
+        input[type="text"]:focus, textarea:focus {
+            outline: none;
+            border-color: #10b981;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+        }
+        
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .alert {
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .alert-info {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            color: #93c5fd;
+        }
+        
+        .alert-warning {
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            color: #fbbf24;
+        }
+        
+        .alert-success {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #34d399;
+        }
+        
+        .code-block {
+            background: rgba(15, 23, 42, 0.9);
+            padding: 16px;
+            border-radius: 12px;
+            font-family: monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+            margin-top: 12px;
+        }
+        
+        .setup-section {
+            margin-top: 40px;
+        }
+        
+        .step {
+            background: rgba(51, 65, 85, 0.5);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            border-left: 4px solid #10b981;
+        }
+        
+        .step h3 {
+            color: #10b981;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 32px;
+            color: #10b981;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            color: #34d399;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Main Chat</a>
+        
+        <h1>🎤 Voice Intelligence Demo</h1>
+        <p class="subtitle">Test the complete voice system before integration</p>
+        
+        <!-- Status Panel -->
+        <div class="demo-section">
+            <h2>System Status</h2>
+            <div class="status-panel">
+                <div class="status-item">
+                    <span class="status-label">Voice Intelligence:</span>
+                    <span class="status-value" id="systemStatus">Not Initialized</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">ElevenLabs API:</span>
+                    <span class="status-value inactive" id="apiStatus">Not Configured</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Speech Recognition:</span>
+                    <span class="status-value" id="recognitionStatus">Checking...</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-label">Currently:</span>
+                    <span class="status-value inactive" id="activityStatus">Idle</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- API Configuration -->
+        <div class="demo-section">
+            <h2>1. API Configuration</h2>
+            <div class="alert alert-info">
+                💡 Get your free API key at <a href="https://elevenlabs.io" target="_blank" style="color: #60a5fa;">elevenlabs.io</a> (10,000 characters/month free)
+            </div>
+            <input type="text" id="apiKeyInput" placeholder="Paste your ElevenLabs API key here...">
+            <button class="btn-primary" onclick="initializeVoice()">Initialize Voice System</button>
+        </div>
+        
+        <!-- Voice Input Demo -->
+        <div class="demo-section">
+            <h2>2. Voice Input (Speech Recognition)</h2>
+            <button class="voice-button btn-primary" id="micButton" onclick="toggleListening()" disabled>
+                🎤
+            </button>
+            <div class="transcript-box empty" id="transcript">
+                Click the microphone and speak...
+            </div>
+            <button class="btn-secondary" onclick="clearTranscript()">Clear</button>
+        </div>
+        
+        <!-- Voice Output Demo -->
+        <div class="demo-section">
+            <h2>3. Voice Output (Text-to-Speech)</h2>
+            <textarea id="textToSpeak" placeholder="Enter text to be spoken...">Based on Buhera's conditions with 500-700mm rainfall and sandy soils, I recommend tobacco as your most profitable crop with a gross margin of 5,200 dollars per hectare.</textarea>
+            
+            <div style="margin-bottom: 16px;">
+                <label style="color: #94a3b8; font-weight: 600; display: block; margin-bottom: 8px;">Confidence Level (affects voice tone):</label>
+                <input type="range" id="confidenceSlider" min="0" max="100" value="90" style="width: 100%;">
+                <div style="display: flex; justify-content: space-between; color: #64748b; font-size: 0.9em; margin-top: 4px;">
+                    <span>Cautious (0%)</span>
+                    <span id="confidenceValue">90%</span>
+                    <span>Confident (100%)</span>
+                </div>
+            </div>
+            
+            <div class="button-grid">
+                <button class="btn-accent" onclick="speakText()" disabled id="speakBtn">🔊 Speak Text</button>
+                <button class="btn-danger" onclick="stopSpeaking()" disabled id="stopBtn">⏹️ Stop Speaking</button>
+            </div>
+        </div>
+        
+        <!-- Sample Scenarios -->
+        <div class="demo-section">
+            <h2>4. Sample Agricultural Scenarios</h2>
+            <div class="button-grid">
+                <button class="btn-secondary" onclick="speakBudgetExample()" disabled class="scenario-btn">📊 Budget Result</button>
+                <button class="btn-secondary" onclick="speakComparisonExample()" disabled class="scenario-btn">⚖️ Crop Comparison</button>
+                <button class="btn-secondary" onclick="speakChatExample()" disabled class="scenario-btn">💬 Chat Response</button>
+                <button class="btn-secondary" onclick="speakGreeting()" disabled class="scenario-btn">👋 Greeting</button>
+            </div>
+        </div>
+        
+        <!-- Setup Instructions -->
+        <div class="setup-section">
+            <div class="demo-section">
+                <h2>Quick Integration Guide</h2>
+                
+                <div class="step">
+                    <h3>Step 1: Add voice_intelligence.js to your HTML</h3>
+                    <div class="code-block">
+&lt;script src="voice_intelligence.js"&gt;&lt;/script&gt;
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <h3>Step 2: Initialize on page load</h3>
+                    <div class="code-block">
+window.onload = function() {
+    VoiceIntelligence.init('YOUR_API_KEY');
+    // ... rest of your code
+};
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <h3>Step 3: Add voice input to chat</h3>
+                    <div class="code-block">
+VoiceIntelligence.startListening(
+    (transcript) => {
+        document.getElementById('queryInput').value = transcript;
+        sendQuery();
+    }
+);
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <h3>Step 4: Add voice output after responses</h3>
+                    <div class="code-block">
+// In your sendQuery() function after getting response:
+VoiceIntelligence.speakChatResponse(
+    data.answer,
+    data.sources,
+    0.9
+);
+                    </div>
+                </div>
+                
+                <div class="alert alert-success">
+                    ✅ See VOICE_SETUP.md for complete integration examples!
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="voice_intelligence.js"></script>
+    <script>
+        let isInitialized = false;
+        
+        // Update confidence slider display
+        document.getElementById('confidenceSlider').addEventListener('input', function() {
+            document.getElementById('confidenceValue').textContent = this.value + '%';
+        });
+        
+        // Check speech recognition support
+        if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+            document.getElementById('recognitionStatus').textContent = 'Supported ✓';
+            document.getElementById('recognitionStatus').classList.remove('inactive');
+        } else {
+            document.getElementById('recognitionStatus').textContent = 'Not Supported ✗';
+            document.getElementById('recognitionStatus').style.color = '#ef4444';
+        }
+        
+        function initializeVoice() {
+            const apiKey = document.getElementById('apiKeyInput').value.trim();
+            
+            if (!apiKey) {
+                alert('Please enter your ElevenLabs API key');
+                return;
+            }
+            
+            try {
+                VoiceIntelligence.init(apiKey);
+                isInitialized = true;
+                
+                document.getElementById('systemStatus').textContent = 'Initialized ✓';
+                document.getElementById('systemStatus').classList.remove('inactive');
+                document.getElementById('apiStatus').textContent = 'Configured ✓';
+                document.getElementById('apiStatus').classList.remove('inactive');
+                
+                // Enable buttons
+                document.getElementById('micButton').disabled = false;
+                document.getElementById('speakBtn').disabled = false;
+                document.getElementById('stopBtn').disabled = false;
+                document.querySelectorAll('.scenario-btn').forEach(btn => btn.disabled = false);
+                
+                alert('✅ Voice Intelligence initialized successfully!');
+            } catch (error) {
+                alert('❌ Failed to initialize: ' + error.message);
+            }
+        }
+        
+        function toggleListening() {
+            if (!isInitialized) {
+                alert('Please initialize the system first');
+                return;
+            }
+            
+            const micButton = document.getElementById('micButton');
+            const transcriptBox = document.getElementById('transcript');
+            
+            if (VoiceIntelligence.isListening) {
+                VoiceIntelligence.stopListening();
+                micButton.classList.remove('listening');
+                document.getElementById('activityStatus').textContent = 'Idle';
+                document.getElementById('activityStatus').classList.add('inactive');
+                return;
+            }
+            
+            micButton.classList.add('listening');
+            document.getElementById('activityStatus').textContent = 'Listening 🎤';
+            document.getElementById('activityStatus').classList.remove('inactive');
+            transcriptBox.classList.remove('empty');
+            
+            VoiceIntelligence.startListening(
+                // Final result
+                (transcript) => {
+                    transcriptBox.textContent = transcript;
+                    micButton.classList.remove('listening');
+                    document.getElementById('activityStatus').textContent = 'Idle';
+                    document.getElementById('activityStatus').classList.add('inactive');
+                },
+                // Interim results
+                (interim) => {
+                    transcriptBox.textContent = interim + '...';
+                }
+            );
+        }
+        
+        function clearTranscript() {
+            document.getElementById('transcript').textContent = 'Click the microphone and speak...';
+            document.getElementById('transcript').classList.add('empty');
+        }
+        
+        function speakText() {
+            if (!isInitialized) {
+                alert('Please initialize the system first');
+                return;
+            }
+            
+            const text = document.getElementById('textToSpeak').value.trim();
+            const confidence = parseInt(document.getElementById('confidenceSlider').value) / 100;
+            
+            if (!text) {
+                alert('Please enter some text to speak');
+                return;
+            }
+            
+            document.getElementById('activityStatus').textContent = 'Speaking 🔊';
+            document.getElementById('activityStatus').classList.remove('inactive');
+            document.getElementById('micButton').classList.add('speaking');
+            
+            VoiceIntelligence.speak(text, {
+                confidence: confidence,
+                context: 'answer',
+                onEnd: () => {
+                    document.getElementById('activityStatus').textContent = 'Idle';
+                    document.getElementById('activityStatus').classList.add('inactive');
+                    document.getElementById('micButton').classList.remove('speaking');
+                }
+            });
+        }
+        
+        function stopSpeaking() {
+            VoiceIntelligence.stopSpeaking();
+            document.getElementById('activityStatus').textContent = 'Idle';
+            document.getElementById('activityStatus').classList.add('inactive');
+            document.getElementById('micButton').classList.remove('speaking');
+        }
+        
+        function speakBudgetExample() {
+            if (!isInitialized) return;
+            
+            const mockBudget = {
+                summary: {
+                    gross_profit: 5200,
+                    gross_return: 12000,
+                    variable_costs_per_ha: 6800
+                }
+            };
+            
+            const mockAdjustments = {
+                confidence: 0.85,
+                explanation: [
+                    'Rainfall (500-700mm): -30% yield impact',
+                    'Natural Region IV: Marginal for most crops',
+                    'Sandy soils: Lower water retention'
+                ]
+            };
+            
+            document.getElementById('activityStatus').textContent = 'Speaking Budget 🔊';
+            document.getElementById('activityStatus').classList.remove('inactive');
+            
+            VoiceIntelligence.speakBudget('tobacco', 'Buhera', mockBudget, mockAdjustments);
+            
+            setTimeout(() => {
+                document.getElementById('activityStatus').textContent = 'Idle';
+                document.getElementById('activityStatus').classList.add('inactive');
+            }, 15000);
+        }
+        
+        function speakComparisonExample() {
+            if (!isInitialized) return;
+            
+            const mockCrops = [
+                { crop: 'tobacco', grossMargin: 5200 },
+                { crop: 'butternut', grossMargin: 4800 },
+                { crop: 'tomatoes', grossMargin: 3500 }
+            ];
+            
+            document.getElementById('activityStatus').textContent = 'Speaking Comparison 🔊';
+            document.getElementById('activityStatus').classList.remove('inactive');
+            
+            VoiceIntelligence.speakCropComparison('Buhera', mockCrops);
+            
+            setTimeout(() => {
+                document.getElementById('activityStatus').textContent = 'Idle';
+                document.getElementById('activityStatus').classList.add('inactive');
+            }, 12000);
+        }
+        
+        function speakChatExample() {
+            if (!isInitialized) return;
+            
+            const response = "For Buhera district with its Natural Region IV classification and sandy soils, I recommend focusing on drought-tolerant crops. Tobacco remains your most profitable option, but consider diversifying with cowpeas and groundnuts which are well-suited to these conditions.";
+            const sources = [
+                { content: "Buhera agricultural guidance..." },
+                { content: "Zimbabwe crop budgets..." }
+            ];
+            
+            document.getElementById('activityStatus').textContent = 'Speaking Response 🔊';
+            document.getElementById('activityStatus').classList.remove('inactive');
+            
+            VoiceIntelligence.speakChatResponse(response, sources, 0.88);
+            
+            setTimeout(() => {
+                document.getElementById('activityStatus').textContent = 'Idle';
+                document.getElementById('activityStatus').classList.add('inactive');
+            }, 20000);
+        }
+        
+        function speakGreeting() {
+            if (!isInitialized) return;
+            
+            document.getElementById('activityStatus').textContent = 'Speaking Greeting 🔊';
+            document.getElementById('activityStatus').classList.remove('inactive');
+            
+            VoiceIntelligence.speak(
+                "Welcome to Hupfumi Africa's Earth Evidence AI. I'm here to help you make data-driven agricultural decisions for Zimbabwe.",
+                { context: 'greeting', confidence: 1.0 }
+            );
+            
+            setTimeout(() => {
+                document.getElementById('activityStatus').textContent = 'Idle';
+                document.getElementById('activityStatus').classList.add('inactive');
+            }, 10000);
+        }
+    </script>
+</body>
+</html>

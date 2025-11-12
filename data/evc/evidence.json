@@ -1,0 +1,75 @@
+{
+  "EV_20251110224215_263cf2": {
+    "id": "EV_20251110224215_263cf2",
+    "title": "Maize Planting Guidelines for Natural Region II",
+    "content": "Farmers should plant maize between October 15 and November 15 after receiving 50mm cumulative rainfall...",
+    "evidence_type": "recommendation",
+    "crop": "maize",
+    "topic": "planting",
+    "natural_regions": [
+      "II",
+      "IIA"
+    ],
+    "source_document": null,
+    "source_organization": "AGRITEX",
+    "submitted_by": "system",
+    "submitted_date": "2025-11-10T22:42:15.365974",
+    "status": "approved",
+    "current_version": 1,
+    "verification_history": [
+      {
+        "verifier_id": "system",
+        "verifier_name": "system",
+        "action": "submitted",
+        "timestamp": "2025-11-10T22:42:15.365978",
+        "status": "submitted",
+        "comments": "Evidence submitted for verification",
+        "changes_requested": null
+      },
+      {
+        "verifier_id": "system",
+        "verifier_name": "System",
+        "action": "assigned",
+        "timestamp": "2025-11-10T22:42:15.366182",
+        "status": "in_review",
+        "comments": "Assigned to 2 verifier(s)",
+        "changes_requested": null
+      },
+      {
+        "verifier_id": "VRF_20251110224215_94485e",
+        "verifier_name": "Dr. John Mapfumo",
+        "action": "approved",
+        "timestamp": "2025-11-10T22:42:15.366312",
+        "status": "in_review",
+        "comments": "Scientific evidence supports this recommendation",
+        "changes_requested": null
+      },
+      {
+        "verifier_id": "VRF_20251110224215_a21560",
+        "verifier_name": "Ms. Grace Moyo",
+        "action": "approved",
+        "timestamp": "2025-11-10T22:42:15.366543",
+        "status": "in_review",
+        "comments": "Aligns with field experience",
+        "changes_requested": null
+      },
+      {
+        "verifier_id": "VRF_20251110224215_a21560",
+        "verifier_name": "Ms. Grace Moyo",
+        "action": "approved",
+        "timestamp": "2025-11-10T22:42:15.366764",
+        "status": "approved",
+        "comments": "Evidence approved for publication",
+        "changes_requested": null
+      }
+    ],
+    "assigned_verifiers": [
+      "VRF_20251110224215_94485e",
+      "VRF_20251110224215_a21560"
+    ],
+    "approval_date": "2025-11-10T22:42:15.366759",
+    "expiry_date": "2026-11-05T22:42:15.366760",
+    "validity_period_months": 12,
+    "metadata": null
+  }
+}

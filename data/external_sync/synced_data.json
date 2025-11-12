@@ -1,0 +1,49 @@
+{
+  "3e06c5fd5366980977f66b432bfd3b11": {
+    "source": "AGRITEX",
+    "data_type": "advisory",
+    "content": {
+      "title": "Maize Planting Advisory",
+      "description": "Recommended planting window for maize",
+      "recommendations": [
+        "Plant after 50mm cumulative rainfall",
+        "Use certified seed"
+      ],
+      "target_crops": [
+        "maize"
+      ],
+      "natural_regions": [
+        "II",
+        "III"
+      ]
+    },
+    "timestamp": "2024-10-15T10:00:00",
+    "location": "Harare",
+    "crop": "maize",
+    "metadata": {
+      "advisory_id": "ADV001",
+      "priority": "high"
+    },
+    "hash": "3e06c5fd5366980977f66b432bfd3b11"
+  },
+  "4f768df9761689bd9d47b1c9c8401f09": {
+    "source": "AMA",
+    "data_type": "price",
+    "content": {
+      "commodity": "maize",
+      "price_per_unit": 350,
+      "unit": "kg",
+      "currency": "USD",
+      "market_name": "Mbare",
+      "price_trend": "rising"
+    },
+    "timestamp": "2024-10-20T08:00:00",
+    "location": "Mbare",
+    "crop": "maize",
+    "metadata": {
+      "market_type": "wholesale",
+      "volume": 5000
+    },
+    "hash": "4f768df9761689bd9d47b1c9c8401f09"
+  }
+}
