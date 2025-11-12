@@ -506,9 +506,12 @@ async def get_price_trends():
 if __name__ == "__main__":
     import uvicorn
     
+    # Use PORT env var (Railway, Render, etc.) or fallback to config
+    port = int(os.environ.get('PORT', config['api']['port']))
+    
     uvicorn.run(
         "src.api.main:app",
-        host=config['api']['host'],
-        port=config['api']['port'],
-        reload=config['api']['reload']
+        host="0.0.0.0",
+        port=port,
+        reload=False  # Disable reload in production
     )

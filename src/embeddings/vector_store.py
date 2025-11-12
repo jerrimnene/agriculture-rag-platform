@@ -33,7 +33,9 @@ class VectorStore:
         
         # Initialize embedding model
         logger.info(f"Loading embedding model: {embedding_model}")
-        self.embedding_model = SentenceTransformer(embedding_model)
+        # Use cache folder if set (for Docker pre-downloaded models)
+        cache_folder = os.environ.get('SENTENCE_TRANSFORMERS_HOME', None)
+        self.embedding_model = SentenceTransformer(embedding_model, cache_folder=cache_folder)
         
         # Initialize ChromaDB
         os.makedirs(persist_directory, exist_ok=True)
