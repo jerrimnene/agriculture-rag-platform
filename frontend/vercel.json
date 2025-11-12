@@ -1,34 +1,4 @@
 {
-  "version": 2,
-  "name": "hupfumi-agriculture",
-  "builds": [
-    {
-      "src": "*.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.js",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.json",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "*.md",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -40,7 +10,7 @@
       ]
     },
     {
-      "source": "/(.*).(js|json)",
+      "source": "/(.*)\\.(js|json)",
       "headers": [
         {
           "key": "Cache-Control",
