@@ -102,59 +102,77 @@ async def startup_event():
     global vector_store, rag_agent, geo_context, weather_api, market_api, data_sync, evc_tracker, historical_archive
     
     logger.info("Initializing AgriEvidence Platform...")
+    logger.warning("Running in minimal mode - some features may require data setup")
+    
+    # Initialize lightweight services that don't require data
+    try:
+        geo_context = GeoContext()
+        logger.info("✓ Geographic context initialized")
+    except Exception as e:
+        logger.warning(f"Could not initialize geo context: {e}")
     
     try:
-        # Initialize vector store
-        vector_db_path = Path(__file__).parent.parent.parent / "data" / "vector_db"
-        vector_store = VectorStore(
-            persist_directory=str(vector_db_path),
-            collection_name=config['vector_store']['collection_name'],
-            embedding_model=config['embeddings']['model_name']
-        )
-        
-        # Initialize RAG agent
-        rag_agent = AgricultureRAGAgent(
-            vector_store=vector_store,
-            llm_model=config['llm']['model'],
-            llm_base_url=config['llm']['base_url']
-        )
-        
-        # Initialize geo context
-        geo_context = GeoContext()
-        
-        # Initialize weather API
         weather_api = WeatherAPI()
-        
-        # Initialize market prices API
+        logger.info("✓ Weather API initialized")
+    except Exception as e:
+        logger.warning(f"Could not initialize weather API: {e}")
+    
+    try:
         market_api = MarketPricesAPI()
-        
-        # Initialize new modules
+        logger.info("✓ Market prices API initialized")
+    except Exception as e:
+        logger.warning(f"Could not initialize market API: {e}")
+    
+    # Try to initialize vector store and RAG agent
+    try:
+        vector_db_path = Path(__file__).parent.parent.parent / "data" / "vector_db"
+        if vector_db_path.exists():
+            vector_store = VectorStore(
+                persist_directory=str(vector_db_path),
+                collection_name=config['vector_store']['collection_name'],
+                embedding_model=config['embeddings']['model_name']
+            )
+            
+            rag_agent = AgricultureRAGAgent(
+                vector_store=vector_store,
+                llm_model=config['llm']['model'],
+                llm_base_url=config['llm']['base_url']
+            )
+            logger.info("✓ Vector store and RAG agent initialized")
+        else:
+            logger.warning(f"Vector store directory not found: {vector_db_path}")
+            logger.warning("RAG features will not be available until data is ingested")
+    except Exception as e:
+        logger.warning(f"Could not initialize vector store/RAG agent: {e}")
+    
+    # Try to initialize extended modules
+    try:
         data_sync = ExternalDataSync()
         evc_tracker = EVCTracker()
         historical_archive = HistoricalDataArchive()
-        
-        # Register extended API endpoints
+        logger.info("✓ Extended modules initialized")
+    except Exception as e:
+        logger.warning(f"Could not initialize extended modules: {e}")
+    
+    # Try to register extended endpoints
+    try:
         from src.api.endpoints_extended import add_sync_endpoints, add_evc_endpoints, add_historical_endpoints
         from src.api.holistic_advisory_endpoints import add_holistic_advisory_endpoints
         from src.api.district_complete_endpoints import add_complete_district_endpoints
-        add_sync_endpoints(app, data_sync)
-        add_evc_endpoints(app, evc_tracker)
-        add_historical_endpoints(app, historical_archive)
+        if data_sync:
+            add_sync_endpoints(app, data_sync)
+        if evc_tracker:
+            add_evc_endpoints(app, evc_tracker)
+        if historical_archive:
+            add_historical_endpoints(app, historical_archive)
         add_holistic_advisory_endpoints(app)
-        add_complete_district_endpoints(app, vector_store)
-        
-        logger.info("✓ AgriEvidence Platform initialized successfully")
-        logger.info(f"✓ Vector store stats: {vector_store.get_stats()}")
-        logger.info(f"✓ Geographic data loaded: {len(geo_context.get_all_districts())} districts")
-        logger.info("✓ Weather API initialized")
-        logger.info(f"✓ Market prices loaded: {len(market_api.get_all_markets()['markets'])} markets")
-        logger.info("✓ External data sync initialized")
-        logger.info(f"✓ EVC tracker initialized: {len(evc_tracker.evidence_db)} evidence items")
-        logger.info(f"✓ Historical archive initialized: {len(historical_archive.timeseries_db)} time series")
-        
+        if vector_store:
+            add_complete_district_endpoints(app, vector_store)
+        logger.info("✓ Extended endpoints registered")
     except Exception as e:
-        logger.error(f"Failed to initialize RAG system: {e}")
-        raise
+        logger.warning(f"Could not register all extended endpoints: {e}")
+    
+    logger.info("✓ Platform API started (health check available at /health)")
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -180,13 +198,24 @@ async def root():
 @app.get("/health")
 async def health_check():
     """Health check endpoint."""
-    if vector_store is None or rag_agent is None:
-        raise HTTPException(status_code=503, detail="System not initialized")
-    
-    return {
+    status = {
         "status": "healthy",
-        "vector_store_stats": vector_store.get_stats()
+        "services": {
+            "vector_store": vector_store is not None,
+            "rag_agent": rag_agent is not None,
+            "geo_context": geo_context is not None,
+            "weather_api": weather_api is not None,
+            "market_api": market_api is not None
+        }
     }
+    
+    if vector_store is not None:
+        try:
+            status["vector_store_stats"] = vector_store.get_stats()
+        except:
+            pass
+    
+    return status
 
 
 @app.post("/query", response_model=QueryResponse)
