@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: agriculture-rag-api
+    env: python
+    buildCommand: "pip install fastapi uvicorn pydantic pyyaml"
+    startCommand: "uvicorn src.api.main_minimal:app --host 0.0.0.0 --port $PORT"
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.0
