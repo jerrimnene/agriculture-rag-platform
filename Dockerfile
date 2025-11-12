@@ -15,5 +15,5 @@ COPY src/api/main_minimal.py ./main.py
 # Expose port
 EXPOSE 8000
 
-# Start - use shell form to allow env var substitution
-CMD uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
+# Start - use shell to substitute PORT env var
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}"]
