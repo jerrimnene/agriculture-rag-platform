@@ -19,22 +19,28 @@ import yaml
 # Add parent directory to path
 sys.path.append(str(Path(__file__).parent.parent.parent))
 
-from src.embeddings.vector_store import VectorStore
-from src.agents.rag_agent import AgricultureRAGAgent
-from src.geo.geo_context import GeoContext
-from src.weather.weather_api import WeatherAPI
-from src.markets.market_api import MarketPricesAPI
-from src.external.data_sync import ExternalDataSync, DataSource
-from src.verification.evc_tracker import EVCTracker, VerifierRole
-from src.historical.archive import HistoricalDataArchive, DataCategory
-
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Load configuration
-config_path = Path(__file__).parent.parent.parent / "config" / "config.yaml"
-with open(config_path, 'r') as f:
-    config = yaml.safe_load(f)
+# Load configuration with fallback
+try:
+    config_path = Path(__file__).parent.parent.parent / "config" / "config.yaml"
+    with open(config_path, 'r') as f:
+        config = yaml.safe_load(f)
+    logger.info("✓ Configuration loaded")
+except Exception as e:
+    logger.warning(f"Could not load config: {e}. Using defaults.")
+    config = {
+        'api': {
+            'cors_origins': ['*'],
+            'host': '0.0.0.0',
+            'port': 8000,
+            'reload': False
+        },
+        'vector_store': {'collection_name': 'agriculture_docs'},
+        'embeddings': {'model_name': 'sentence-transformers/all-MiniLM-L6-v2'},
+        'llm': {'model': 'mistral', 'base_url': 'http://localhost:11434'}
+    }
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -106,18 +112,21 @@ async def startup_event():
     
     # Initialize lightweight services that don't require data
     try:
+        from src.geo.geo_context import GeoContext
         geo_context = GeoContext()
         logger.info("✓ Geographic context initialized")
     except Exception as e:
         logger.warning(f"Could not initialize geo context: {e}")
     
     try:
+        from src.weather.weather_api import WeatherAPI
         weather_api = WeatherAPI()
         logger.info("✓ Weather API initialized")
     except Exception as e:
         logger.warning(f"Could not initialize weather API: {e}")
     
     try:
+        from src.markets.market_api import MarketPricesAPI
         market_api = MarketPricesAPI()
         logger.info("✓ Market prices API initialized")
     except Exception as e:
@@ -125,6 +134,9 @@ async def startup_event():
     
     # Try to initialize vector store and RAG agent
     try:
+        from src.embeddings.vector_store import VectorStore
+        from src.agents.rag_agent import AgricultureRAGAgent
+        
         vector_db_path = Path(__file__).parent.parent.parent / "data" / "vector_db"
         if vector_db_path.exists():
             vector_store = VectorStore(
@@ -147,6 +159,10 @@ async def startup_event():
     
     # Try to initialize extended modules
     try:
+        from src.external.data_sync import ExternalDataSync
+        from src.verification.evc_tracker import EVCTracker
+        from src.historical.archive import HistoricalDataArchive
+        
         data_sync = ExternalDataSync()
         evc_tracker = EVCTracker()
         historical_archive = HistoricalDataArchive()
