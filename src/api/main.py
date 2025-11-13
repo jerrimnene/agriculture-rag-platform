@@ -19,8 +19,14 @@ import yaml
 # Add parent directory to path
 sys.path.append(str(Path(__file__).parent.parent.parent))
 
+import threading
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+# Global flags for lazy loading
+models_loaded = False
+loading_models = False
 
 # Load configuration with fallback
 try:
@@ -102,37 +108,16 @@ class QueryResponse(BaseModel):
     reconciliation: Optional[Dict] = None
 
 
-@app.on_event("startup")
-async def startup_event():
-    """Initialize the RAG system on startup."""
-    global vector_store, rag_agent, geo_context, weather_api, market_api, data_sync, evc_tracker, historical_archive
+def load_heavy_models():
+    """Load ML models in background thread."""
+    global vector_store, rag_agent, data_sync, evc_tracker, historical_archive, models_loaded, loading_models
     
-    logger.info("Initializing AgriEvidence Platform...")
-    logger.warning("Running in minimal mode - some features may require data setup")
+    if loading_models or models_loaded:
+        return
     
-    # Initialize lightweight services that don't require data
-    try:
-        from src.geo.geo_context import GeoContext
-        geo_context = GeoContext()
-        logger.info("✓ Geographic context initialized")
-    except Exception as e:
-        logger.warning(f"Could not initialize geo context: {e}")
+    loading_models = True
+    logger.info("Background: Loading heavy ML models...")
     
-    try:
-        from src.weather.weather_api import WeatherAPI
-        weather_api = WeatherAPI()
-        logger.info("✓ Weather API initialized")
-    except Exception as e:
-        logger.warning(f"Could not initialize weather API: {e}")
-    
-    try:
-        from src.markets.market_api import MarketPricesAPI
-        market_api = MarketPricesAPI()
-        logger.info("✓ Market prices API initialized")
-    except Exception as e:
-        logger.warning(f"Could not initialize market API: {e}")
-    
-    # Try to initialize vector store and RAG agent
     try:
         from src.embeddings.vector_store import VectorStore
         from src.agents.rag_agent import AgricultureRAGAgent
@@ -144,21 +129,13 @@ async def startup_event():
                 collection_name=config['vector_store']['collection_name'],
                 embedding_model=config['embeddings']['model_name']
             )
-            
             rag_agent = AgricultureRAGAgent(
                 vector_store=vector_store,
                 llm_model=config['llm']['model'],
                 llm_base_url=config['llm']['base_url']
             )
-            logger.info("✓ Vector store and RAG agent initialized")
-        else:
-            logger.warning(f"Vector store directory not found: {vector_db_path}")
-            logger.warning("RAG features will not be available until data is ingested")
-    except Exception as e:
-        logger.warning(f"Could not initialize vector store/RAG agent: {e}")
-    
-    # Try to initialize extended modules
-    try:
+            logger.info("✓ Vector store and RAG agent loaded")
+        
         from src.external.data_sync import ExternalDataSync
         from src.verification.evc_tracker import EVCTracker
         from src.historical.archive import HistoricalDataArchive
@@ -166,12 +143,8 @@ async def startup_event():
         data_sync = ExternalDataSync()
         evc_tracker = EVCTracker()
         historical_archive = HistoricalDataArchive()
-        logger.info("✓ Extended modules initialized")
-    except Exception as e:
-        logger.warning(f"Could not initialize extended modules: {e}")
-    
-    # Try to register extended endpoints
-    try:
+        
+        # Register extended endpoints
         from src.api.endpoints_extended import add_sync_endpoints, add_evc_endpoints, add_historical_endpoints
         from src.api.holistic_advisory_endpoints import add_holistic_advisory_endpoints
         from src.api.district_complete_endpoints import add_complete_district_endpoints
@@ -184,11 +157,68 @@ async def startup_event():
         add_holistic_advisory_endpoints(app)
         if vector_store:
             add_complete_district_endpoints(app, vector_store)
-        logger.info("✓ Extended endpoints registered")
+        
+        models_loaded = True
+        logger.info("✓ All heavy models loaded successfully")
     except Exception as e:
-        logger.warning(f"Could not register all extended endpoints: {e}")
+        logger.error(f"Failed to load models: {e}")
+    finally:
+        loading_models = False
+
+
+@app.on_event("startup")
+async def startup_event():
+    """Fast startup - only init lightweight services."""
+    global geo_context, weather_api, market_api
     
-    logger.info("✓ Platform API started (health check available at /health)")
+    logger.info("✓ Fast boot: lightweight services only")
+    
+    try:
+        from src.geo.geo_context import GeoContext
+        geo_context = GeoContext()
+        logger.info("✓ Geographic context ready")
+    except Exception as e:
+        logger.warning(f"GeoContext init failed: {e}")
+    
+    try:
+        from src.weather.weather_api import WeatherAPI
+        weather_api = WeatherAPI()
+        logger.info("✓ Weather API ready")
+    except Exception as e:
+        logger.warning(f"WeatherAPI init failed: {e}")
+    
+    try:
+        from src.markets.market_api import MarketPricesAPI
+        market_api = MarketPricesAPI()
+        logger.info("✓ Market API ready")
+    except Exception as e:
+        logger.warning(f"Markets init failed: {e}")
+    
+    # Start background loading
+    threading.Thread(target=load_heavy_models, daemon=True).start()
+    logger.info("✓ API ready! Heavy models loading in background...")
+
+
+@app.get("/health")
+async def health():
+    """Fast health check - always returns OK."""
+    return {"status": "ok", "ready": models_loaded}
+
+
+@app.get("/ready")
+async def ready():
+    """Check if heavy models are loaded."""
+    return {
+        "ready": models_loaded,
+        "loading": loading_models,
+        "services": {
+            "geo_context": geo_context is not None,
+            "weather_api": weather_api is not None,
+            "market_api": market_api is not None,
+            "vector_store": vector_store is not None,
+            "rag_agent": rag_agent is not None
+        }
+    }
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -211,27 +241,6 @@ async def root():
     """)
 
 
-@app.get("/health")
-async def health_check():
-    """Health check endpoint."""
-    status = {
-        "status": "healthy",
-        "services": {
-            "vector_store": vector_store is not None,
-            "rag_agent": rag_agent is not None,
-            "geo_context": geo_context is not None,
-            "weather_api": weather_api is not None,
-            "market_api": market_api is not None
-        }
-    }
-    
-    if vector_store is not None:
-        try:
-            status["vector_store_stats"] = vector_store.get_stats()
-        except:
-            pass
-    
-    return status
 
 
 @app.post("/query", response_model=QueryResponse)
